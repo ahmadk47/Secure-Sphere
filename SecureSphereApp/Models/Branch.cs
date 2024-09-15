@@ -18,7 +18,7 @@ public partial class Branch
     public decimal ClientId { get; set; }
 
     public virtual ICollection<Camera> Cameras { get; set; } = new List<Camera>();
-    
+
     public virtual Client? Client { get; set; } = null!;
 
     public virtual ICollection<User> Users { get; set; } = new List<User>();

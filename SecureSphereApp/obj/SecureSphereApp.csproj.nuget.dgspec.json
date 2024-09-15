@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\VS Projects\\SecureSphereApp\\SecureSphereApp.csproj": {}
+    "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj": {}
   },
   "projects": {
-    "C:\\VS Projects\\SecureSphereApp\\SecureSphereApp.csproj": {
+    "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\VS Projects\\SecureSphereApp\\SecureSphereApp.csproj",
+        "projectUniqueName": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj",
         "projectName": "SecureSphereApp",
-        "projectPath": "C:\\VS Projects\\SecureSphereApp\\SecureSphereApp.csproj",
-        "packagesPath": "C:\\Users\\DELL-G5\\.nuget\\packages\\",
-        "outputPath": "C:\\VS Projects\\SecureSphereApp\\obj\\",
+        "projectPath": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj",
+        "packagesPath": "C:\\Users\\HP14\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL-G5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP14\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

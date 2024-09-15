@@ -19,10 +19,36 @@ namespace SecureSphereApp.Controllers
         }
 
         // GET: Branches
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            var testDbContext = _context.Branches.Include(b => b.Client);
-            return View(await testDbContext.ToListAsync());
+                IQueryable<Branch> branches = _context.Branches.Include(b => b.Client);
+
+                if (!string.IsNullOrEmpty(SearchString))
+                {
+                    branches = branches.Where(b => b.Client.Name.Contains(SearchString));
+                }
+
+                var model = await branches.ToListAsync();
+                ViewBag.SearchString = SearchString;
+
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                {
+                    return PartialView(model);
+                }
+
+                return View(model);
+            //if (SearchString != null)
+            //{
+            //    var branches = await _context.Branches.Include(b => b.Client).Where(c => c.Client.Name.Contains(SearchString)).ToListAsync();
+            //    ViewBag.SearchString = SearchString;
+            //    return View(branches);
+            //}
+            //else
+            //{
+            //    return View(await _context.Branches.Include(c => c.Client).ToListAsync());
+            //}
+            //var testDbContext = _context.Branches.Include(b => b.Client);
+            //return View(await testDbContext.ToListAsync());
         }
 
         // GET: Branches/Details/5

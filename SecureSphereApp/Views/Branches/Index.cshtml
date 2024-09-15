@@ -9,6 +9,11 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="Branches" asp-action="Index" id="searchForm">
+    <p>
+        Name: <input type="text" name="SearchString" id="searchInput" value="@ViewBag.SearchString" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -40,3 +45,31 @@
 }
     </tbody>
 </table>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var delay = (function () {
+                var timer = 0;
+                return function (callback, ms) {
+                    clearTimeout(timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+            $('#searchInput').on('input', function () {
+                var searchString = $(this).val();
+                delay(function () {
+                    $.ajax({
+                        url: '@Url.Action("Index", "Branches")',
+                        data: { SearchString: searchString },
+                        success: function (result) {
+                            $('tbody').html($(result).find('tbody').html());
+                        },
+                        error: function (xhr, status, error) {
+                            console.error('AJAX error:', status, error);
+                        }
+                    });
+                }, 300); // Wait for 300ms after the user stops typing
+            });
+        });
+    </script>
+}
