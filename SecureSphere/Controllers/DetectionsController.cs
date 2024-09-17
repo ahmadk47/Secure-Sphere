@@ -11,7 +11,7 @@ namespace SecureSphere.Controllers
 {
     public class DetectionsController : Controller
     {
-        private readonly ApplicationDbContext _context;
+       private readonly ApplicationDbContext _context;
 
         public DetectionsController(ApplicationDbContext context)
         {
