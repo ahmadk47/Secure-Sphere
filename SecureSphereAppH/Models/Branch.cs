@@ -9,8 +9,7 @@ namespace SecureSphereApp.Models;
 
 public partial class Branch
 {
-    [Key]
-    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+   
     public decimal Id { get; set; }
 
     public string? Address { get; set; }

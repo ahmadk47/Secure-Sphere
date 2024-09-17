@@ -1,62 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\",
+  "WorkspaceRootPath": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\views\\branches\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:views\\branches\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\controllers\\detectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:controllers\\detectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\models\\detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\systemlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\systemlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\source\\repos\\securesphereapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\securesphereapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:securesphereapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,200 +58,157 @@
       "DocumentGroups": [
         {
           "DockedHeight": 317,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-09T18:25:30.431Z",
-              "IsPinned": true
-            },
-            {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Branches\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Branches\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Branches\\Index.cshtml*",
-              "RelativeToolTip": "Views\\Branches\\Index.cshtml*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-15T08:55:24.973Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Clients\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Clients\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Clients\\Index.cshtml",
-              "RelativeToolTip": "Views\\Clients\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-13T12:18:08.291Z",
+              "Title": "SystemLog.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\SystemLog.cs",
+              "RelativeDocumentMoniker": "Models\\SystemLog.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\SystemLog.cs",
+              "RelativeToolTip": "Models\\SystemLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T11:06:15.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Detection.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Detection.cs",
+              "RelativeDocumentMoniker": "Models\\Detection.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Detection.cs",
+              "RelativeToolTip": "Models\\Detection.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T11:05:56.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "Controllers\\ClientsController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Models\\Client.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Client.cs",
+              "RelativeToolTip": "Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T08:52:55.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BranchesController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\BranchesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BranchesController.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\BranchesController.cs*",
-              "RelativeToolTip": "Controllers\\BranchesController.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T08:52:58.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T11:05:52.555Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DetectionsController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\DetectionsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DetectionsController.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\DetectionsController.cs",
-              "RelativeToolTip": "Controllers\\DetectionsController.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAQwKkAAAAAAAAAAAAAAA==",
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Camera.cs",
+              "RelativeDocumentMoniker": "Models\\Camera.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Camera.cs",
+              "RelativeToolTip": "Models\\Camera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T21:23:14.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T11:05:35.086Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T12:54:17.255Z"
+              "WhenOpened": "2024-09-16T10:50:45.816Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAUwMIAAAAJAAAAAAAAAA==",
+              "Title": "TestDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\TestDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\TestDbContext.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\TestDbContext.cs",
+              "RelativeToolTip": "Models\\TestDbContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwB8AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T12:07:42.179Z"
+              "WhenOpened": "2024-09-15T14:18:26.334Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T11:55:59.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Detection.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Models\\Detection.cs",
-              "RelativeDocumentMoniker": "Models\\Detection.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Models\\Detection.cs",
-              "RelativeToolTip": "Models\\Detection.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwA8AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T12:05:23.522Z",
+              "WhenOpened": "2024-09-15T14:04:56.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAACwAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-12T21:40:42.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TestDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Models\\TestDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\TestDbContext.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Models\\TestDbContext.cs",
-              "RelativeToolTip": "Models\\TestDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T12:09:30.468Z"
+              "DocumentIndex": 10,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-16T10:46:16.383Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T21:39:12.264Z"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-15T14:15:11.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-12T12:00:37.412Z"
-            }
-          ]
-        },
-        {
-          "DockedHeight": 317,
-          "SelectedChildIndex": -1,
-          "Children": [
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:15:11.042Z"
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Branch.cs",
+              "RelativeDocumentMoniker": "Models\\Branch.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Branch.cs",
+              "RelativeToolTip": "Models\\Branch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:03:36.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SecureSphereApp.csproj",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\SecureSphereApp.csproj",
+              "RelativeDocumentMoniker": "SecureSphereApp.csproj",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\SecureSphereApp.csproj",
+              "RelativeToolTip": "SecureSphereApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-16T10:30:47.987Z"
             }
           ]
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ecomers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9a3be908628b40164e5732cbd88946620e3fa7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ecomers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ecomers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

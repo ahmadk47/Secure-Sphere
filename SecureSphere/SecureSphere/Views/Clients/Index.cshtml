@@ -1,0 +1,67 @@
+﻿@model IEnumerable<SecureSphere.Models.Client>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Clients</h1>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-controller="Clients" asp-action="Index" id="searchForm">
+    <p>
+        Name: <input type="text" name="SearchString" id="searchInput" value="@ViewBag.SearchString" />
+    </p>
+</form>
+<div id="searchResults">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            var delay = (function(){
+                var timer = 0;
+                return function(callback, ms){
+                    clearTimeout (timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+
+            $('#searchInput').on('input', function() {
+                var searchString = $(this).val();
+                delay(function() {
+                    $.ajax({
+                        url: '@Url.Action("Index", "Clients")',
+                        data: { SearchString: searchString },
+                        success: function(result) {
+                            $('#searchResults').html($(result).find('#searchResults').html());
+                        }
+                    });
+                }, 300); // Wait for 300ms after the user stops typing
+            });
+        });
+    </script>
+}

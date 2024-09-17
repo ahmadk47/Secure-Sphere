@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP14\\Downloads\\Ecomers\\Ecomers\\Ecomers.csproj": {}
+    "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\Ecomers\\Ecomers\\Ecomers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP14\\Downloads\\Ecomers\\Ecomers\\Ecomers.csproj": {
+    "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\Ecomers\\Ecomers\\Ecomers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP14\\Downloads\\Ecomers\\Ecomers\\Ecomers.csproj",
+        "projectUniqueName": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\Ecomers\\Ecomers\\Ecomers.csproj",
         "projectName": "Ecomers",
-        "projectPath": "C:\\Users\\HP14\\Downloads\\Ecomers\\Ecomers\\Ecomers.csproj",
+        "projectPath": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\Ecomers\\Ecomers\\Ecomers.csproj",
         "packagesPath": "C:\\Users\\HP14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP14\\Downloads\\Ecomers\\Ecomers\\obj\\",
+        "outputPath": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\Ecomers\\Ecomers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP14\\AppData\\Roaming\\NuGet\\NuGet.Config",

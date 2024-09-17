@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj": {}
+    "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\SecureSphereApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj": {
+    "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\SecureSphereApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj",
+        "projectUniqueName": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\SecureSphereApp.csproj",
         "projectName": "SecureSphereApp",
-        "projectPath": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\SecureSphereApp.csproj",
+        "projectPath": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\SecureSphereApp.csproj",
         "packagesPath": "C:\\Users\\HP14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP14\\source\\repos\\SecureSphereApp\\obj\\",
+        "outputPath": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP14\\AppData\\Roaming\\NuGet\\NuGet.Config",
