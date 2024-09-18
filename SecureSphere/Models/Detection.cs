@@ -26,7 +26,7 @@ namespace SecureSphere.Models
         public string? Reason { get; set; }
 
         [ForeignKey("ApplicationUser")]
-        public string? UserID { get; set; }
+        public string UserID { get; set; }
 
         public ApplicationUser? User { get; set; }
     }

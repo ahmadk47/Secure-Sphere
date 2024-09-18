@@ -15,7 +15,7 @@ namespace SecureSphere.Models
         [StringLength(15)]
         public string? IpAddress { get; set; }
 
-        [ForeignKey("ApplicationUser")]
+        [ForeignKey("ApplicationUser")] 
         public string? UserID { get; set; }
 
         public ApplicationUser? User { get; set; }

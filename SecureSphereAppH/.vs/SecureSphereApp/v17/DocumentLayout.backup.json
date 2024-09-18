@@ -62,23 +62,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 317,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T08:45:39.61Z"
             },
             {
               "$type": "Document",
@@ -148,10 +136,22 @@
               "RelativeDocumentMoniker": "Models\\TestDbContext.cs",
               "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\TestDbContext.cs",
               "RelativeToolTip": "Models\\TestDbContext.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T14:18:26.334Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T08:45:39.61Z"
             },
             {
               "$type": "Document",

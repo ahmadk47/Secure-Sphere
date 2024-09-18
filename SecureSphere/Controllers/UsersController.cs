@@ -48,7 +48,7 @@ namespace SecureSphereApp.Controllers
         // GET: Users/Create
         public IActionResult Create()
         {
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Name");
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address");
             return View();
         }
 
@@ -67,7 +67,7 @@ namespace SecureSphereApp.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Name", user.BranchID);
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Adress", user.BranchID);
             return View(user);
         }
 

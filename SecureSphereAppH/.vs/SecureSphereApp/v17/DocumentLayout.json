@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|c:\\users\\hp14\\documents\\github\\secure-sphere\\securesphereapph\\models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CF76D35-CF64-4DAD-BCCD-FC6304E3624B}|SecureSphereApp.csproj|solutionrelative:models\\testdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 317,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +74,93 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BranchesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Controllers\\BranchesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BranchesController.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Controllers\\BranchesController.cs",
+              "RelativeToolTip": "Controllers\\BranchesController.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T18:10:20.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SystemLog.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\SystemLog.cs",
+              "RelativeDocumentMoniker": "Models\\SystemLog.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\SystemLog.cs",
+              "RelativeToolTip": "Models\\SystemLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T11:06:15.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detection.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Detection.cs",
+              "RelativeDocumentMoniker": "Models\\Detection.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Detection.cs",
+              "RelativeToolTip": "Models\\Detection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T11:05:56.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "Models\\Client.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Client.cs",
+              "RelativeToolTip": "Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T11:05:52.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Camera.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Camera.cs",
+              "RelativeDocumentMoniker": "Models\\Camera.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Camera.cs",
+              "RelativeToolTip": "Models\\Camera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T11:05:35.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T10:50:45.816Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TestDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\TestDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\TestDbContext.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\TestDbContext.cs",
+              "RelativeToolTip": "Models\\TestDbContext.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAwwL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T14:18:26.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -83,79 +173,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SystemLog.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\SystemLog.cs",
-              "RelativeDocumentMoniker": "Models\\SystemLog.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\SystemLog.cs",
-              "RelativeToolTip": "Models\\SystemLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:06:15.657Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Detection.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Detection.cs",
-              "RelativeDocumentMoniker": "Models\\Detection.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Detection.cs",
-              "RelativeToolTip": "Models\\Detection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:05:56.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Models\\Client.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Client.cs",
-              "RelativeToolTip": "Models\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:05:52.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Camera.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Camera.cs",
-              "RelativeDocumentMoniker": "Models\\Camera.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Camera.cs",
-              "RelativeToolTip": "Models\\Camera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T11:05:35.086Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T10:50:45.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TestDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\TestDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\TestDbContext.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\TestDbContext.cs",
-              "RelativeToolTip": "Models\\TestDbContext.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T14:18:26.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -167,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -179,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -191,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -203,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Branch.cs",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\Models\\Branch.cs",
               "RelativeDocumentMoniker": "Models\\Branch.cs",
@@ -215,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "SecureSphereApp.csproj",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphereAppH\\SecureSphereApp.csproj",
               "RelativeDocumentMoniker": "SecureSphereApp.csproj",
