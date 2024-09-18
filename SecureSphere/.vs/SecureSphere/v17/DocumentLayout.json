@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Controllers\\SystemLogsController.cs",
               "ToolTip": "C:\\Users\\HP14\\Documents\\GitHub\\Secure-Sphere\\SecureSphere\\Controllers\\SystemLogsController.cs",
               "RelativeToolTip": "Controllers\\SystemLogsController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAApwF0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAAF0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-18T08:57:23.201Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "RelativeToolTip": "Views\\Users\\Index.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-18T07:57:52.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-18T07:57:52.048Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "Controllers\\DetectionsController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAHwAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T07:49:44.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-18T07:49:44.574Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Views\\Users\\Create.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-18T07:41:10.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-18T07:41:10.474Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AgIAAIEAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T17:48:13.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T17:48:13.454Z"
             },
             {
               "$type": "Document",
@@ -143,8 +139,7 @@
               "RelativeToolTip": "Models\\SystemLog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T08:57:35.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-18T08:57:35.904Z"
             },
             {
               "$type": "Document",
@@ -156,8 +151,7 @@
               "RelativeToolTip": "Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T16:46:24.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T16:46:24.131Z"
             },
             {
               "$type": "Document",
@@ -169,8 +163,7 @@
               "RelativeToolTip": "Controllers\\CamerasController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T17:08:07.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T17:08:07.93Z"
             },
             {
               "$type": "Document",
@@ -182,8 +175,7 @@
               "RelativeToolTip": "Models\\Camera.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T16:46:40.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T16:46:40.591Z"
             },
             {
               "$type": "Document",
@@ -195,8 +187,7 @@
               "RelativeToolTip": "Models\\Branch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T16:46:37.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T16:46:37.274Z"
             },
             {
               "$type": "Document",
@@ -208,8 +199,7 @@
               "RelativeToolTip": "Views\\Detections\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T17:50:04.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-17T17:50:04.727Z"
             },
             {
               "$type": "Document",
