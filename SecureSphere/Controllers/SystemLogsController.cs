@@ -26,7 +26,7 @@ namespace SecureSphere.Controllers
         }
 
         // GET: SystemLogs/Details/5
-        public async Task<IActionResult> Details(decimal? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
             {
@@ -47,7 +47,7 @@ namespace SecureSphere.Controllers
         // GET: SystemLogs/Create
         public IActionResult Create()
         {
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "Name");
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName");
             return View();
         }
 
@@ -56,7 +56,7 @@ namespace SecureSphere.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Details,IpAddress,UserId")] SystemLog systemLog)
+        public async Task<IActionResult> Create([Bind("ID,Details,IpAddress,UserID")] SystemLog systemLog)
         {
             if (ModelState.IsValid)
             {
@@ -64,12 +64,12 @@ namespace SecureSphere.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "Name", systemLog.UserID);
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName", systemLog.UserID);
             return View(systemLog);
         }
 
         // GET: SystemLogs/Edit/5
-        public async Task<IActionResult> Edit(decimal? id)
+        public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
             {
@@ -81,7 +81,7 @@ namespace SecureSphere.Controllers
             {
                 return NotFound();
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "Name", systemLog.UserID);
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName", systemLog.UserID);
             return View(systemLog);
         }
 
@@ -90,7 +90,7 @@ namespace SecureSphere.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(decimal id, [Bind("Id,Details,IpAddress,UserId")] SystemLog systemLog)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Details,IpAddress,UserID")] SystemLog systemLog)
         {
             if (id != systemLog.ID)
             {
@@ -117,12 +117,12 @@ namespace SecureSphere.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "Name", systemLog.UserID);
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName", systemLog.UserID);
             return View(systemLog);
         }
 
         // GET: SystemLogs/Delete/5
-        public async Task<IActionResult> Delete(decimal? id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
             {
@@ -143,7 +143,7 @@ namespace SecureSphere.Controllers
         // POST: SystemLogs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(decimal id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var systemLog = await _context.SystemLogs.FindAsync(id);
             if (systemLog != null)
@@ -155,7 +155,7 @@ namespace SecureSphere.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool SystemLogExists(decimal id)
+        private bool SystemLogExists(int id)
         {
             return _context.SystemLogs.Any(e => e.ID == id);
         }

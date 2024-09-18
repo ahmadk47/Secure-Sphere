@@ -49,7 +49,7 @@ namespace SecureSphere.Controllers
         public IActionResult Create()
         {
             ViewData["CameraID"] = new SelectList(_context.Cameras, "ID", "Name");
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "Name");
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName");
             return View();
         }
 
@@ -66,8 +66,8 @@ namespace SecureSphere.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CameraID"] = new SelectList(_context.Cameras, "ID", "ID", detection.CameraID);
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "ID", detection.UserID);
+            ViewData["CameraID"] = new SelectList(_context.Cameras, "ID", "Name", detection.CameraID);
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName", detection.UserID);
             return View(detection);
         }
 
@@ -85,7 +85,7 @@ namespace SecureSphere.Controllers
                 return NotFound();
             }
             ViewData["CameraID"] = new SelectList(_context.Cameras, "ID", "Name", detection.CameraID);
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "Name", detection.UserID);
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName", detection.UserID);
             return View(detection);
         }
 
@@ -122,7 +122,7 @@ namespace SecureSphere.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["CameraID"] = new SelectList(_context.Cameras, "ID", "Name", detection.CameraID);
-            ViewData["UserID"] = new SelectList(_context.Users, "ID", "Name", detection.UserID);
+            ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName", detection.UserID);
             return View(detection);
         }
 

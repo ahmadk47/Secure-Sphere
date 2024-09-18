@@ -1,54 +1,230 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>
+        Secure Sphere
+    </title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SecureSphereApp</title>
+    <title>@ViewData["Title"] - SecureSphere</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/SecureSphereApp.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SecureSphere.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family : 'Roboto';
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-custom navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Secure Sphere</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/NewFolder/SecureSphere.jpeg" class="img-fluid rounded-circle" />
+                </a>
+
+                <a class="navbar-brand navbar-text text-capitalize fs-3 text-center fw-bolder" asp-area="" asp-controller="Home" asp-action="Index">
+                        Secure Sphere
+                   </a>
+                <button class="hamburger" type="button" id="sidebarToggle" style="color:#90AFC5">
+                    &#9776;
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+               
+                <div class="navbar-collapse collapse d-sm-inline-flex align-items-center justify-content-between">
+                    
                     <ul class="navbar-nav flex-grow-1">
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="index">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="privacy">privacy</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="account" asp-action="login">log in</a>
+                            </li>
+                        }
+                        else
+                        {
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Clients" asp-action="index">Clients</a>
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Clients
+                                </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Clients" asp-action="index">Show Clients</a></li>
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Clients" asp-action="create">Create Clients</a></li>
+                                    </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Branches" asp-action="index">Branches</a>
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Branches
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Branches" asp-action="index">Show Branches</a></li>
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Branches" asp-action="create">Create Branches</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="index">Branch Users</a>
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Users
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="index">Show Users</a></li>
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="create">Create Users</a></li>
+                                </ul>
+                                </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cameras" asp-action="index">Cameras</a>
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Cameras
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Cameras" asp-action="index">Show Cameras</a></li>
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Cameras" asp-action="create">Add Cameras</a></li>
+                                </ul>
+                            </div>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Detections" asp-action="index">Detections</a>
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Detections
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Detections" asp-action="index">Show Detections</a></li>
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Detections" asp-action="create">Add Detections</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SystemLogs" asp-action="index">Logs</a>
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    System Logs
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="SystemLogs" asp-action="index">Show Logs</a></li>
+                                    <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="SystemLogs" asp-action="create">Add Logs</a></li>
+                                </ul>
+                            </div>
                         </li>
-
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  
+                                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Account" asp-action="logout">Log out</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        }
                     </ul>
                 </div>
+
+               
             </div>
         </nav>
     </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" style="background-color : #2A3132">
+        <ul>
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="index" style="color: #90afc5">home</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="privacy" style="color: #90afc5">privacy</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="account" asp-action="login" style="color: #90afc5">log in</a> </li>
+            } 
+             else
+            {
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Index" style="color: #90AFC5">Home</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy" style="color: #90AFC5">Privacy</a></li>
+                <li>
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#clientsCollapse" aria-expanded="false" style="color: #90AFC5">
+                        Clients
+                    </button>
+                    <ul class="collapse" id="clientsCollapse" style="background-color : #2A3132;color: #90AFC5 ">
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Clients" asp-action="index" style="color: #90AFC5">Show Clients</a></li>
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Clients" asp-action="create" style="color: #90AFC5">Create Clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#branchesCollapse" aria-expanded="false" style="color: #90AFC5">
+                        Branches
+                    </button>
+                    <ul class="collapse" id="branchesCollapse" style="background-color : #2A3132;color:#90AFC5 ">
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Branches" asp-action="index" style="color: #90AFC5">Show Branches</a></li>
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Branches" asp-action="create" style="color: #90AFC5">Create Branches</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#usersCollapse" aria-expanded="false" style="color:#90AFC5">
+                        Branch Users
+                    </button>
+                    <ul class="collapse" id="usersCollapse" style="background-color : #2A3132;color:#90AFC5 ">
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="index" style="color:#90AFC5">Show Users</a></li>
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="create" style="color:#90AFC5">Create Users</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#camsCollapse" aria-expanded="false" style="color:#90AFC5">
+                        Cameras
+                    </button>
+                    <ul class="collapse" id="camsCollapse" style="background-color : #2A3132;color:#90AFC5 ">
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Cameras" asp-action="index" style="color:#90AFC5">Show Cameras</a></li>
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Cameras" asp-action="create" style="color: color:#90AFC5">Add Cameras</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#detectionsCollapse" aria-expanded="false" style="color:#90AFC5">
+                        Detections
+                    </button>
+                    <ul class="collapse" id="detectionsCollapse" style="background-color : #2A3132;color:#90AFC5">
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Detections" asp-action="index" style="color:#90AFC5">Show Detections</a></li>
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Detections" asp-action="create" style="color:#90AFC5">Add Detections</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#logsCollapse" aria-expanded="false" style="color:#90AFC5">
+                        System Logs
+                    </button>
+                    <ul class="collapse" id="logsCollapse" style="background-color : #2A3132;color:#90AFC5 ">
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="SystemLogs" asp-action="index" style="color:#90AFC5">Show Logs</a></li>
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="SystemLogs" asp-action="create" style="color:#90AFC5">Add Logs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accCollapse" aria-expanded="false" style="color:#90AFC5">
+                        Account
+                    </button>
+                    <ul class="collapse" id="accCollapse" style="background-color : #2A3132;color:#90AFC5">
+                            <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Account" asp-action="logout" style="color:#90AFC5">Log out</a></li>
+
+                </ul>
+            </li>
+            }
+        </ul>
+    </div>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -60,9 +236,17 @@
             &copy; 2024 - Secure Sphere - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('active');
+        });
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
