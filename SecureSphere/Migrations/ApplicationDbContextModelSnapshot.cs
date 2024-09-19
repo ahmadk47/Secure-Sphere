@@ -294,6 +294,10 @@ namespace SecureSphere.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<string>("address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ID");
 
                     b.ToTable("Clients");

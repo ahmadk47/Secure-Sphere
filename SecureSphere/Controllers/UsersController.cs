@@ -13,7 +13,7 @@ namespace SecureSphereApp.Controllers
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;
-        
+
         public UsersController(ApplicationDbContext context)
         {
             _context = context;
@@ -48,7 +48,7 @@ namespace SecureSphereApp.Controllers
         // GET: Users/Create
         public IActionResult Create()
         {
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address");
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace SecureSphereApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,UserName,Email,PasswordHash,CreatedAt,BranchID")] ApplicationUser user)
+        public async Task<IActionResult> Create([Bind("ID,UserName,Email,PasswordHash,CreatedAt,BranchID")] ApplicationUser user)
         {
 
             if (ModelState.IsValid)
@@ -67,7 +67,7 @@ namespace SecureSphereApp.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Adress", user.BranchID);
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
             return View(user);
         }
 
@@ -139,7 +139,7 @@ namespace SecureSphereApp.Controllers
             //}
             //ViewData["BranchId"] = new SelectList(_context.Branches, "Id", "Id", user.BranchId);
             //return View(user);
-            if (id !=  user.Id)
+            if (id != user.Id)
             {
                 return NotFound();
             }

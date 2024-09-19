@@ -20,13 +20,13 @@ namespace SecureSphere.Models
 
         public decimal Confidence { get; set; }
 
-        public decimal Status { get; set; }
+        public decimal? Status { get; set; }
 
         [StringLength(50)]
         public string? Reason { get; set; }
 
         [ForeignKey("ApplicationUser")]
-        public string UserID { get; set; }
+        public string? UserID { get; set; }
 
         public ApplicationUser? User { get; set; }
     }
