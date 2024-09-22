@@ -4,14 +4,19 @@
     ViewData["Title"] = "Index";
 }
 <!DOCTYPE html>
-<html>
-    <head>
 
-    </head>
-    <body>
         <h1>Users</h1>
+    <li>
+        <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#camsCollapse" aria-expanded="false" style="color:#90AFC5">
+            Cameras
+        </button>
+        <ul class="collapse" id="camsCollapse" style="background-color : #FDF6F6;color:#90AFC5 ">
+            <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Cameras" asp-action="index" style="color:#90AFC5">Show Cameras</a></li>
+            <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Cameras" asp-action="create" style="color:#90AFC5">Add Cameras</a></li>
+        </ul>
+    </li>
 
-        <table class="table">
+    <table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
             <thead>
                 <tr>
                     <th>
@@ -33,7 +38,9 @@
                         @Html.DisplayNameFor(model => model.Branch)
                     </th>
 
-                    <th></th>
+                    <th>
+                        Properties
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -67,6 +74,3 @@
                 }
             </tbody>
         </table>
-
-    </body>
-</html>

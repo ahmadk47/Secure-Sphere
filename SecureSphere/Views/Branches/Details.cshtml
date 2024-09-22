@@ -24,6 +24,45 @@
         </dd>
     </dl>
 </div>
+<table class="table">
+    <tr>
+        <th>Cameras</th>
+        <th>IP Address</th>
+        <th>Info</th>
+    </tr>
+    @foreach (Camera camera in ViewBag.Cameras)
+    {
+        <tr>
+            <td>@camera.Name</td>
+            <td>@camera.IpAddress</td>
+            <td>
+                <a asp-controller="Cameras" asp-action="Edit" asp-route-id="@camera.ID">Edit</a> |
+                <a asp-controller="Cameras" asp-action="Details" asp-route-id="@camera.ID">Details</a> |
+                <a asp-controller="Cameras" asp-action="Delete" asp-route-id="@camera.ID">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
+<table class="table">
+    <tr>
+        <th>Users</th>
+        <th>Emails</th>
+        <th>Info</th>
+    </tr>
+    @foreach (ApplicationUser user in ViewBag.Users)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+            <td>
+                <a asp-controller="Users" asp-action="Edit" asp-route-id="@user.Id">Edit</a> |
+                <a asp-controller="Users" asp-action="Details" asp-route-id="@user.Id">Details</a> |
+                <a asp-controller="Users" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+            </td>
+
+        </tr>
+    }
+</table>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
     <a asp-action="Index">Back to List</a>

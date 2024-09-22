@@ -6,10 +6,16 @@
 
 <h1>Clients Branches</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<li>
+    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#usersCollapse" aria-expanded="false" style="color:#90AFC5">
+        Branch Users
+    </button>
+    <ul class="collapse" id="usersCollapse" style="background-color : #FDF6F6;color:#90AFC5 ">
+        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="index" style="color:#90AFC5">Show Users</a></li>
+        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="create" style="color:#90AFC5">Create Users</a></li>
+    </ul>
+</li>
+<table class="table table-light w-50 table-bordered table-hover table-sm table-responsive">
     <thead>
         <tr>
             <th>
@@ -18,7 +24,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Address)
             </th>
-            <th></th>
+
+            <th>
+                Properties
+            </th>
         </tr>
     </thead>
     <tbody>

@@ -36,6 +36,9 @@ namespace SecureSphere.Controllers
             var camera = await _context.Cameras
                 .Include(c => c.Branch)
                 .FirstOrDefaultAsync(m => m.ID == id);
+
+            ViewBag.Detections = _context.Detections.Where(d => d.CameraID == id).ToList();
+
             if (camera == null)
             {
                 return NotFound();
