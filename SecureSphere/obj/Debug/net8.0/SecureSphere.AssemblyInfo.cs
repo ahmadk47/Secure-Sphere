@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SecureSphere")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+269435bb0f62b87508183ad1fad5070753f69be2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a1f31e07472f83b0e39337005148940058f2cd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SecureSphere")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SecureSphere")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
