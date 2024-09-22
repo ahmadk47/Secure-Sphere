@@ -60,6 +60,7 @@
 }
 .navbar-custom {
     background-color: #2A3132;
+    color: #002C54;
 }
     .navbar-custom .navbar-brand,
     .navbar-custom .navbar-text {
@@ -72,3 +73,4 @@
     .navbar .navbar-brand img {
         height: 50px;
     }
+
