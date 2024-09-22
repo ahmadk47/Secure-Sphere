@@ -5,11 +5,19 @@
 }
 
 <h1>Cameras</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<li>
+    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#detectionsCollapse" aria-expanded="false" style="color:#90AFC5">
+        Detections
+    </button>
+    <ul class="collapse" id="detectionsCollapse" style="background-color : #FDF6F6;color:#90AFC5">
+        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Detections" asp-action="index" style="color:#90AFC5">Show Detections</a></li>
+        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Detections" asp-action="create" style="color:#90AFC5">Add Detections</a></li>
+    </ul>
+</li>
+<table class="table table-light w-50 table-bordered table-hover table-sm table-responsive">
+    <caption>
+        List Of Cameras
+    </caption>
     <thead>
         <tr>
             <th>
@@ -27,7 +35,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Branch)
             </th>
-            <th></th>
+
+            <th>
+                Properties
+            </th>
         </tr>
     </thead>
     <tbody>
