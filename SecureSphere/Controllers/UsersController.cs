@@ -37,6 +37,9 @@ namespace SecureSphereApp.Controllers
             var user = await _context.Users
                 .Include(u => u.Branch)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
+            ViewBag.Detections = _context.Detections.Where(u => u.UserID == id).ToList();
+
             if (user == null)
             {
                 return NotFound();

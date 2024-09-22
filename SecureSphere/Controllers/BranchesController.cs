@@ -58,10 +58,15 @@ namespace SecureSphere.Controllers
             {
                 return NotFound();
             }
+            
 
             var branch = await _context.Branches
                 .Include(b => b.Client)
                 .FirstOrDefaultAsync(m => m.ID == id);
+
+            ViewBag.Cameras = _context.Cameras.Where(c => c.BranchID == id).ToList();
+            ViewBag.Users = _context.Users.Where(u => u.BranchID == id).ToList();
+
             if (branch == null)
             {
                 return NotFound();

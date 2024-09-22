@@ -44,6 +44,9 @@ namespace SecureSphere.Controllers
 
             var client = await _context.Clients
                 .FirstOrDefaultAsync(m => m.ID == id);
+
+            ViewBag.Branchs =  _context.Branches.Where(b => b.ClientID == id).ToList();
+
             if (client == null)
             {
                 return NotFound();

@@ -1,0 +1,30 @@
+﻿@model Ecomers.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Register</h1>
+
+
+<form asp-action="Register" method="post">
+    <div class="form-group">
+        <label asp-for="UserName" class="control-label">Username</label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserEmail" class="control-label">Email</label>
+        <input asp-for="UserEmail" type="email" class="form-control" />
+        <span asp-validation-for="UserEmail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password" class="control-label">Password</label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+</form>
