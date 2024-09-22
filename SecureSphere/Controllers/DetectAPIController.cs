@@ -80,7 +80,6 @@ namespace SecureSphere.Controllers
             // Set default values for fields not provided by the Python script
             detection.CameraID = 1; // Default camera ID
             detection.Status = 0; // Default status (e.g., 0 for "Unprocessed")
-            //detection.Reason = string.Empty; // Default empty reason
             detection.UserID = "4f394d62-c6c1-4604-b44d-a640fb3d6b07";
             if (detection.WeaponType == true)
                 detection.Reason = "Gun is detected";
