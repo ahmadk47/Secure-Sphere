@@ -7897,11 +7897,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\SecureSphere.csproj",
+      "projectUniqueName": "C:\\Users\\HP14\\Desktop\\SecureSphere\\SecureSphere.csproj",
       "projectName": "SecureSphere",
-      "projectPath": "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\SecureSphere.csproj",
+      "projectPath": "C:\\Users\\HP14\\Desktop\\SecureSphere\\SecureSphere.csproj",
       "packagesPath": "C:\\Users\\HP14\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\obj\\",
+      "outputPath": "C:\\Users\\HP14\\Desktop\\SecureSphere\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP14\\AppData\\Roaming\\NuGet\\NuGet.Config",

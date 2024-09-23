@@ -80,7 +80,7 @@ namespace SecureSphere.Controllers
         {
             ViewBag.Clientlist = new SelectList(_context.Clients, "ID", "Name");
             return View();
-        }
+        }  
 
         // POST: Branches/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -88,20 +88,8 @@ namespace SecureSphere.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Address,ClientID")] Branch branch)
+        public async Task<IActionResult> Create(Branch branch)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    _context.Add(branch);
-            //    await _context.SaveChangesAsync();
-            //    ViewBag.meg = "added successfully";
-            //    return RedirectToAction(nameof(Index));
-            //}
-            //else
-            //{
-            //    ViewData["ClientId"] = new SelectList(_context.clients, "Id", "Name", branch.ClientId);
-            //    return View(branch);
-            //}
             if (ModelState.IsValid)
             {
                 _context.Add(branch);
@@ -112,6 +100,7 @@ namespace SecureSphere.Controllers
             }
             ViewBag.Clientlist = new SelectList(_context.Clients, "ID", "Name", branch.ClientID);
             return View();
+
 
         }
 

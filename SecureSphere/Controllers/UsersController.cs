@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +14,12 @@ namespace SecureSphereApp.Controllers
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public UsersController(ApplicationDbContext context)
+        public UsersController(ApplicationDbContext context,UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Users
@@ -74,16 +77,17 @@ namespace SecureSphereApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,UserName,Email,PasswordHash,CreatedAt,BranchID")] ApplicationUser user)
+        public async Task<IActionResult> Create(ApplicationUser user)
         {
 
-            if (ModelState.IsValid)
-            {
-                //user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-                _context.Add(user);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
+           await _userManager.CreateAsync(user,user.PasswordHash!);
+            //if (ModelState.IsValid)
+            //{
+            //    //user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            //    _context.Add(user);
+            //    await _context.SaveChangesAsync();
+            //    return RedirectToAction(nameof(Index));
+            //}
             ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
             return View(user);
         }

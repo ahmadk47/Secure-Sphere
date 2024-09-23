@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 namespace SecureSphere.Models
 {
@@ -13,6 +14,7 @@ namespace SecureSphere.Models
         public string? Address { get; set; }
 
         [ForeignKey("Client")]
+        [DisplayName("Client")]
         public int ClientID { get; set; }
 
         public Client? Client { get; set; }
