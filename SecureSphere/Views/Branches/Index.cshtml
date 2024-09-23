@@ -15,6 +15,15 @@
         <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="create" style="color:#90AFC5">Create Users</a></li>
     </ul>
 </li>
+<form asp-controller="Branches" asp-action="Index" id="searchForm">
+    @*     <p>
+    Search <input class="search-bar" type="text" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" />
+    </p> *@
+    <div class="input-group w-50">
+        <input type="search" class="form-control rounded" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" aria-label="Search" aria-describedby="search-addon" />
+
+    </div>
+</form>
 <table class="table table-light w-50 table-bordered table-hover table-sm table-responsive">
     <thead>
         <tr>
@@ -49,3 +58,29 @@
 }
     </tbody>
 </table>
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            var delay = (function(){
+                var timer = 0;
+                return function(callback, ms){
+                    clearTimeout (timer);
+                    timer = setTimeout(callback, ms);
+                };
+            })();
+
+            $('#searchInput').on('input', function() {
+                var searchString = $(this).val();
+                delay(function() {
+                    $.ajax({
+                        url: '@Url.Action("Index", "Branches")',
+                        data: { SearchString: searchString },
+                        success: function(result) {
+                            $('#searchResults').html($(result).find('#searchResults').html());
+                        }
+                    });
+                }, 300); // Wait for 300ms after the user stops typing
+            });
+        });
+    </script>
+}

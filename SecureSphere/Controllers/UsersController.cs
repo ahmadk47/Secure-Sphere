@@ -20,10 +20,24 @@ namespace SecureSphereApp.Controllers
         }
 
         // GET: Users
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            var testDbContext = _context.Users.Include(u => u.Branch);
-            return View(await testDbContext.ToListAsync());
+            IQueryable<ApplicationUser> users = _context.Users.Include(b => b.Branch);
+
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                users =users.Where(b => b.Branch.Client.Name.Contains(SearchString));
+            }
+
+            var model = await users.ToListAsync();
+            ViewBag.SearchString = SearchString;
+
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView(model);
+            }
+
+            return View(model);
         }
 
         // GET: Users/Details/5

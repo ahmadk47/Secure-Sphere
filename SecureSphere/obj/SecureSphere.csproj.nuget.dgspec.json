@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP14\\Desktop\\SecureSphere\\SecureSphere.csproj": {}
+    "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\SecureSphere.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP14\\Desktop\\SecureSphere\\SecureSphere.csproj": {
+    "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\SecureSphere.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP14\\Desktop\\SecureSphere\\SecureSphere.csproj",
+        "projectUniqueName": "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\SecureSphere.csproj",
         "projectName": "SecureSphere",
-        "projectPath": "C:\\Users\\HP14\\Desktop\\SecureSphere\\SecureSphere.csproj",
+        "projectPath": "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\SecureSphere.csproj",
         "packagesPath": "C:\\Users\\HP14\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP14\\Desktop\\SecureSphere\\obj\\",
+        "outputPath": "C:\\Users\\HP14\\Desktop\\SecureSpherenew\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP14\\AppData\\Roaming\\NuGet\\NuGet.Config",

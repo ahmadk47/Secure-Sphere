@@ -19,10 +19,24 @@ namespace SecureSphere.Controllers
         }
 
         // GET: Cameras
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string SearchString)
         {
-            var testDbContext = _context.Cameras.Include(c => c.Branch);
-            return View(await testDbContext.ToListAsync());
+            IQueryable<Camera> cameras = _context.Cameras.Include(b => b.Branch.Cameras);
+
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+                cameras = cameras.Where(b => b.Branch.Client.Name.Contains(SearchString));
+            }
+
+            var model = await cameras.ToListAsync();
+            ViewBag.SearchString = SearchString;
+
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView(model);
+            }
+
+            return View(model);
         }
 
         // GET: Cameras/Details/5
