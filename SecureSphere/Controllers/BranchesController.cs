@@ -10,11 +10,9 @@ using SecureSphere.Models;
 
 namespace SecureSphere.Controllers
 {
-<<<<<<< HEAD
+
     [Authorize]
-=======
-[Authorize]
->>>>>>> ahmad1.3
+
     public class BranchesController : Controller
     {
 

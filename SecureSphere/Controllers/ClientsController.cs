@@ -21,10 +21,7 @@ namespace SecureSphere.Controllers
         }
 
         // GET: Clients
-<<<<<<< HEAD
-=======
         
->>>>>>> ahmad1.3
         public async Task<IActionResult> Index(string SearchString)
         {
             if (SearchString != null)
