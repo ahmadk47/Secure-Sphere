@@ -43,6 +43,7 @@ namespace SecureSphere.Controllers
             }
 
             var isValidEmail = await _userManager.FindByEmailAsync(email) != null;
+
             if (!isValidEmail)
             {
                 ModelState.AddModelError("", "Invalid email format or email not registered.");

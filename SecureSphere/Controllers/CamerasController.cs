@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using SecureSphere.Models;
 
 namespace SecureSphere.Controllers
 {
+    [Authorize]
     public class CamerasController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -62,10 +64,14 @@ namespace SecureSphere.Controllers
         }
 
         // GET: Cameras/Create
-        public IActionResult Create()
+        public IActionResult Create(int BranchID)
         {
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID");
-            return View();
+            var camera = new Camera
+            {
+                BranchID = BranchID
+            }; 
+           //ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address");
+            return View(camera);
         }
 
         // POST: Cameras/Create
@@ -79,10 +85,10 @@ namespace SecureSphere.Controllers
             {
                 _context.Add(camera);
                 await _context.SaveChangesAsync();
-                ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", camera.BranchID);
+                //ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", camera.Branch.Address);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", camera.BranchID);
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", camera.Branch.Address);
             return View();
         }
 

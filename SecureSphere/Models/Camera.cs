@@ -10,7 +10,7 @@ namespace SecureSphere.Models
         public int ID { get; set; }
 
         [StringLength(50)]
-        public required string Name { get; set; }
+        public string Name { get; set; }
 
         [ForeignKey("Branch")]
         public int BranchID { get; set; }

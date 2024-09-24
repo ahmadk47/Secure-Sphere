@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using SecureSphere.Models;
 
 namespace SecureSphere.Controllers
 {
+    [Authorize]
     public class BranchesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -76,10 +78,14 @@ namespace SecureSphere.Controllers
         }
 
         // GET: Branches/Create
-        public IActionResult Create()
+        public IActionResult Create(int ClientID)
         {
-            ViewBag.Clientlist = new SelectList(_context.Clients, "ID", "Name");
-            return View();
+            var branch = new Branch
+            {
+                ClientID = ClientID
+            };
+
+            return View(branch);
         }  
 
         // POST: Branches/Create

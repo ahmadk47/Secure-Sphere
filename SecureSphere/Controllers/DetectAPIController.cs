@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SecureSphere.Models;
@@ -14,10 +17,12 @@ namespace SecureSphere.Controllers
     public class DetectAPIController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public DetectAPIController(ApplicationDbContext context)
+        public DetectAPIController(ApplicationDbContext context, UserManager<ApplicationUser> userManger)
         {
             _context = context;
+            _userManager = userManger;
         }
 
         // GET: api/DetectAPI
@@ -75,12 +80,21 @@ namespace SecureSphere.Controllers
         // POST: api/DetectAPI
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Detection>> PostDetection([FromBody] Detection detection)
         {
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                return Unauthorized("User is not authenticated.");
+            }
             // Set default values for fields not provided by the Python script
             detection.CameraID = 1; // Default camera ID
             detection.Status = 0; // Default status (e.g., 0 for "Unprocessed")
-            detection.UserID = "4f394d62-c6c1-4604-b44d-a640fb3d6b07";
+            detection.UserID = user.Id;
+
+            // detection.UserID = "31cf615f-374f-44b9-b8ca-7f98d3419726";
             if (detection.WeaponType == true)
                 detection.Reason = "Gun is detected";
             else

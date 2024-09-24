@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,6 +12,7 @@ using SecureSphere.Models;
 
 namespace SecureSphereApp.Controllers
 {
+    [Authorize]
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -66,10 +68,14 @@ namespace SecureSphereApp.Controllers
         }
 
         // GET: Users/Create
-        public IActionResult Create()
+        public IActionResult Create(int BranchID)
         {
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID");
-            return View();
+            var user = new ApplicationUser
+            {
+                BranchID = BranchID
+            };
+            //ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address");
+            return View(user);
         }
 
         // POST: Users/Create
@@ -88,7 +94,7 @@ namespace SecureSphereApp.Controllers
             //    await _context.SaveChangesAsync();
             //    return RedirectToAction(nameof(Index));
             //}
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
+            //ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
             return View(user);
         }
 
@@ -105,7 +111,7 @@ namespace SecureSphereApp.Controllers
             {
                 return NotFound();
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", user.Branch.Address);
             return View(user);
         }
 
