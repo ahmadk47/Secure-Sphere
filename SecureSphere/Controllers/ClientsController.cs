@@ -10,6 +10,7 @@ using SecureSphere.Models;
 
 namespace SecureSphere.Controllers
 {
+    [Authorize]
     public class ClientsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -20,7 +21,6 @@ namespace SecureSphere.Controllers
         }
 
         // GET: Clients
-        [Authorize]
         public async Task<IActionResult> Index(string SearchString)
         {
             if (SearchString != null)
