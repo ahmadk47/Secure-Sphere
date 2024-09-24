@@ -1,38 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\",
+<<<<<<< HEAD
+  "WorkspaceRootPath": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\desktop\\securesphere\\views\\branches\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\securesphere\\views\\branches\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\branches\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\desktop\\securesphere\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\securesphere\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\desktop\\securesphere\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\securesphere\\views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\desktop\\securesphere\\views\\cameras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\cameras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\desktop\\securesphere\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\desktop\\securesphere\\controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
+  "WorkspaceRootPath": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\",
+  "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\cameras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\cameras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,12 +48,21 @@
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\systemlogs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\systemlogs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> ahmad1.3
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\clients\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\clients\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\securesphere\\views\\cameras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\cameras\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+<<<<<<< HEAD
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\securesphere\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\securesphere\\controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\camerascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\detections\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -95,49 +95,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+<<<<<<< HEAD
+          "SelectedChildIndex": 1,
           "Children": [
             {
-<<<<<<< HEAD
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Users\\Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Users\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Users\\Details.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Users\\Details.cshtml",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Users\\Details.cshtml",
               "RelativeToolTip": "Views\\Users\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T17:14:59.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-24T17:14:59.108Z"
 =======
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
->>>>>>> ahmad1.3
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Branches\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Branches\\Details.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Branches\\Details.cshtml*",
-              "RelativeToolTip": "Views\\Branches\\Details.cshtml*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T16:45:08.06Z",
-=======
+              "DocumentIndex": 1,
               "Title": "CamerasController.cs",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Controllers\\CamerasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CamerasController.cs",
               "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Controllers\\CamerasController.cs",
               "RelativeToolTip": "Controllers\\CamerasController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFcAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAuwFYAAABiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T10:57:59.724Z",
               "EditorCaption": ""
@@ -167,16 +158,27 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-24T10:54:40.477Z",
               "EditorCaption": ""
+>>>>>>> ahmad1.3
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+<<<<<<< HEAD
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Branches\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Branches\\Details.cshtml",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Branches\\Details.cshtml",
+              "RelativeToolTip": "Views\\Branches\\Details.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T16:45:08.06Z",
+=======
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Cameras\\Create.cshtml",
               "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Create.cshtml",
               "RelativeToolTip": "Views\\Cameras\\Create.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T10:50:02.93Z",
               "EditorCaption": ""
@@ -226,13 +228,13 @@
               "DocumentIndex": 5,
 <<<<<<< HEAD
               "Title": "CamerasController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Controllers\\CamerasController.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Controllers\\CamerasController.cs",
               "RelativeDocumentMoniker": "Controllers\\CamerasController.cs",
-              "ToolTip": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Controllers\\CamerasController.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Controllers\\CamerasController.cs",
               "RelativeToolTip": "Controllers\\CamerasController.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAAAFcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T16:27:25.383Z",
+              "WhenOpened": "2024-09-24T16:27:25.383Z"
 =======
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\SystemLogs\\Index.cshtml",
@@ -242,22 +244,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T10:43:48.733Z",
->>>>>>> ahmad1.3
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 4,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T17:00:57.541Z",
-=======
               "DocumentIndex": 11,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\SystemLogs\\Details.cshtml",
@@ -267,22 +257,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T10:42:46.91Z",
->>>>>>> ahmad1.3
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Cameras\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cameras\\Create.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Cameras\\Create.cshtml",
-              "RelativeToolTip": "Views\\Cameras\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T16:41:28.611Z",
-=======
               "DocumentIndex": 9,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Details.cshtml",
@@ -345,10 +323,45 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T10:16:01.906Z",
               "EditorCaption": ""
+>>>>>>> ahmad1.3
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+<<<<<<< HEAD
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Controllers\\UsersController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAAGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T17:00:57.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cameras\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Create.cshtml",
+              "RelativeToolTip": "Views\\Cameras\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T16:41:28.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\Views\\Users\\Create.cshtml",
+              "RelativeToolTip": "Views\\Users\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T17:06:59.542Z"
+=======
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Branches\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Branches\\Details.cshtml",
@@ -357,23 +370,15 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAUwAsAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-24T08:51:53.374Z",
->>>>>>> ahmad1.3
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 256,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-<<<<<<< HEAD
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Users\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Users\\Create.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Desktop\\SecureSphere\\Views\\Users\\Create.cshtml",
-              "RelativeToolTip": "Views\\Users\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-24T17:06:59.542Z",
-              "EditorCaption": ""
-=======
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
 >>>>>>> ahmad1.3
