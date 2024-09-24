@@ -10,9 +10,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SecureSphere.Models;
 
-namespace SecureSphere.Controllers
-{
-    [Route("api/[controller]")]
+namespace SecureSphere.Controllers { 
+
+    [Authorize]
+[Route("api/[controller]")]
     [ApiController]
     public class DetectAPIController : ControllerBase
     {

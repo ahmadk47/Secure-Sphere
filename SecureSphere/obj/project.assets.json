@@ -7892,19 +7892,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP14\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL-G5\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\SecureSphere.csproj",
+      "projectUniqueName": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\SecureSphere.csproj",
       "projectName": "SecureSphere",
-      "projectPath": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\SecureSphere.csproj",
-      "packagesPath": "C:\\Users\\HP14\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\obj\\",
+      "projectPath": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\SecureSphere.csproj",
+      "packagesPath": "C:\\Users\\DELL-G5\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\HP14\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL-G5\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7978,8 +7978,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
