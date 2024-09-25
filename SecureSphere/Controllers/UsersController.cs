@@ -111,7 +111,7 @@ namespace SecureSphereApp.Controllers
             {
                 return NotFound();
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", user.Branch.Address);
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
             return View(user);
         }
 
@@ -122,50 +122,7 @@ namespace SecureSphereApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("ID,Name,Email,Password,CreateAt,BranchID")] ApplicationUser user)
         {
-            //if (id != user.Id)
-            //{
-            //    return NotFound();
-            //}
-
-            //if (ModelState.IsValid)
-            //{
-            //    try
-            //    {
-            //        var existingUser = await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id);
-            //        if (existingUser == null)
-            //        {
-            //            return NotFound();
-            //        }
-
-            //        // Only update the password if a new one is provided
-            //        if (!string.IsNullOrWhiteSpace(user.Password))
-            //        {
-            //            user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-            //        }
-            //        else
-            //        {
-            //            // Keep the existing password
-            //            user.Password = existingUser.Password;
-            //        }
-
-            //        _context.Update(user);
-            //        await _context.SaveChangesAsync();
-            //    }
-            //    catch (DbUpdateConcurrencyException)
-            //    {
-            //        if (!UserExists(user.Id))
-            //        {
-            //            return NotFound();
-            //        }
-            //        else
-            //        {
-            //            throw;
-            //        }
-            //    }
-            //    return RedirectToAction(nameof(Index));
-            //}
-            //ViewData["BranchId"] = new SelectList(_context.Branches, "Id", "Id", user.BranchId);
-            //return View(user);
+            
             if (id != user.Id)
             {
                 return NotFound();

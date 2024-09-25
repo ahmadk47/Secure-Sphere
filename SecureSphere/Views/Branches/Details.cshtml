@@ -4,10 +4,9 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Branch Details</h1>
 
 <div>
-    <h4>Branch</h4>
     <hr />
     <table class="table table-bordered table-striped w-50">
         <thead>
@@ -26,7 +25,7 @@
 
 </div>
 <div class="mb-md-2">
-    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Create" style="color: #90AFC5">Add Camera</a>
+    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Create" asp-route-BranchID="@Model.ID" style="color: #90AFC5">Add Camera</a>
 </div>
 
 <table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
@@ -41,7 +40,7 @@
             <td>@camera.Name</td>
             <td>@camera.IpAddress</td>
             <td class="btn-group-sm">
-                <a class="btn btn-outline-warning btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Edit" asp-route-id="@camera.ID">Edit Camera</a> |
+                <a class="btn btn-outline-warning btn-sm active navbar-text text-capitalize fs-6 fw-bold"  asp-controller="Cameras" asp-action="Edit" asp-route-id="@camera.ID">Edit Camera</a> |
                 <a class="btn btn-outline-info btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Details" asp-route-id="@camera.ID">Details</a> |
                 <a class="btn btn-outline-danger btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Delete" asp-route-id="@camera.ID">Delete</a>
             </td>
@@ -51,7 +50,7 @@
 
 
 <div class="mb-md-2">
-    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Users" asp-action="Create" style="color: #90AFC5">Add User</a>
+    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Users" asp-action="Create" asp-route-BranchID="@Model.ID" style="color: #90AFC5">Add User</a>
 </div>
 
 <table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
@@ -76,5 +75,6 @@
 </table>
 <div>
     <a class="btn btn-outline-warning btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@Model?.ID">Edit Branch</a> |
-    <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Index">Back to List</a>
+    <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Clients" asp-action="Details" asp-route-id="@Model.ClientID">Back to List</a>
+   
 </div>
