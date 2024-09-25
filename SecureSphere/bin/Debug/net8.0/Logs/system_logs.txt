@@ -1,0 +1,79 @@
+9/25/2024 3:15:09 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/25/2024 3:16:18 PM: User '11111@gmail.com' ;pgged in.
+9/25/2024 3:18:01 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/25/2024 3:18:08 PM: User '11111@gmail.com' ;logged in.
+9/25/2024 3:19:39 PM: User '11111@gmail.com' ;logged in.
+9/25/2024 3:22:08 PM: User '11111@gmail.com' ;logged in.
+9/25/2024 3:49:17 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/25/2024 3:49:29 PM: User '11111@gmail.com' ;logged in.
+9/25/2024 3:49:47 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/25/2024 3:49:48 PM: User '11111@gmail.com' ;logged in.
+9/25/2024 3:55:11 PM: User searched for 'a' 
+9/25/2024 3:56:52 PM: User searched for '' 
+9/25/2024 3:59:04 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.ApplicationUser,System.String]' searched for '' 
+9/25/2024 3:59:09 PM: User searched for 'a' 
+9/25/2024 3:59:09 PM: User searched for 'ah' 
+9/25/2024 3:59:10 PM: User searched for 'ah' 
+9/25/2024 3:59:32 PM: User searched for 'a' 
+9/25/2024 4:00:29 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.ApplicationUser,System.String]' searched for '' 
+9/25/2024 4:00:32 PM: User searched for 'h' 
+9/25/2024 4:01:41 PM: User requested Index For Clients 
+9/25/2024 4:01:41 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.ApplicationUser,System.String]' searched for '' 
+9/25/2024 4:01:58 PM: User requested Index For Clients 
+9/25/2024 4:01:58 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.ApplicationUser,System.String]' searched for '' 
+9/25/2024 4:02:11 PM: User requested Index For Clients 
+9/25/2024 4:02:11 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.ApplicationUser,System.String]' searched for '' 
+9/25/2024 4:02:31 PM: User requested Index For Clients 
+9/25/2024 4:02:45 PM: User requested Index For Clients 
+9/25/2024 4:03:45 PM: User requested Index For Clients 
+9/25/2024 4:03:53 PM: User requested Details For Clients 
+9/25/2024 4:03:58 PM: User requested Index For Clients 
+9/25/2024 4:04:02 PM: User requested Edit For Clients 
+9/25/2024 4:04:05 PM: User requested Index For Clients 
+9/25/2024 4:04:06 PM: User requested Delete For Clients 
+9/25/2024 4:06:45 PM: User requested Index For Clients 
+9/25/2024 4:06:49 PM: User requested Details For Clients 
+9/25/2024 4:06:54 PM: User requested Details For Branches 
+9/25/2024 4:07:02 PM: User requested Details For Clients 
+9/25/2024 4:08:02 PM: User requested Edit For Branches 
+9/25/2024 4:08:08 PM: User requested Delete For Branches 
+9/25/2024 4:08:13 PM: User requested Details For Clients 
+9/25/2024 4:08:56 PM: User requested Details For Branches 
+9/25/2024 4:09:12 PM: User requested Details For Clients 
+9/25/2024 4:21:04 PM: User requested Details For Clients 
+9/25/2024 4:22:01 PM: User requested Index For Clients 
+9/25/2024 4:22:40 PM: User requested Index For Clients 
+9/25/2024 4:22:55 PM: User requested Index For Clients 
+9/25/2024 4:23:42 PM: User requested Index For Clients 
+9/25/2024 4:23:46 PM: User requested Index For Clients 
+9/25/2024 4:24:18 PM: User requested Index For Clients 
+9/25/2024 4:24:22 PM: User requested Create For Clients 
+9/25/2024 4:24:28 PM: User requested Index For Clients 
+9/25/2024 4:25:25 PM: User requested Index For Clients 
+9/25/2024 4:25:33 PM: User requested Edit For Clients 
+9/25/2024 4:25:38 PM: User requested Edit confirmed For Clients 
+9/25/2024 4:25:38 PM: User requested Index For Clients 
+9/25/2024 4:32:48 PM: User requested Index For System Logs 
+9/25/2024 4:32:56 PM: User requested Index For System Logs 
+9/25/2024 4:33:00 PM: User requested Create For System Logs 
+9/25/2024 4:33:04 PM: User requested Index For Clients 
+9/25/2024 4:33:09 PM: User requested Index For System Logs 
+9/25/2024 4:35:34 PM: User requested Index For System Logs 
+9/25/2024 4:35:44 PM: User requested Index For Clients 
+9/25/2024 4:35:52 PM: User requested Index For System Logs 
+9/25/2024 4:36:39 PM: User requested Index For System Logs 
+9/25/2024 4:39:47 PM: User requested Index For System Logs 
+9/25/2024 4:39:54 PM: User requested Details For System Logs 
+9/25/2024 4:40:02 PM: User requested Index For System Logs 
+9/25/2024 4:40:04 PM: User requested Index For Clients 
+9/25/2024 4:40:05 PM: User requested Details For Clients 
+9/25/2024 4:40:06 PM: User requested Details For Branches 
+9/25/2024 4:40:07 PM: User requested Details For Cameras 
+9/25/2024 4:45:46 PM: User requested Details For Branches 
+9/25/2024 4:45:50 PM: User requested Details For Clients 
+9/25/2024 4:45:51 PM: User requested Index For Clients 
+9/25/2024 4:45:58 PM: User requested Details For Clients 
+9/25/2024 4:46:00 PM: User requested Index For System Logs 
+9/25/2024 4:46:06 PM: User requested Edit For System Logs 
+9/25/2024 4:46:09 PM: User requested Index For System Logs 
+9/25/2024 4:46:11 PM: User requested Edit For System Logs 

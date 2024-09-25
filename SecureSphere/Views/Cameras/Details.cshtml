@@ -43,10 +43,10 @@
             <td>@detection.Timestamp</td>
             <td>@detection.Confidence</td>
             <td>@detection.Reason</td>
-            <td>
-                <a asp-controller="Detections" asp-action="Edit" asp-route-id="@detection.ID">Edit</a> |
-                <a asp-controller="Detections" asp-action="Details" asp-route-id="@detection.ID">Details</a> |
-                <a asp-controller="Detections" asp-action="Delete" asp-route-id="@detection.ID">Delete</a>
+            <td class="btn-group-sm">
+                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Edit" asp-route-id="@detection.ID">Edit</a> |
+                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Details" asp-route-id="@detection.ID">Details</a> |
+                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Delete" asp-route-id="@detection.ID">Delete</a>
             </td>
             
         </tr>
@@ -54,6 +54,6 @@
 </table>
 
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
-    <a asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>
+    <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
+    <a class="btn btn-outline-danger btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>
 </div>

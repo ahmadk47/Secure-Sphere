@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using SecureSphere.Models;
 
 namespace SecureSphere.Controllers
@@ -26,7 +27,8 @@ namespace SecureSphere.Controllers
         // GET: Branches
         public async Task<IActionResult> Index(string SearchString)
         {
-                IQueryable<Branch> branches = _context.Branches.Include(b => b.Client);
+            await Logger.LogAsync($"User requested Index For Branches ", _context);
+            IQueryable<Branch> branches = _context.Branches.Include(b => b.Client);
 
                 if (!string.IsNullOrEmpty(SearchString))
                 {
@@ -37,11 +39,12 @@ namespace SecureSphere.Controllers
                 ViewBag.SearchString = SearchString;
 
                 if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
-                {
-                    return PartialView(model);
+            {
+                return PartialView(model);
                 }
-
-                return View(model);
+            await Logger.LogAsync($"User '{_context.Branches.Include(b => b.Client.Name)}' searched for '{SearchString}' ", _context);
+            
+            return View(model);
             //if (SearchString != null)
             //{
             //    var branches = await _context.Branches.Include(b => b.Client).Where(c => c.Client.Name.Contains(SearchString)).ToListAsync();
@@ -59,6 +62,7 @@ namespace SecureSphere.Controllers
         // GET: Branches/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            await Logger.LogAsync($"User requested Details For Branches ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -83,6 +87,7 @@ namespace SecureSphere.Controllers
         // GET: Branches/Create
         public IActionResult Create(int ClientID)
         {
+            Logger.LogAsync($"User requested Create For Branches ", _context);
             var branch = new Branch
             {
                 ClientID = ClientID
@@ -99,6 +104,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Branch branch)
         {
+            await Logger.LogAsync($"User requested Create confirmed For Branches ", _context);
             if (ModelState.IsValid)
             {
                 _context.Add(branch);
@@ -116,7 +122,8 @@ namespace SecureSphere.Controllers
         // GET: Branches/Edit/5
         public async Task<IActionResult> Edit(int? id)
             {
-                if (id == null)
+            await Logger.LogAsync($"User requested Edit For Branches ", _context);
+            if (id == null)
                 {
                     return NotFound();
                 }
@@ -137,7 +144,8 @@ namespace SecureSphere.Controllers
             [ValidateAntiForgeryToken]
             public async Task<IActionResult> Edit(int id, [Bind("ID,Address,ClientID")] Branch branch)
             {
-                if (id != branch.ID)
+            await Logger.LogAsync($"User requested Edit confirmed For Branches ", _context);
+            if (id != branch.ID)
                 {
                     return NotFound();
                 }
@@ -169,7 +177,8 @@ namespace SecureSphere.Controllers
             // GET: Branches/Delete/5
             public async Task<IActionResult> Delete(int? id)
             {
-                if (id == null)
+            await Logger.LogAsync($"User requested Delete For Branches ", _context);
+            if (id == null)
                 {
                     return NotFound();
                 }
@@ -190,7 +199,8 @@ namespace SecureSphere.Controllers
             [ValidateAntiForgeryToken]
             public async Task<IActionResult> DeleteConfirmed(int id)
             {
-                var branch = await _context.Branches.FindAsync(id);
+            await Logger.LogAsync($"User requested Delete confirmed For Branches ", _context);
+            var branch = await _context.Branches.FindAsync(id);
                 if (branch != null)
                 {
                     _context.Branches.Remove(branch);

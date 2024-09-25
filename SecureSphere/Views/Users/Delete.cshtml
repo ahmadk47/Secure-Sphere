@@ -46,6 +46,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>
+        <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>
     </form>
 </div>

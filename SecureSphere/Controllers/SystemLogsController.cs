@@ -23,6 +23,7 @@ namespace SecureSphere.Controllers
         // GET: SystemLogs
         public async Task<IActionResult> Index()
         {
+            await Logger.LogAsync($"User requested Index For System Logs ", _context);
             var testDbContext = _context.SystemLogs.Include(s => s.User);
             return View(await testDbContext.ToListAsync());
         }
@@ -30,6 +31,7 @@ namespace SecureSphere.Controllers
         // GET: SystemLogs/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            await Logger.LogAsync($"User requested Details For System Logs ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -49,6 +51,7 @@ namespace SecureSphere.Controllers
         // GET: SystemLogs/Create
         public IActionResult Create()
         {
+             Logger.LogAsync($"User requested Create For System Logs ", _context);
             ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName");
             return View();
         }
@@ -60,6 +63,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Details,IpAddress,UserID")] SystemLog systemLog)
         {
+            await Logger.LogAsync($"User requested Create Confirmed For System Logs ", _context);
             if (ModelState.IsValid)
             {
                 _context.Add(systemLog);
@@ -73,6 +77,7 @@ namespace SecureSphere.Controllers
         // GET: SystemLogs/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            await Logger.LogAsync($"User requested Edit For System Logs ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -94,6 +99,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Details,IpAddress,UserID")] SystemLog systemLog)
         {
+            await Logger.LogAsync($"User requested Edit For System Logs ", _context);
             if (id != systemLog.ID)
             {
                 return NotFound();
@@ -126,6 +132,7 @@ namespace SecureSphere.Controllers
         // GET: SystemLogs/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            await Logger.LogAsync($"User requested Delete For System Logs ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -147,6 +154,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            await Logger.LogAsync($"User requested Delete Confirmed For System Logs ", _context);
             var systemLog = await _context.SystemLogs.FindAsync(id);
             if (systemLog != null)
             {

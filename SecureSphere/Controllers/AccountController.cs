@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 using SecureSphere.Models;
 
 namespace SecureSphere.Controllers
@@ -47,6 +48,7 @@ namespace SecureSphere.Controllers
             if (!isValidEmail)
             {
                 ModelState.AddModelError("", "Invalid email format or email not registered.");
+                await Logger.LogAsync($"User '{email}' failed to log in.", _context);
                 return View();
             }
 
@@ -54,8 +56,10 @@ namespace SecureSphere.Controllers
             var isSignIn= await _signInManager.PasswordSignInAsync(user, password,false,false);
             if(isSignIn.Succeeded)
             {
+                await Logger.LogAsync($"User '{email}' ;logged in.", _context);
                 return RedirectToAction("Index", "Home");
             }
+            await Logger.LogAsync($"User '{email}' failed to log in.", _context);
             ModelState.AddModelError("", "Invalid email or password.");
             return View();
             //if (user != null)
@@ -83,6 +87,7 @@ namespace SecureSphere.Controllers
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
+            await Logger.LogAsync($"User {_signInManager}logged out", _context);
             return RedirectToAction("Login");
         }
     }

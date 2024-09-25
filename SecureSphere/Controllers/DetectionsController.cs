@@ -23,6 +23,7 @@ namespace SecureSphere.Controllers
         // GET: Detections
         public async Task<IActionResult> Index()
         {
+            await Logger.LogAsync($"User requested Index For Detections ", _context);
             var testDbContext = _context.Detections.Include(d => d.Camera).Include(d => d.User);
             return View(await testDbContext.ToListAsync());
         }
@@ -30,6 +31,7 @@ namespace SecureSphere.Controllers
         // GET: Detections/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            await Logger.LogAsync($"User requested Details For Detections ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -50,6 +52,7 @@ namespace SecureSphere.Controllers
         // GET: Detections/Create
         public IActionResult Create()
         {
+            Logger.LogAsync($"User requested Create For Detections ", _context);
             ViewData["CameraID"] = new SelectList(_context.Cameras, "ID", "Name");
             ViewData["UserID"] = new SelectList(_context.Users, "Id", "UserName");
             return View();
@@ -62,6 +65,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,CameraID,Timestamp,WeaponType,Confidence,Status,Reason,UserID")] Detection detection)
         {
+            await Logger.LogAsync($"User requested Create Confirmed For Detections ", _context);
             if (ModelState.IsValid)
             {
                 _context.Add(detection);
@@ -76,6 +80,7 @@ namespace SecureSphere.Controllers
         // GET: Detections/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            await Logger.LogAsync($"User requested Edit For Detections ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -98,6 +103,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,CameraID,Timestamp,WeaponType,Confidence,Status,Reason,UserID")] Detection detection)
         {
+            await Logger.LogAsync($"User requested Edit For Detections ", _context);
             if (id != detection.ID)
             {
                 return NotFound();
@@ -131,6 +137,7 @@ namespace SecureSphere.Controllers
         // GET: Detections/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            await Logger.LogAsync($"User requested Delete For Detections ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -153,6 +160,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            await Logger.LogAsync($"User requested Delete Confirmed For Detections ", _context);
             var detection = await _context.Detections.FindAsync(id);
             if (detection != null)
             {

@@ -27,11 +27,13 @@ namespace SecureSphereApp.Controllers
         // GET: Users
         public async Task<IActionResult> Index(string SearchString)
         {
+            await Logger.LogAsync($"User requested Index For Users ", _context);
             IQueryable<ApplicationUser> users = _context.Users.Include(b => b.Branch);
 
             if (!string.IsNullOrEmpty(SearchString))
             {
                 users =users.Where(b => b.Branch.Client.Name.Contains(SearchString));
+                await Logger.LogAsync($"User Searched For '{SearchString}' ", _context);
             }
 
             var model = await users.ToListAsync();
@@ -48,6 +50,7 @@ namespace SecureSphereApp.Controllers
         // GET: Users/Details/5
         public async Task<IActionResult> Details(string? id)
         {
+            await Logger.LogAsync($"User requested Details For Users ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -70,6 +73,7 @@ namespace SecureSphereApp.Controllers
         // GET: Users/Create
         public IActionResult Create(int BranchID)
         {
+             Logger.LogAsync($"User requested Create For Users ", _context);
             var user = new ApplicationUser
             {
                 BranchID = BranchID
@@ -85,8 +89,8 @@ namespace SecureSphereApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ApplicationUser user)
         {
-
-           await _userManager.CreateAsync(user,user.PasswordHash!);
+            await Logger.LogAsync($"User requested Create For Users ", _context);
+            await _userManager.CreateAsync(user,user.PasswordHash!);
             //if (ModelState.IsValid)
             //{
             //    //user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
@@ -101,6 +105,7 @@ namespace SecureSphereApp.Controllers
         // GET: Users/Edit/5
         public async Task<IActionResult> Edit(string? id)
         {
+            await Logger.LogAsync($"User requested Edit For Users ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -122,7 +127,7 @@ namespace SecureSphereApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("ID,Name,Email,Password,CreateAt,BranchID")] ApplicationUser user)
         {
-            
+            await Logger.LogAsync($"User requested Edit For Users ", _context);
             if (id != user.Id)
             {
                 return NotFound();
@@ -155,6 +160,7 @@ namespace SecureSphereApp.Controllers
         // GET: Users/Delete/5
         public async Task<IActionResult> Delete(string? id)
         {
+            await Logger.LogAsync($"User requested Delete For Users ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -176,6 +182,7 @@ namespace SecureSphereApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
+            await Logger.LogAsync($"User requested Delete Confirmed For Users ", _context);
             var user = await _context.Users.FindAsync(id);
             if (user != null)
             {

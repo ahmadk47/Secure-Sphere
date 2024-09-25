@@ -40,9 +40,9 @@
             <td>@camera.Name</td>
             <td>@camera.IpAddress</td>
             <td class="btn-group-sm">
-                <a class="btn btn-outline-warning btn-sm active navbar-text text-capitalize fs-6 fw-bold"  asp-controller="Cameras" asp-action="Edit" asp-route-id="@camera.ID">Edit Camera</a> |
-                <a class="btn btn-outline-info btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Details" asp-route-id="@camera.ID">Details</a> |
-                <a class="btn btn-outline-danger btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Delete" asp-route-id="@camera.ID">Delete</a>
+                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Cameras" asp-action="Edit" asp-route-id="@camera.ID">Edit Camera</a> |
+                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Cameras" asp-action="Details" asp-route-id="@camera.ID">Details</a> |
+                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Cameras" asp-action="Delete" asp-route-id="@camera.ID">Delete</a>
             </td>
         </tr>
     }
@@ -74,7 +74,7 @@
     }
 </table>
 <div>
-    <a class="btn btn-outline-warning btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@Model?.ID">Edit Branch</a> |
+    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@Model?.ID">Edit Branch</a> |
     <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Clients" asp-action="Details" asp-route-id="@Model.ClientID">Back to List</a>
    
 </div>

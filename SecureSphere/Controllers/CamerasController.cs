@@ -23,6 +23,7 @@ namespace SecureSphere.Controllers
         // GET: Cameras
         public async Task<IActionResult> Index(string SearchString)
         {
+            await Logger.LogAsync($"User requested Index For Cameras ", _context);
             IQueryable<Camera> cameras = _context.Cameras.Include(b => b.Branch.Cameras);
 
             if (!string.IsNullOrEmpty(SearchString))
@@ -44,6 +45,7 @@ namespace SecureSphere.Controllers
         // GET: Cameras/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            await Logger.LogAsync($"User requested Details For Cameras ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -66,6 +68,7 @@ namespace SecureSphere.Controllers
         // GET: Cameras/Create
         public IActionResult Create(int BranchID)
         {
+            Logger.LogAsync($"User requested Create For Cameras ", _context);
             var camera = new Camera
             {
                 BranchID = BranchID
@@ -81,6 +84,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Name,BranchID,IpAddress,Status")] Camera camera)
         {
+            await Logger.LogAsync($"User requested Create confirmed For Cameras ", _context);
             if (ModelState.IsValid)
             {
                 _context.Add(camera);
@@ -95,6 +99,7 @@ namespace SecureSphere.Controllers
         // GET: Cameras/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            await Logger.LogAsync($"User requested Edit For Cameras ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -116,6 +121,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Name,BranchID,IpAddress,Status")] Camera camera)
         {
+            await Logger.LogAsync($"User requested Edit For Cameras ", _context);
             if (id != camera.ID)
             {
                 return NotFound();
@@ -148,6 +154,7 @@ namespace SecureSphere.Controllers
         // GET: Cameras/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            await Logger.LogAsync($"User requested Delete For Cameras ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -169,6 +176,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            await Logger.LogAsync($"User requested Delete Confirmed For Cameras ", _context);
             var camera = await _context.Cameras.FindAsync(id);
             if (camera != null)
             {

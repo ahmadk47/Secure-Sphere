@@ -24,10 +24,12 @@ namespace SecureSphere.Controllers
 
         public async Task<IActionResult> Index(string SearchString)
         {
+            await Logger.LogAsync($"User requested Index For Clients ", _context);
             if (SearchString != null)
             {
                 var clients =await _context.Clients.Where(c => c.Name.Contains(SearchString)).ToListAsync();
                 ViewBag.SearchString = SearchString;
+                await Logger.LogAsync($"User searched for '{SearchString}' ", _context);
                 return View(clients);
             }
             else
@@ -40,6 +42,7 @@ namespace SecureSphere.Controllers
         // GET: Clients/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            await Logger.LogAsync($"User requested Details For Clients ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -61,6 +64,7 @@ namespace SecureSphere.Controllers
         // GET: Clients/Create
         public IActionResult Create()
         {
+            Logger.LogAsync($"User requested Create For Clients ", _context);
             return View();
         }
 
@@ -71,6 +75,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Name")] Client client)
         {
+            await Logger.LogAsync($"User requested Create For Clients ", _context);
             if (ModelState.IsValid)
             {
                 _context.Add(client);
@@ -83,6 +88,7 @@ namespace SecureSphere.Controllers
         // GET: Clients/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            await Logger.LogAsync($"User requested Edit For Clients ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -103,6 +109,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("ID,Name")] Client client)
         {
+            await Logger.LogAsync($"User requested Edit confirmed For Clients ", _context);
             if (id != client.ID)
             {
                 return NotFound();
@@ -134,6 +141,7 @@ namespace SecureSphere.Controllers
         // GET: Clients/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            await Logger.LogAsync($"User requested Delete For Clients ", _context);
             if (id == null)
             {
                 return NotFound();
@@ -154,6 +162,7 @@ namespace SecureSphere.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            await Logger.LogAsync($"User requested Delete confirmed For Clients ", _context);
             var client = await _context.Clients.FindAsync(id);
             if (client != null)
             {
