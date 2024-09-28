@@ -251,3 +251,73 @@
 9/28/2024 4:58:26 PM: User requested Create For Users 
 9/28/2024 5:02:10 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
 9/28/2024 5:02:12 PM: User '1212@gmail.com' ;logged in.
+9/28/2024 5:13:39 PM: User 'm111@gmail.com' ;logged in.
+9/28/2024 5:13:40 PM: User requested Index For Clients 
+9/28/2024 5:13:42 PM: User requested Details For Clients 
+9/28/2024 5:13:44 PM: User requested Details For Branches 
+9/28/2024 5:13:50 PM: User requested Details For Branches 
+9/28/2024 5:13:50 PM: User requested Details For Branches 
+9/28/2024 5:13:50 PM: User requested Details For Branches 
+9/28/2024 5:13:50 PM: User requested Details For Branches 
+9/28/2024 5:14:05 PM: User requested Index For Clients 
+9/28/2024 5:14:31 PM: User requested Index For Clients 
+9/28/2024 5:17:01 PM: User requested Index For Clients 
+9/28/2024 5:17:02 PM: User requested Details For Clients 
+9/28/2024 5:17:04 PM: User requested Details For Branches 
+9/28/2024 5:17:05 PM: User requested Details For Users 
+9/28/2024 5:17:07 PM: User requested Details For Detections 
+9/28/2024 5:17:09 PM: User requested Details For Users 
+9/28/2024 5:17:11 PM: User requested Delete For Detections 
+9/28/2024 5:17:12 PM: User requested Details For Users 
+9/28/2024 5:17:13 PM: User requested Edit For Detections 
+9/28/2024 5:17:15 PM: User requested Details For Users 
+9/28/2024 5:17:59 PM: User requested Index For System Logs 
+9/28/2024 5:20:21 PM: User requested Index For Clients 
+9/28/2024 5:20:31 PM: User requested Details For Clients 
+9/28/2024 5:20:32 PM: User requested Details For Branches 
+9/28/2024 5:20:40 PM: User requested Details For Users 
+9/28/2024 5:20:44 PM: User requested Index For Clients 
+9/28/2024 5:21:46 PM: User requested Index For Clients 
+9/28/2024 5:21:48 PM: User requested Index For Clients 
+9/28/2024 5:21:48 PM: User requested Details For Clients 
+9/28/2024 5:21:49 PM: User requested Details For Branches 
+9/28/2024 5:21:51 PM: User requested Create For Users 
+9/28/2024 5:21:56 PM: User requested Edit For Users 
+9/28/2024 5:22:10 PM: User requested Index For Clients 
+9/28/2024 5:22:18 PM: User requested Edit For Clients 
+9/28/2024 5:22:19 PM: User requested Index For Clients 
+9/28/2024 5:22:20 PM: User requested Details For Clients 
+9/28/2024 5:22:22 PM: User requested Index For Clients 
+9/28/2024 5:23:33 PM: User requested Details For Clients 
+9/28/2024 5:23:35 PM: User requested Details For Branches 
+9/28/2024 5:23:36 PM: User requested Details For Users 
+9/28/2024 5:23:37 PM: User requested Details For Users 
+9/28/2024 5:23:39 PM: User requested Details For Users 
+9/28/2024 5:23:39 PM: User requested Details For Users 
+9/28/2024 5:23:40 PM: User requested Details For Users 
+9/28/2024 5:23:40 PM: User requested Details For Users 
+9/28/2024 5:25:20 PM: User requested Index For Clients 
+9/28/2024 5:25:22 PM: User requested Details For Clients 
+9/28/2024 5:25:23 PM: User requested Details For Branches 
+9/28/2024 5:25:25 PM: User requested Details For Users 
+9/28/2024 5:25:34 PM: User requested Details For Users 
+9/28/2024 5:25:35 PM: User requested Details For Users 
+9/28/2024 5:25:36 PM: User requested Details For Users 
+9/28/2024 5:25:36 PM: User requested Details For Users 
+9/28/2024 5:25:37 PM: User requested Details For Users 
+9/28/2024 5:26:28 PM: User requested Create For Cameras 
+9/28/2024 5:26:29 PM: User requested Details For Branches 
+9/28/2024 5:26:33 PM: User requested Create For Cameras 
+9/28/2024 5:27:53 PM: User requested Index For Clients 
+9/28/2024 5:27:57 PM: User requested Details For Clients 
+9/28/2024 5:27:59 PM: User requested Create For Branches 
+9/28/2024 5:28:01 PM: User requested Create confirmed For Branches 
+9/28/2024 5:28:03 PM: User requested Details For Clients 
+9/28/2024 5:28:04 PM: User requested Delete For Branches 
+9/28/2024 5:28:05 PM: User requested Delete confirmed For Branches 
+9/28/2024 5:28:05 PM: User requested Index For Branches 
+9/28/2024 5:28:05 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+9/28/2024 5:28:07 PM: User requested Delete For Branches 
+9/28/2024 5:28:10 PM: User requested Create For Branches 
+9/28/2024 5:28:12 PM: User requested Index For Clients 
+9/28/2024 5:29:31 PM: User requested Index For Clients 

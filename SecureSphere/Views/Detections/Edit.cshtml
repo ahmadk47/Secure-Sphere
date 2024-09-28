@@ -56,7 +56,7 @@
 </div>
 
 <div>
-    <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Index">Back to List</a>
+    <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Users" asp-action="Details" asp-route-id="@Model.UserID">Back to List</a>
 </div>
 
 @section Scripts {

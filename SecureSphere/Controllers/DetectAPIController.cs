@@ -10,23 +10,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SecureSphere.Models;
 
-namespace SecureSphere.Controllers { 
-
+namespace SecureSphere.Controllers
+{
     [Authorize]
-[Route("api/[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class DetectAPIController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
-
-        public DetectAPIController(ApplicationDbContext context, UserManager<ApplicationUser> userManger)
+        private readonly IConfiguration _configuration;
+        public DetectAPIController(ApplicationDbContext context, UserManager<ApplicationUser> userManger,
+            IConfiguration configuration)
         {
             _context = context;
             _userManager = userManger;
+            _configuration = configuration;
+
         }
 
         // GET: api/DetectAPI
+        [Authorize]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Detection>>> GetDetections()
         {
@@ -49,6 +53,7 @@ namespace SecureSphere.Controllers {
 
         // PUT: api/DetectAPI/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [Authorize]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDetection(int id, Detection detection)
         {
@@ -80,26 +85,28 @@ namespace SecureSphere.Controllers {
 
         // POST: api/DetectAPI
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [AllowAnonymous]
         [HttpPost]
-        [Authorize]
         public async Task<ActionResult<Detection>> PostDetection([FromBody] Detection detection)
         {
-            var user = await _userManager.GetUserAsync(User);
-
-            if (user == null)
+            // Check API key only for POST method
+            if (!Request.Headers.TryGetValue("X-API-Key", out var apiKey) || apiKey != _configuration["APIKey"])
             {
-                return Unauthorized("User is not authenticated.");
+                return Unauthorized("Invalid API Key");
             }
+            // Get the current user
+            //var userid = _userManager.GetUserId(User);
+
             // Set default values for fields not provided by the Python script
             detection.CameraID = 1; // Default camera ID
             detection.Status = 0; // Default status (e.g., 0 for "Unprocessed")
-            detection.UserID = user.Id;
+           // detection.UserID = userid;
 
-            // detection.UserID = "31cf615f-374f-44b9-b8ca-7f98d3419726";
+            detection.UserID = "31cf615f-374f-44b9-b8ca-7f98d3419726";
             if (detection.WeaponType == true)
-                detection.Reason = "Gun is detected";
-            else
                 detection.Reason = "Knife is detected";
+            else
+                detection.Reason = "Gun is detected";
 
             _context.Detections.Add(detection);
             await _context.SaveChangesAsync();
@@ -108,6 +115,7 @@ namespace SecureSphere.Controllers {
         }
 
         // DELETE: api/DetectAPI/5
+        [Authorize]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDetection(int id)
         {

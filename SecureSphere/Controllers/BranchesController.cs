@@ -111,7 +111,7 @@ namespace SecureSphere.Controllers
                 await _context.SaveChangesAsync();
                 ViewBag.meg = "Added Successfully";
                 //ViewBag.Clientlist = new SelectList(_context.Clients, "ID", "Name", branch.ClientID);
-                return View();
+                return View(branch);
             }
             ViewBag.Clientlist = new SelectList(_context.Clients, "ID", "Name", branch.ClientID);
             return View();
