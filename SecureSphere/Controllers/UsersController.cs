@@ -71,34 +71,44 @@ namespace SecureSphereApp.Controllers
         }
 
         // GET: Users/Create
+        // GET: Users/Create
         public IActionResult Create(int BranchID)
         {
-             Logger.LogAsync($"User requested Create For Users ", _context);
+            Logger.LogAsync($"User requested Create For Users ", _context);
+
+            ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Get available roles
             var user = new ApplicationUser
             {
                 BranchID = BranchID
             };
-            //ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address");
             return View(user);
         }
 
         // POST: Users/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ApplicationUser user)
+        public async Task<IActionResult> Create(ApplicationUser user, string selectedRole)
         {
-            await Logger.LogAsync($"User requested Create For Users ", _context);
-            await _userManager.CreateAsync(user,user.PasswordHash!);
-            //if (ModelState.IsValid)
-            //{
-            //    //user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
-            //    _context.Add(user);
-            //    await _context.SaveChangesAsync();
-            //    return RedirectToAction(nameof(Index));
-            //}
-            //ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
+            Logger.LogAsync($"User requested Create For Users ", _context);
+
+            // Create the user
+            var result = await _userManager.CreateAsync(user, user.PasswordHash!);
+
+            if (result.Succeeded)
+            {
+                // Assign the role to the user
+                await _userManager.AddToRoleAsync(user, selectedRole);
+
+                return RedirectToAction(nameof(Index));
+            }
+
+            // If there are errors, display them
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Reload roles if something fails
             return View(user);
         }
 

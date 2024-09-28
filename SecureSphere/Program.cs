@@ -1,7 +1,5 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using SecureSphere.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -38,6 +36,22 @@ builder.Services.Configure<IdentityOptions>(options =>
 
 var app = builder.Build();
 
+// Role seeding logic
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
+        var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
+        await EnsureRolesAndAdminCreated(roleManager, userManager);
+    }
+    catch (Exception ex)
+    {
+        // Log errors here if necessary
+        Console.WriteLine($"Error seeding roles: {ex.Message}");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -60,3 +74,21 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+// Role and Admin seeding function
+async Task EnsureRolesAndAdminCreated(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager)
+{
+    // Define roles
+    string[] roleNames = { "Admin", "User" };
+
+    // Create roles if they don't exist
+    foreach (var roleName in roleNames)
+    {
+        if (!await roleManager.RoleExistsAsync(roleName))
+        {
+            await roleManager.CreateAsync(new IdentityRole(roleName));
+        }
+    }
+
+   
+}
