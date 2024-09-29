@@ -1,42 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\",
+  "WorkspaceRootPath": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\controllers\\detectapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\detectapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\views\\detections\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\views\\detections\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\views\\detections\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\views\\detections\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\secure-sphere\\securesphere\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,124 +18,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BranchesController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\BranchesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BranchesController.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\BranchesController.cs",
-              "RelativeToolTip": "Controllers\\BranchesController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAAAHEAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:18:28.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Detections\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Detections\\Edit.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAADJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-28T14:12:17.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Detections\\Details.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Details.cshtml",
-              "RelativeToolTip": "Views\\Detections\\Details.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADUAAADJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-28T14:12:17.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Detections\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Detections\\Delete.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADwAAADNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-28T14:12:16.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Detections\\Create.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Create.cshtml",
-              "RelativeToolTip": "Views\\Detections\\Create.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-28T14:12:16.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:11:06.242Z",
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-29T12:14:17.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DetectAPIController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\DetectAPIController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DetectAPIController.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\DetectAPIController.cs",
-              "RelativeToolTip": "Controllers\\DetectAPIController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAAGgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:14:58.482Z",
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "wwwroot\\css\\styles.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-29T11:36:01.443Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 256,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClientsController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\ClientsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\ClientsController.cs",
-              "RelativeToolTip": "Controllers\\ClientsController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:18:29.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-28T14:11:16.856Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }

@@ -321,3 +321,59 @@
 9/28/2024 5:28:10 PM: User requested Create For Branches 
 9/28/2024 5:28:12 PM: User requested Index For Clients 
 9/28/2024 5:29:31 PM: User requested Index For Clients 
+9/29/2024 2:37:22 PM: User '1212@gmail.com' ;logged in.
+9/29/2024 2:38:10 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/29/2024 2:38:11 PM: User '1212@gmail.com' ;logged in.
+9/29/2024 2:38:58 PM: User requested Index For Clients 
+9/29/2024 2:39:18 PM: User requested Index For Clients 
+9/29/2024 2:39:20 PM: User requested Details For Clients 
+9/29/2024 2:39:22 PM: User requested Details For Branches 
+9/29/2024 2:39:25 PM: User requested Create For Users 
+9/29/2024 2:43:11 PM: User requested Index For System Logs 
+9/29/2024 2:43:26 PM: User requested Index For System Logs 
+9/29/2024 2:43:37 PM: User requested Index For Clients 
+9/29/2024 2:43:38 PM: User requested Index For System Logs 
+9/29/2024 2:43:40 PM: User requested Index For Clients 
+9/29/2024 2:44:13 PM: User requested Index For Clients 
+9/29/2024 2:50:23 PM: User requested Index For System Logs 
+9/29/2024 2:50:24 PM: User requested Index For Clients 
+9/29/2024 2:50:31 PM: User requested Index For Clients 
+9/29/2024 2:50:31 PM: User requested Index For System Logs 
+9/29/2024 2:58:46 PM: User requested Index For Clients 
+9/29/2024 2:58:48 PM: User requested Details For Clients 
+9/29/2024 3:00:13 PM: User requested Index For Clients 
+9/29/2024 3:00:14 PM: User requested Details For Clients 
+9/29/2024 3:00:15 PM: User requested Details For Branches 
+9/29/2024 3:00:17 PM: User requested Create For Users 
+9/29/2024 3:00:35 PM: User requested Index For Clients 
+9/29/2024 3:05:26 PM: User requested Index For Clients 
+9/29/2024 3:05:46 PM: User requested Index For Clients 
+9/29/2024 3:05:48 PM: User requested Details For Clients 
+9/29/2024 3:05:50 PM: User requested Details For Branches 
+9/29/2024 3:05:58 PM: User requested Details For Users 
+9/29/2024 3:06:01 PM: User requested Edit For Users 
+9/29/2024 3:09:01 PM: User requested Index For Clients 
+9/29/2024 3:10:06 PM: User requested Details For Clients 
+9/29/2024 3:10:08 PM: User requested Details For Branches 
+9/29/2024 3:10:09 PM: User requested Details For Users 
+9/29/2024 3:10:10 PM: User requested Edit For Users 
+9/29/2024 3:11:01 PM: User requested Index For Clients 
+9/29/2024 3:11:02 PM: User requested Index For System Logs 
+9/29/2024 3:11:18 PM: User requested Delete For System Logs 
+9/29/2024 3:11:19 PM: User requested Delete Confirmed For System Logs 
+9/29/2024 3:11:19 PM: User requested Index For System Logs 
+9/29/2024 3:11:20 PM: User requested Delete For System Logs 
+9/29/2024 3:11:21 PM: User requested Delete Confirmed For System Logs 
+9/29/2024 3:11:21 PM: User requested Index For System Logs 
+9/29/2024 3:11:51 PM: User requested Index For Clients 
+9/29/2024 3:11:53 PM: User requested Index For Clients 
+9/29/2024 3:11:54 PM: User requested Index For System Logs 
+9/29/2024 3:11:58 PM: User requested Index For Clients 
+9/29/2024 3:12:31 PM: User requested Index For System Logs 
+9/29/2024 3:12:32 PM: User requested Index For Clients 
+9/29/2024 3:14:08 PM: User requested Index For System Logs 
+9/29/2024 3:15:24 PM: User requested Index For Clients 
+9/29/2024 3:15:27 PM: User requested Index For Clients 
+9/29/2024 3:15:27 PM: User requested Index For System Logs 
+9/29/2024 3:15:30 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/29/2024 3:15:33 PM: User '1212@gmail.com' ;logged in.

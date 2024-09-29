@@ -5,9 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>
-        Secure Sphere
-    </title>
+    <title>Secure Sphere</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SecureSphere</title>
@@ -15,30 +13,23 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SecureSphere.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body{
-            font-family : 'Roboto';
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-custom navbar-expand-lg navbar-toggleable-lg border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <img src="~/NewFolder/SecureSphere.jpeg" class="img-fluid rounded-circle" />
+                    <img src="~/NewFolder/SecureSphere.jpeg" class="img-fluid rounded-circle" alt="Secure Sphere Logo" />
                 </a>
-
                 <a class="navbar-brand navbar-text text-capitalize fs-3 text-center fw-bolder" asp-area="" asp-controller="Home" asp-action="Index">
-                        Secure Sphere
-                   </a>
-                <button class="hamburger" type="button" id="sidebarToggle" style="color:#90AFC5">
+                    Secure Sphere
+                </a>
+                <button class="hamburger" type="button" id="sidebarToggle">
                     &#9776;
                 </button>
-               
+
                 <div class="navbar-collapse collapse d-sm-inline-flex align-items-center justify-content-between">
-                    
                     <ul class="navbar-nav flex-grow-1">
                         @if (!User.Identity.IsAuthenticated)
                         {
@@ -49,67 +40,63 @@
                                 <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="privacy">privacy</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="account" asp-action="login">log in</a>
+                                <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="account" asp-action="login">log in</a>
                             </li>
                         }
                         else
                         {
-                        <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Clients" asp-action="Index">Clients</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="SystemLogs" asp-action="Index">System Logs</a>
                             </li>
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Account
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="btn btn-sm dropdown-toggle navbar-text text-capitalize fs-6 fw-bold" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Account
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Account" asp-action="logout">Log out</a></li>
-                                    
-                                </ul>
-                            </div>
-                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         }
                     </ul>
                 </div>
-
-               
             </div>
         </nav>
     </header>
+
     <!-- Sidebar -->
-    <div id="sidebar" style="background-color : #2A3132">
+    <div id="sidebar">
         <ul>
             @if (!User.Identity.IsAuthenticated)
             {
-                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="index" style="color: #90afc5">home</a></li>
-                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="privacy" style="color: #90afc5">privacy</a></li>
-                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="account" asp-action="login" style="color: #90afc5">log in</a> </li>
-            } 
-             else
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="index">home</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="home" asp-action="privacy">privacy</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="account" asp-action="login">log in</a></li>
+            }
+            else
             {
-                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Index" style="color: #90AFC5">Home</a></li>
-                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy" style="color: #90AFC5">Privacy</a></li>
-                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Clients" asp-action="Index" style="color: #90AFC5">Clients</a></li>
-                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="SystemLogs" asp-action="Index" style="color: #90AFC5">System Logs</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Clients" asp-action="Index">Clients</a></li>
+                <li><a class="nav-link text-capitalize fs-6 fw-bold" asp-area="" asp-controller="SystemLogs" asp-action="Index">System Logs</a></li>
                 <li>
-                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accCollapse" aria-expanded="false" style="color:#90AFC5">
+                    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accCollapse" aria-expanded="false">
                         Account
                     </button>
-                    <ul class="collapse" id="accCollapse" style="background-color : #2A3132;color:#90AFC5">
-                            <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Account" asp-action="logout" style="color:#90AFC5">Log out</a></li>
-
-                </ul>
-            </li>
+                    <ul class="collapse" id="accCollapse">
+                        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Account" asp-action="logout">Log out</a></li>
+                    </ul>
+                </li>
             }
         </ul>
     </div>
@@ -131,7 +118,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <script>
-        document.getElementById('sidebarToggle').addEventListener('click', function() {
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
             document.getElementById('sidebar').classList.toggle('active');
         });
     </script>
