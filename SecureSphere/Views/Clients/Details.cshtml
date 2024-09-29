@@ -6,19 +6,19 @@
 
 <h1>Client Details</h1>
 
-<div>
+<div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
     <hr />
-    <table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-        <thead>
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
             <tr>
-                <th class="col-sm-2">@Html.DisplayNameFor(model => model.Name)</th>
-                <th class="col-sm-10">@Html.DisplayFor(model => model.Name)</th>
+                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Name)</th>
+                <th class="th col-sm-10">@Html.DisplayFor(model => model.Name)</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody">
             <tr>
-                <td>@Html.DisplayNameFor(model => model.ID)</td>
-                <td>@Html.DisplayFor(model => model.ID)</td>
+                <td class="td">@Html.DisplayNameFor(model => model.ID)</td>
+                <td class="td"`>@Html.DisplayFor(model => model.ID)</td>
             </tr>
         </tbody>
     </table>
@@ -29,23 +29,29 @@
     <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Create" asp-route-ClientID="@Model.ID" style="color: #90AFC5">Add Branch</a>
 </div>
 
-<div>
+<div class ="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
 
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
     <tr>
-        <th>Branches</th>
-        <th>Info</th>
+        <th class="th">Branches</th>
+        <th class="th">Info</th>
     </tr>
+    </thead>
     @foreach(Branch branch in ViewBag.Branchs)
     {
+        <tbody class="tbody">
+
         <tr>
-            <td>@branch.Address</td>
-            <td class="btn-group-sm">
+            <td class="td">@branch.Address</td>
+            <td class="td btn-group-sm">
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Edit" asp-route-id="@branch.ID">Edit</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Details" asp-route-id="@branch.ID">Details</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Delete" asp-route-id="@branch.ID">Delete</a>
             </td>
         </tr>
+
+            </tbody>
     }
 </table>
 

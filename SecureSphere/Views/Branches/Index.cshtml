@@ -24,32 +24,33 @@
 
     </div>
 </form>
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-    <thead>
+ <div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+    <thead class="thead">
         <tr>
-            <th>
+            <th class="th">
                 @Html.DisplayNameFor(model => model.Client.Name)
             </th>
-            <th>
+                <th class="th">
                 @Html.DisplayNameFor(model => model.Address)
             </th>
 
-            <th>
+                <th class="th">
                 Properties
             </th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="tbody">
 
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td class="td">
                 @Html.DisplayFor(modelItem => item.Client.Name)
             </td>
-            <td>
+            <td class="td">
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
-                <td class="btn-group-sm">
+                <td class="td btn-group-sm">
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Details" asp-route-id="@item.ID">Details</a> |
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
@@ -58,6 +59,7 @@
 }
     </tbody>
 </table>
+</div>
 @section Scripts {
     <script>
         $(document).ready(function() {

@@ -8,71 +8,78 @@
 
 <div>
     <hr />
-    <table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-        <thead>
+    <div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
+        <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
             <tr>
-                <th class="col-sm-2">@Html.DisplayNameFor(model => model.Address)</th>
-                <th class="col-sm-2">@Html.DisplayNameFor(model => model.Client)</th>
+                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Address)</th>
+                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Client)</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody">
             <tr>
-                <td>@Html.DisplayFor(model => model.Address)</td>
-                <td>@Html.DisplayFor(model => model.Client.Name)</td>
+                <td class="td">@Html.DisplayFor(model => model.Address)</td>
+                <td class="td">@Html.DisplayFor(model => model.Client.Name)</td>
             </tr>
         </tbody>
-    </table>
+    </table>   
 
-</div>
 <div class="mb-md-2">
     <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Cameras" asp-action="Create" asp-route-BranchID="@Model.ID" style="color: #90AFC5">Add Camera</a>
 </div>
-
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+            <thead class="thead">
     <tr>
-        <th>Cameras</th>
-        <th>IP Address</th>
-        <th>Info</th>
+        <th class="th">Cameras</th>
+        <th class="th">IP Address</th>
+        <th class="th">Info</th>
     </tr>
+            </thead>
     @foreach (Camera camera in ViewBag.Cameras)
     {
+        <tbody class="tbody">
         <tr>
-            <td>@camera.Name</td>
-            <td>@camera.IpAddress</td>
-            <td class="btn-group-sm">
+            <td class="td">@camera.Name</td>
+            <td class="td">@camera.IpAddress</td>
+            <td class="td btn-group-sm">
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Cameras" asp-action="Edit" asp-route-id="@camera.ID">Edit Camera</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Cameras" asp-action="Details" asp-route-id="@camera.ID">Details</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Cameras" asp-action="Delete" asp-route-id="@camera.ID">Delete</a>
             </td>
         </tr>
+                </tbody>
     }
 </table>
-
 
 <div class="mb-md-2">
     <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Users" asp-action="Create" asp-route-BranchID="@Model.ID" style="color: #90AFC5">Add User</a>
 </div>
 
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
     <tr>
-        <th>Users</th>
-        <th>Emails</th>
-        <th>Info</th>
+        <th class="th">Users</th>
+        <th class="th">Emails</th>
+        <th class="th">Info</th>
     </tr>
+        </thead>
     @foreach (ApplicationUser user in ViewBag.Users)
     {
+        <tbody class="tbody">
         <tr>
-            <td>@user.UserName</td>
-            <td>@user.Email</td>
-            <td class="btn-group-sm">
+            <td class="td">@user.UserName</td>
+            <td class="td">@user.Email</td>
+            <td class="td btn-group-sm">
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Users" asp-action="Edit" asp-route-id="@user.Id">Edit User</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Users" asp-action="Details" asp-route-id="@user.Id">Details</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Users" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
             </td>
 
         </tr>
+        </tbody>
     }
 </table>
+</div>
 <div>
     <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@Model?.ID">Edit Branch</a> |
     <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Clients" asp-action="Details" asp-route-id="@Model.ClientID">Back to List</a>

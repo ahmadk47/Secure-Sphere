@@ -23,25 +23,23 @@
 
     </div>
 </form>
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-    <caption>
-        List Of Cameras
-    </caption>
-    <thead>
+<div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+    <thead class="thead">
         <tr>
-            <th>
+            <th class="th">
                 @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
+            </th >
+                <th class="th">
                 @Html.DisplayNameFor(model => model.IpAddress)
             </th>
-            <th>
+                <th class="th">
                 @Html.DisplayNameFor(model => model.Status)
             </th>
-            <th>
+                <th class="th">
                 @Html.DisplayNameFor(model => model.Branch.Client.Name)
             </th>
-            <th>
+                <th class="th">
                 @Html.DisplayNameFor(model => model.Branch)
             </th>
 
@@ -50,22 +48,22 @@
             </th>
         </tr>
     </thead>
-    <tbody>
+    <tbody class="tbody">
 @foreach (var item in Model) {
         <tr>
-            <td>
+            <td class="td">
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
+                    <td class="td">
                 @Html.DisplayFor(modelItem => item.IpAddress)
             </td>
-            <td>
+                    <td class="td">
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
-            <td>
+                    <td class="td">
                 @Html.DisplayFor(modelItem => item.Branch.Client.Name)
             </td>
-            <td>
+                    <td class="td">
                 @Html.DisplayFor(modelItem => item.Branch.ID)
             </td>
                 <td class="btn-group-sm">
@@ -77,6 +75,7 @@
 }
     </tbody>
 </table>
+</div>
 @section Scripts {
     <script>
         $(document).ready(function() {

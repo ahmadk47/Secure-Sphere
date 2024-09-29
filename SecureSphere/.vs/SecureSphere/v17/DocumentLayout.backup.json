@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\cameras\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\cameras\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\clients\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\clients\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\systemlogs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\systemlogs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\cameras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\cameras\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\clients\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\detections\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\detections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +66,143 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\SystemLogs\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\SystemLogs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\SystemLogs\\Index.cshtml",
+              "RelativeToolTip": "Views\\SystemLogs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:42:22.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Users\\Index.cshtml*",
+              "RelativeToolTip": "Views\\Users\\Index.cshtml*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:42:04.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Details.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Users\\Details.cshtml*",
+              "RelativeToolTip": "Views\\Users\\Details.cshtml*",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:38:04.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cameras\\Details.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Details.cshtml*",
+              "RelativeToolTip": "Views\\Cameras\\Details.cshtml*",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:33:27.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cameras\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cameras\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:31:37.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Detections\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Index.cshtml",
+              "RelativeToolTip": "Views\\Detections\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:27:10.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Clients\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Clients\\Index.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Clients\\Index.cshtml",
+              "RelativeToolTip": "Views\\Clients\\Index.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:27:09.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Detections\\Details.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Details.cshtml",
+              "RelativeToolTip": "Views\\Detections\\Details.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:26:10.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Clients\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Clients\\Details.cshtml",
+              "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Clients\\Details.cshtml*",
+              "RelativeToolTip": "Views\\Clients\\Details.cshtml*",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-29T16:10:29.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-29T12:14:17.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\styles.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
               "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\styles.css",
               "RelativeToolTip": "wwwroot\\css\\styles.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAMIAAAAAAAAAAAAAANUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-29T11:36:01.443Z",
               "EditorCaption": ""

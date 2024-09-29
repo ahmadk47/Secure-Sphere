@@ -6,53 +6,53 @@
 
 <h1>Details</h1>
 
-<div>
+
     <h4>Camera</h4>
-    <hr />
-    <table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-        <thead>
+    <div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
             <tr>
-                <th class="col-sm-2">@Html.DisplayNameFor(model => model.Name)</th>
-                <th class="col-sm-10">@Html.DisplayFor(model => model.Name)</th>
+                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Name)</th>
+                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.IpAddress)</th>
+                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Status)</th>
+                
             </tr>
         </thead>
-        <tbody>
+        <tbody class="tbody">
             <tr>
-                <td>@Html.DisplayNameFor(model => model.IpAddress)</td>
-                <td>@Html.DisplayFor(model => model.IpAddress)</td>
-            </tr>
-            <tr>
-                <td>@Html.DisplayNameFor(model => model.Status)</td>
-                <td>@Html.DisplayFor(model => model.Status)</td>
+                <td class="td">@Html.DisplayFor(model => model.Name)</td>
+                <td class="td">@Html.DisplayFor(model => model.IpAddress)</td>
+                <td class="td">@Html.DisplayFor(model => model.Status)</td>
             </tr>
         </tbody>
     </table>
-
-</div>
-
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
     <tr>
-        <th>Detections</th>
-        <th>Confidence</th>
-        <th>Reason</th>
-        <th>Info</th>
+        <th class="th">Detections</th>
+        <th class="th">Confidence</th>
+        <th class="th">Reason</th>
+        <th class="th">Info</th>
     </tr>
+        </thead>
+       
     @foreach (Detection detection in ViewBag.Detections)
     {
+            <tbody class="tbody">
         <tr>
-            <td>@detection.Timestamp</td>
-            <td>@detection.Confidence</td>
-            <td>@detection.Reason</td>
-            <td class="btn-group-sm">
+            <td class="td">@detection.Timestamp</td>
+            <td class="td">@detection.Confidence</td>
+            <td class="td">@detection.Reason</td>
+            <td class="td btn-group-sm">
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Edit" asp-route-id="@detection.ID">Edit</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Details" asp-route-id="@detection.ID">Details</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Delete" asp-route-id="@detection.ID">Delete</a>
             </td>
-            
         </tr>
+            </tbody>
     }
 </table>
-
+</div>
 <div>
     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
     <a class="btn btn-outline-danger btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>

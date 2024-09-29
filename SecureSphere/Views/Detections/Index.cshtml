@@ -10,33 +10,33 @@
     </head>
     <body>
     <h1>Detections</h1>
-
-    <table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-        <thead>
+    <div class="table-custom table-responsive w-75" style="height :300px; overflow-y:auto">
+        <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
             <tr>
-                <th>
+                <th class="th">
                     @Html.DisplayNameFor(model => model.Timestamp)
                 </th>
-                <th>
+                    <th class="th">
                     @Html.DisplayNameFor(model => model.WeaponType)
                 </th>
-                <th>
+                    <th class="th">
                     @Html.DisplayNameFor(model => model.Confidence)
                 </th>
-                <th>
+                    <th class="th">
                     @Html.DisplayNameFor(model => model.Status)
                 </th>
-                <th>
+                    <th class="th">
                     @Html.DisplayNameFor(model => model.Reason)
                 </th>
-                <th>
+                    <th class="th">
                     @Html.DisplayNameFor(model => model.Camera)
                 </th>
-                <th>
+                    <th class="th">
                     @Html.DisplayNameFor(model => model.User)
                 </th>
 
-                <th>
+                    <th class="th">
                     Properties
                 </th>
             </tr>
@@ -75,6 +75,7 @@
             }
         </tbody>
     </table>
+    </div>
     </body>
 </html>
 

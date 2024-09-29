@@ -202,3 +202,15 @@ input, select, textarea {
         border-color: var(--secondary-color);
         box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
     }
+ .thead .th{
+    background-color: rgb(26, 43, 60);
+    color: white;
+    position: sticky;
+    top: -1px;
+    text-align: center;
+}
+ .tbody .td {
+     text-align:center;
+     justify-content:space-between;
+     
+ }

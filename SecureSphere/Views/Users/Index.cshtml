@@ -24,29 +24,30 @@
 
     </div>
 </form>
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-            <thead>
+<div class="table-custom table-responsive w-75" style="height :300px; overflow-y:auto">
+    <table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
                 <tr>
-                    <th>
+                    <th class="th">
                         @Html.DisplayNameFor(model => model.UserName)
                     </th>
-                    <th>
+                <th class="th">
                         @Html.DisplayNameFor(model => model.Email)
-                    </th>
-                    <th>
+                    </th >
+                <th class="th">
                         @Html.DisplayNameFor(model => model.PasswordHash)
                     </th>
-                    <th>
+                <th class="th">
                         @Html.DisplayNameFor(model => model.CreatedAt)
                     </th>
-                    <th>
+                <th class="th">
                         @Html.DisplayNameFor(model => model.Branch.Client)
                     </th>
-                    <th>
+                <th class="th">
                         @Html.DisplayNameFor(model => model.Branch)
                     </th>
 
-                    <th>
+                <th class="th">
                         Properties
                     </th>
                 </tr>
@@ -82,6 +83,7 @@
                 }
             </tbody>
         </table>
+        </div>
 @section Scripts {
     <script>
         $(document).ready(function() {

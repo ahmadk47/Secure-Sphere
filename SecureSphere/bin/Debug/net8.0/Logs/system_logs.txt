@@ -377,3 +377,273 @@
 9/29/2024 3:15:27 PM: User requested Index For System Logs 
 9/29/2024 3:15:30 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
 9/29/2024 3:15:33 PM: User '1212@gmail.com' ;logged in.
+9/29/2024 3:32:23 PM: User requested Index For Clients 
+9/29/2024 3:32:37 PM: User requested Index For Clients 
+9/29/2024 3:32:38 PM: User requested Details For Clients 
+9/29/2024 3:32:40 PM: User requested Details For Branches 
+9/29/2024 3:38:31 PM: User requested Index For Clients 
+9/29/2024 3:38:33 PM: User requested Create For Clients 
+9/29/2024 3:38:38 PM: User requested Create For Clients 
+9/29/2024 3:38:38 PM: User requested Index For Clients 
+9/29/2024 3:38:40 PM: User requested Details For Clients 
+9/29/2024 3:38:42 PM: User requested Edit For Clients 
+9/29/2024 3:38:44 PM: User requested Edit confirmed For Clients 
+9/29/2024 3:38:44 PM: User requested Index For Clients 
+9/29/2024 3:38:46 PM: User requested Details For Clients 
+9/29/2024 3:38:47 PM: User requested Create For Branches 
+9/29/2024 3:38:50 PM: User requested Create confirmed For Branches 
+9/29/2024 3:38:51 PM: User requested Details For Clients 
+9/29/2024 3:38:52 PM: User requested Details For Branches 
+9/29/2024 3:38:53 PM: User requested Create For Users 
+9/29/2024 6:03:47 PM: User requested Index For Clients 
+9/29/2024 6:03:48 PM: User requested Index For System Logs 
+9/29/2024 6:03:49 PM: User requested Index For Clients 
+9/29/2024 6:03:51 PM: User requested Index For System Logs 
+9/29/2024 6:04:57 PM: User requested Index For System Logs 
+9/29/2024 6:05:24 PM: User requested Index For System Logs 
+9/29/2024 6:06:44 PM: User requested Index For System Logs 
+9/29/2024 6:06:59 PM: User requested Index For System Logs 
+9/29/2024 6:07:16 PM: User requested Index For System Logs 
+9/29/2024 6:07:54 PM: User requested Index For System Logs 
+9/29/2024 6:09:53 PM: User requested Index For System Logs 
+9/29/2024 6:10:02 PM: User requested Index For System Logs 
+9/29/2024 6:10:23 PM: User requested Index For Clients 
+9/29/2024 6:10:28 PM: User requested Index For Clients 
+9/29/2024 6:10:29 PM: User requested Index For System Logs 
+9/29/2024 6:10:46 PM: User requested Index For Clients 
+9/29/2024 6:10:48 PM: User requested Index For Clients 
+9/29/2024 6:10:54 PM: User requested Index For Clients 
+9/29/2024 6:12:42 PM: User requested Index For Clients 
+9/29/2024 6:12:44 PM: User requested Index For System Logs 
+9/29/2024 6:13:55 PM: User requested Index For System Logs 
+9/29/2024 6:14:25 PM: User requested Index For System Logs 
+9/29/2024 6:14:39 PM: User requested Index For System Logs 
+9/29/2024 6:14:52 PM: User requested Index For System Logs 
+9/29/2024 6:15:18 PM: User requested Index For System Logs 
+9/29/2024 6:15:28 PM: User requested Index For System Logs 
+9/29/2024 6:15:56 PM: User requested Index For System Logs 
+9/29/2024 6:16:14 PM: User requested Index For System Logs 
+9/29/2024 6:16:23 PM: User requested Index For System Logs 
+9/29/2024 6:16:37 PM: User requested Index For System Logs 
+9/29/2024 6:17:14 PM: User requested Index For System Logs 
+9/29/2024 6:17:36 PM: User requested Index For System Logs 
+9/29/2024 6:18:58 PM: User requested Index For System Logs 
+9/29/2024 6:19:11 PM: User requested Index For System Logs 
+9/29/2024 6:19:33 PM: User requested Index For System Logs 
+9/29/2024 6:21:22 PM: User requested Index For System Logs 
+9/29/2024 6:21:42 PM: User requested Index For System Logs 
+9/29/2024 6:21:57 PM: User requested Index For System Logs 
+9/29/2024 6:22:19 PM: User requested Index For System Logs 
+9/29/2024 6:23:06 PM: User requested Index For System Logs 
+9/29/2024 6:23:29 PM: User requested Index For System Logs 
+9/29/2024 6:24:27 PM: User requested Index For System Logs 
+9/29/2024 6:24:58 PM: User requested Index For System Logs 
+9/29/2024 6:26:23 PM: User requested Index For System Logs 
+9/29/2024 6:26:55 PM: User requested Index For System Logs 
+9/29/2024 6:27:27 PM: User requested Index For System Logs 
+9/29/2024 6:28:11 PM: User requested Index For System Logs 
+9/29/2024 6:29:31 PM: User requested Index For System Logs 
+9/29/2024 6:30:03 PM: User requested Index For System Logs 
+9/29/2024 6:30:22 PM: User requested Index For System Logs 
+9/29/2024 6:30:46 PM: User requested Index For System Logs 
+9/29/2024 6:32:20 PM: User requested Index For System Logs 
+9/29/2024 6:35:22 PM: User requested Index For System Logs 
+9/29/2024 6:36:43 PM: User requested Index For System Logs 
+9/29/2024 6:37:33 PM: User requested Index For System Logs 
+9/29/2024 6:39:01 PM: User requested Index For Clients 
+9/29/2024 6:39:02 PM: User requested Index For System Logs 
+9/29/2024 6:39:03 PM: User requested Index For Clients 
+9/29/2024 6:39:08 PM: User requested Index For Clients 
+9/29/2024 6:39:09 PM: User requested Index For System Logs 
+9/29/2024 6:39:53 PM: User requested Index For System Logs 
+9/29/2024 6:40:23 PM: User requested Index For Clients 
+9/29/2024 6:40:25 PM: User requested Index For System Logs 
+9/29/2024 6:43:53 PM: User requested Index For System Logs 
+9/29/2024 6:44:03 PM: User requested Details For System Logs 
+9/29/2024 6:44:37 PM: User requested Details For System Logs 
+9/29/2024 6:44:42 PM: User requested Index For System Logs 
+9/29/2024 6:44:47 PM: User requested Create For System Logs 
+9/29/2024 6:44:52 PM: User requested Delete For System Logs 
+9/29/2024 6:44:53 PM: User requested Create For System Logs 
+9/29/2024 6:44:57 PM: User requested Details For System Logs 
+9/29/2024 6:45:06 PM: User requested Details For System Logs 
+9/29/2024 6:48:42 PM: User requested Details For System Logs 
+9/29/2024 6:48:44 PM: User requested Index For Clients 
+9/29/2024 6:48:45 PM: User requested Details For Clients 
+9/29/2024 6:48:47 PM: User requested Details For Branches 
+9/29/2024 6:48:54 PM: User requested Details For Users 
+9/29/2024 6:50:56 PM: User requested Details For Branches 
+9/29/2024 6:53:54 PM: User requested Details For Branches 
+9/29/2024 6:54:01 PM: User requested Details For Users 
+9/29/2024 6:57:18 PM: User requested Details For Users 
+9/29/2024 6:57:49 PM: User requested Details For Users 
+9/29/2024 6:58:12 PM: User requested Details For Users 
+9/29/2024 6:59:22 PM: User requested Details For Users 
+9/29/2024 7:00:01 PM: User requested Details For Users 
+9/29/2024 7:00:27 PM: User requested Details For Users 
+9/29/2024 7:00:31 PM: User requested Details For Users 
+9/29/2024 7:01:00 PM: User requested Details For Users 
+9/29/2024 7:01:43 PM: User requested Index For Clients 
+9/29/2024 7:01:44 PM: User requested Details For Clients 
+9/29/2024 7:01:46 PM: User requested Details For Branches 
+9/29/2024 7:01:48 PM: User requested Details For Users 
+9/29/2024 7:02:02 PM: User requested Details For Users 
+9/29/2024 7:02:27 PM: User requested Details For Users 
+9/29/2024 7:02:30 PM: User requested Details For Users 
+9/29/2024 7:02:32 PM: User requested Details For Users 
+9/29/2024 7:03:03 PM: User requested Details For Users 
+9/29/2024 7:03:09 PM: User requested Details For Users 
+9/29/2024 7:03:10 PM: User requested Details For Users 
+9/29/2024 7:03:11 PM: User requested Details For Users 
+9/29/2024 7:03:11 PM: User requested Details For Users 
+9/29/2024 7:03:11 PM: User requested Details For Users 
+9/29/2024 7:03:25 PM: User requested Details For Users 
+9/29/2024 7:03:29 PM: User requested Details For Users 
+9/29/2024 7:04:13 PM: User requested Details For Users 
+9/29/2024 7:04:24 PM: User requested Details For Users 
+9/29/2024 7:04:56 PM: User requested Details For Users 
+9/29/2024 7:05:20 PM: User requested Details For Users 
+9/29/2024 7:07:12 PM: User requested Details For Users 
+9/29/2024 7:07:13 PM: User requested Index For Clients 
+9/29/2024 7:08:05 PM: User requested Index For System Logs 
+9/29/2024 7:08:09 PM: User requested Index For Clients 
+9/29/2024 7:09:11 PM: User requested Index For Clients 
+9/29/2024 7:10:16 PM: User requested Index For System Logs 
+9/29/2024 7:10:19 PM: User requested Index For Clients 
+9/29/2024 7:13:30 PM: User requested Index For Clients 
+9/29/2024 7:13:33 PM: User requested Details For Clients 
+9/29/2024 7:13:57 PM: User requested Details For Clients 
+9/29/2024 7:19:49 PM: User requested Index For Clients 
+9/29/2024 7:19:50 PM: User requested Details For Clients 
+9/29/2024 7:19:51 PM: User requested Details For Branches 
+9/29/2024 7:19:54 PM: User requested Details For Users 
+9/29/2024 7:19:58 PM: User requested Index For Clients 
+9/29/2024 7:19:58 PM: User requested Index For Clients 
+9/29/2024 7:20:00 PM: User requested Index For Clients 
+9/29/2024 7:21:30 PM: User requested Index For Clients 
+9/29/2024 7:21:33 PM: User requested Details For Clients 
+9/29/2024 7:21:35 PM: User requested Details For Branches 
+9/29/2024 7:22:10 PM: User requested Details For Users 
+9/29/2024 7:22:22 PM: User requested Create For Detections 
+9/29/2024 7:22:38 PM: User requested Create For Cameras 
+9/29/2024 7:22:55 PM: User requested Create confirmed For Cameras 
+9/29/2024 7:23:00 PM: User requested Create For Cameras 
+9/29/2024 7:23:19 PM: User requested Index For Clients 
+9/29/2024 7:23:20 PM: User requested Details For Clients 
+9/29/2024 7:23:22 PM: User requested Details For Branches 
+9/29/2024 7:23:23 PM: User requested Create For Cameras 
+9/29/2024 7:23:26 PM: User requested Create confirmed For Cameras 
+9/29/2024 7:23:26 PM: User requested Index For Cameras 
+9/29/2024 7:23:40 PM: User requested Create For Cameras 
+9/29/2024 7:23:41 PM: User requested Details For Branches 
+9/29/2024 7:23:43 PM: User requested Details For Cameras 
+9/29/2024 7:23:53 PM: User requested Create For Detections 
+9/29/2024 7:24:14 PM: User requested Create Confirmed For Detections 
+9/29/2024 7:24:14 PM: User requested Index For Detections 
+9/29/2024 7:24:17 PM: User requested Index For Clients 
+9/29/2024 7:24:18 PM: User requested Details For Clients 
+9/29/2024 7:24:20 PM: User requested Details For Branches 
+9/29/2024 7:24:22 PM: User requested Details For Cameras 
+9/29/2024 7:24:31 PM: User requested Details For Detections 
+9/29/2024 7:25:39 PM: User requested Details For Users 
+9/29/2024 7:25:47 PM: User requested Index For Clients 
+9/29/2024 7:25:48 PM: User requested Details For Clients 
+9/29/2024 7:25:49 PM: User requested Details For Branches 
+9/29/2024 7:25:50 PM: User requested Details For Users 
+9/29/2024 7:25:53 PM: User requested Details For Cameras 
+9/29/2024 7:25:54 PM: User requested Details For Branches 
+9/29/2024 7:26:05 PM: User requested Details For Detections 
+9/29/2024 7:26:31 PM: User requested Details For Detections 
+9/29/2024 7:36:40 PM: User requested Details For Detections 
+9/29/2024 7:36:49 PM: User requested Details For Users 
+9/29/2024 7:39:09 PM: User requested Index For Clients 
+9/29/2024 7:39:11 PM: User requested Details For Clients 
+9/29/2024 7:39:16 PM: User requested Details For Branches 
+9/29/2024 7:39:18 PM: User requested Details For Users 
+9/29/2024 7:39:20 PM: User requested Details For Cameras 
+9/29/2024 7:39:26 PM: User requested Details For Cameras 
+9/29/2024 7:40:02 PM: User requested Details For Branches 
+9/29/2024 7:40:05 PM: User requested Details For Users 
+9/29/2024 7:40:53 PM: User requested Details For Users 
+9/29/2024 7:41:12 PM: User requested Edit For Detections 
+9/29/2024 7:41:22 PM: User requested Details For Cameras 
+9/29/2024 7:43:06 PM: User requested Details For Branches 
+9/29/2024 7:43:09 PM: User requested Details For Users 
+9/29/2024 7:43:12 PM: User requested Details For Detections 
+9/29/2024 7:43:17 PM: User requested Details For Users 
+9/29/2024 7:43:18 PM: User requested Details For Detections 
+9/29/2024 7:43:19 PM: User requested Details For Users 
+9/29/2024 7:43:49 PM: User requested Details For Users 
+9/29/2024 7:43:51 PM: User requested Details For Users 
+9/29/2024 7:43:56 PM: User requested Index For Clients 
+9/29/2024 7:43:57 PM: User requested Details For Clients 
+9/29/2024 7:44:00 PM: User requested Details For Branches 
+9/29/2024 7:44:03 PM: User requested Create For Cameras 
+9/29/2024 7:44:04 PM: User requested Details For Branches 
+9/29/2024 7:44:05 PM: User requested Create For Users 
+9/29/2024 7:44:06 PM: User requested Details For Branches 
+9/29/2024 7:44:07 PM: User requested Details For Cameras 
+9/29/2024 7:44:08 PM: User requested Details For Branches 
+9/29/2024 7:44:09 PM: User requested Details For Cameras 
+9/29/2024 7:44:14 PM: User requested Details For Branches 
+9/29/2024 7:44:32 PM: User requested Details For Branches 
+9/29/2024 7:44:34 PM: User requested Details For Cameras 
+9/29/2024 7:44:52 PM: User requested Details For Cameras 
+9/29/2024 7:44:55 PM: User requested Details For Detections 
+9/29/2024 7:44:56 PM: User requested Details For Users 
+9/29/2024 7:45:07 PM: User requested Details For Users 
+9/29/2024 7:45:12 PM: User requested Details For Cameras 
+9/29/2024 7:45:18 PM: User requested Details For Detections 
+9/29/2024 7:45:19 PM: User requested Details For Users 
+9/29/2024 7:45:20 PM: User requested Details For Detections 
+9/29/2024 7:45:22 PM: User requested Details For Users 
+9/29/2024 7:46:57 PM: User requested Details For Users 
+9/29/2024 7:46:58 PM: User requested Details For Detections 
+9/29/2024 7:46:59 PM: User requested Details For Users 
+9/29/2024 7:48:58 PM: User requested Details For Users 
+9/29/2024 7:49:00 PM: User requested Details For Users 
+9/29/2024 7:49:49 PM: User requested Details For Users 
+9/29/2024 7:49:54 PM: User requested Details For Users 
+9/29/2024 7:50:17 PM: User requested Index For Clients 
+9/29/2024 7:50:19 PM: User requested Details For Clients 
+9/29/2024 7:50:20 PM: User requested Details For Branches 
+9/29/2024 7:50:21 PM: User requested Details For Users 
+9/29/2024 7:56:48 PM: User requested Details For Users 
+9/29/2024 7:56:51 PM: User requested Index For Clients 
+9/29/2024 7:56:52 PM: User requested Details For Clients 
+9/29/2024 7:56:53 PM: User requested Details For Branches 
+9/29/2024 7:57:57 PM: User requested Index For Clients 
+9/29/2024 7:57:58 PM: User requested Details For Clients 
+9/29/2024 7:57:59 PM: User requested Details For Branches 
+9/29/2024 7:58:00 PM: User requested Details For Cameras 
+9/29/2024 7:58:01 PM: User requested Details For Branches 
+9/29/2024 7:58:02 PM: User requested Details For Users 
+9/29/2024 7:58:40 PM: User requested Details For Users 
+9/29/2024 7:59:35 PM: User requested Details For Users 
+9/29/2024 7:59:40 PM: User requested Details For Users 
+9/29/2024 8:00:15 PM: User requested Details For Users 
+9/29/2024 8:00:18 PM: User requested Details For Users 
+9/29/2024 8:00:48 PM: User requested Details For Users 
+9/29/2024 8:00:50 PM: User requested Details For Branches 
+9/29/2024 8:00:51 PM: User requested Details For Clients 
+9/29/2024 8:00:52 PM: User requested Details For Branches 
+9/29/2024 8:00:54 PM: User requested Details For Users 
+9/29/2024 8:01:25 PM: User requested Details For Users 
+9/29/2024 8:02:36 PM: User requested Details For Users 
+9/29/2024 8:03:17 PM: User requested Details For Users 
+9/29/2024 8:03:24 PM: User requested Details For Detections 
+9/29/2024 8:03:25 PM: User requested Edit For Detections 
+9/29/2024 8:03:27 PM: User requested Details For Users 
+9/29/2024 8:03:28 PM: User requested Details For Branches 
+9/29/2024 8:04:14 PM: User requested Details For Branches 
+9/29/2024 8:06:07 PM: User requested Details For Branches 
+9/29/2024 8:06:10 PM: User requested Details For Clients 
+9/29/2024 8:06:11 PM: User requested Details For Branches 
+9/29/2024 8:06:12 PM: User requested Details For Users 
+9/29/2024 8:06:15 PM: User requested Details For Detections 
+9/29/2024 8:06:16 PM: User requested Details For Users 
+9/29/2024 8:06:17 PM: User requested Details For Branches 
+9/29/2024 8:06:18 PM: User requested Details For Clients 
+9/29/2024 8:06:20 PM: User requested Details For Branches 
+9/29/2024 8:06:25 PM: User requested Details For Clients 
+9/29/2024 8:06:26 PM: User requested Index For Clients 

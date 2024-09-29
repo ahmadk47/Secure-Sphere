@@ -3,29 +3,33 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<link href="~\wwwroot\css\site.css" rel="stylesheet" />
+<link href="~\wwwroot\css\styles.css" rel="stylesheet" />
 <h1>Logs</h1>
 
 <div class="mb-md-2">
     <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="SystemLogs" asp-action="Create" style="color: #90AFC5">Add Logs</a>
 </div>
 
-<table class="table table-light w-75 table-bordered table-hover table-sm table-responsive">
-    <thead>
-        <tr>
-            <th>
+<div class="table-custom table-responsive w-75" style="height :300px; overflow-y:auto">
+<table class="table table-light w-100 table-bordered table-hover table-sm">
+        <thead class="thead">
+        <tr> 
+            <th class="th">
                 @Html.DisplayNameFor(model => model.Details)
-            </th>
-            <th>
+            </th >
+                <th class="th">
                 @Html.DisplayNameFor(model => model.IpAddress)
-            </th>
-            <th>
+            </th >
+            <th class="th">
                 @Html.DisplayNameFor(model => model.User)
             </th>
-            <th></th>
+            <th class="th">
+                Properties
+            </th>
         </tr>
     </thead>
-    <tbody>
+    <tbody >
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -35,7 +39,7 @@
                 @Html.DisplayFor(modelItem => item.IpAddress)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.User.UserName)
+                @Html.DisplayFor(modelItem => item.User)
             </td>
                 <td class="btn-group-sm">
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
@@ -46,3 +50,4 @@
 }
     </tbody>
 </table>
+</div>
