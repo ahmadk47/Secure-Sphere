@@ -7,12 +7,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using SecureSphere.Models;
 
 namespace SecureSphere.Controllers
 {
-    [Authorize]
+
     [Route("api/[controller]")]
     [ApiController]
     public class DetectAPIController : ControllerBase
@@ -20,13 +21,14 @@ namespace SecureSphere.Controllers
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IConfiguration _configuration;
+        private readonly IEmailSender _emailSender;
         public DetectAPIController(ApplicationDbContext context, UserManager<ApplicationUser> userManger,
-            IConfiguration configuration)
+            IConfiguration configuration, IEmailSender emailSender)
         {
             _context = context;
             _userManager = userManger;
             _configuration = configuration;
-
+            _emailSender = emailSender;
         }
 
         // GET: api/DetectAPI
@@ -100,9 +102,20 @@ namespace SecureSphere.Controllers
             // Set default values for fields not provided by the Python script
             detection.CameraID = 1; // Default camera ID
             detection.Status = 0; // Default status (e.g., 0 for "Unprocessed")
-           // detection.UserID = userid;
+                                  // detection.UserID = userid;
 
             detection.UserID = "31cf615f-374f-44b9-b8ca-7f98d3419726";
+
+            var camera = await _context.Cameras
+            .Include(c => c.Branch)
+            .Include(c => c.Detections)
+            .FirstOrDefaultAsync(c => c.ID == detection.CameraID);
+
+            var user = await _context.Users
+            .Include(u => u.Branch)
+            .Include(u => u.Detections)
+            .FirstOrDefaultAsync(u => u.Id == detection.UserID);
+
             if (detection.WeaponType == true)
                 detection.Reason = "Knife is detected";
             else
@@ -110,6 +123,14 @@ namespace SecureSphere.Controllers
 
             _context.Detections.Add(detection);
             await _context.SaveChangesAsync();
+
+            var receiver = "maghairehhamad@gmail.com";
+            var subject = "Secure Sphere Alert - Weapon Detected";
+            var message = $"{detection.Reason} at {camera.Name} {detection.Timestamp} \n" +
+                          $"Location :  {user.Branch.Address} ";
+
+            await _emailSender.SendEmailAsync(receiver, subject, message);
+
 
             return CreatedAtAction(nameof(GetDetection), new { id = detection.ID }, detection);
         }
