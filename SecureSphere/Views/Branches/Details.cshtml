@@ -3,10 +3,9 @@
 @{
     ViewData["Title"] = "Details";
 }
-
+<div>
 <h1>Branch Details</h1>
 
-<div>
     <hr />
     <div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
         <table class="table table-light w-100 table-bordered table-hover table-sm">
@@ -84,4 +83,5 @@
     <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@Model?.ID">Edit Branch</a> |
     <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Clients" asp-action="Details" asp-route-id="@Model.ClientID">Back to List</a>
    
+</div>
 </div>

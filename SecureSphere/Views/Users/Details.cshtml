@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Details";
 }
-
+<div>
 <h1>Details</h1>
 <div>
     <h4>User</h4>
@@ -18,12 +18,12 @@
            
         </tr>
     </thead>
-    <tbody>
+    <tbody class="tbody">
         <tr>
-            <td>@Html.DisplayFor(model => model.UserName)</td>
-            <td>@Html.DisplayFor(model => model.Email)</td>
-            <td>@Html.DisplayFor(model => model.PasswordHash)</td>
-            <td>@Html.DisplayFor(model => model.CreatedAt)</td>
+            <td class="td">@Html.DisplayFor(model => model.UserName)</td>
+            <td class="td">@Html.DisplayFor(model => model.Email)</td>
+            <td class="td">@Html.DisplayFor(model => model.PasswordHash)</td>
+            <td class="td">@Html.DisplayFor(model => model.CreatedAt)</td>
         </tr>
     </tbody>
 </table>
@@ -63,4 +63,4 @@
         <a class="btn btn-outline-danger btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>
     </div>
 </div>
-
+</div>

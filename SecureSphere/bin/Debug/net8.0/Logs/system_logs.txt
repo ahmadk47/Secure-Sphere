@@ -647,3 +647,66 @@
 9/29/2024 8:06:20 PM: User requested Details For Branches 
 9/29/2024 8:06:25 PM: User requested Details For Clients 
 9/29/2024 8:06:26 PM: User requested Index For Clients 
+9/30/2024 1:58:40 AM: User '1212@gmail.com' ;logged in.
+9/30/2024 1:58:43 AM: User requested Index For System Logs 
+9/30/2024 1:58:50 AM: User requested Index For Clients 
+9/30/2024 1:58:53 AM: User requested Details For Clients 
+9/30/2024 1:58:54 AM: User requested Details For Branches 
+9/30/2024 1:58:56 AM: User requested Details For Clients 
+9/30/2024 1:58:57 AM: User requested Index For Clients 
+9/30/2024 2:02:36 AM: User requested Index For System Logs 
+9/30/2024 2:02:37 AM: User requested Delete For System Logs 
+9/30/2024 2:02:39 AM: User requested Delete For System Logs 
+9/30/2024 2:03:10 AM: User requested Index For System Logs 
+9/30/2024 2:03:11 AM: User requested Create For System Logs 
+9/30/2024 2:20:46 AM: User requested Index For Clients 
+9/30/2024 2:20:49 AM: User requested Details For Clients 
+9/30/2024 2:20:52 AM: User requested Details For Branches 
+9/30/2024 2:20:54 AM: User requested Details For Users 
+9/30/2024 2:21:28 AM: User requested Details For Detections 
+9/30/2024 2:21:30 AM: User requested Details For Users 
+9/30/2024 2:21:31 AM: User requested Details For Branches 
+9/30/2024 2:21:32 AM: User requested Create For Users 
+9/30/2024 2:21:33 AM: User requested Details For Branches 
+9/30/2024 2:21:34 AM: User requested Create For Cameras 
+9/30/2024 2:21:35 AM: User requested Details For Branches 
+9/30/2024 2:21:36 AM: User requested Details For Clients 
+9/30/2024 2:21:37 AM: User requested Create For Branches 
+9/30/2024 2:21:38 AM: User requested Details For Clients 
+9/30/2024 2:21:43 AM: User requested Edit For Clients 
+9/30/2024 2:21:43 AM: User requested Index For Clients 
+9/30/2024 2:21:47 AM: User requested Details For Clients 
+9/30/2024 2:21:50 AM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/30/2024 2:22:28 AM: User '1212@gmail.com' ;logged in.
+9/30/2024 2:22:30 AM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/30/2024 2:22:36 AM: User '1212@gmail.com' ;logged in.
+9/30/2024 2:23:24 AM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/30/2024 2:24:10 AM: User '1212@gmail.com' ;logged in.
+9/30/2024 2:24:12 AM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/30/2024 2:24:16 AM: User '1212@gmail.com' ;logged in.
+9/30/2024 2:24:37 AM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/30/2024 2:24:52 AM: User '1212@gmail.com' ;logged in.
+9/30/2024 2:27:03 AM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out
+9/30/2024 2:29:17 AM: User '1212@gmail.com' ;logged in.
+9/30/2024 2:29:18 AM: User requested Index For Clients 
+9/30/2024 2:29:19 AM: User requested Details For Clients 
+9/30/2024 2:29:20 AM: User requested Details For Branches 
+9/30/2024 3:19:01 PM: User '1212@gmail.com' ;logged in.
+9/30/2024 3:19:05 PM: User requested Index For Clients 
+9/30/2024 3:19:09 PM: User requested Create For Clients 
+9/30/2024 3:19:12 PM: User requested Index For Clients 
+9/30/2024 3:19:15 PM: User requested Edit For Clients 
+9/30/2024 3:19:17 PM: User requested Index For Clients 
+9/30/2024 3:19:20 PM: User requested Details For Clients 
+9/30/2024 3:19:25 PM: User requested Create For Branches 
+9/30/2024 3:19:26 PM: User requested Details For Clients 
+9/30/2024 3:19:27 PM: User requested Edit For Branches 
+9/30/2024 3:19:28 PM: User requested Details For Clients 
+9/30/2024 3:19:30 PM: User requested Edit For Branches 
+9/30/2024 3:19:31 PM: User requested Details For Clients 
+9/30/2024 3:19:32 PM: User requested Details For Branches 
+9/30/2024 3:19:57 PM: User requested Details For Users 
+9/30/2024 3:20:07 PM: User requested Details For Detections 
+9/30/2024 3:20:13 PM: User requested Details For Users 
+9/30/2024 3:20:14 PM: User requested Details For Branches 
+9/30/2024 3:20:16 PM: User requested Details For Users 

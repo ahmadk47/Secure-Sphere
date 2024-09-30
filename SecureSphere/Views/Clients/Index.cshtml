@@ -2,6 +2,7 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div>
 <h1>Clients</h1>
 <div>
         <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Clients" asp-action="Create" style="color: #90AFC5">Add Clients</a>
@@ -20,25 +21,26 @@
     </div>
 </form>
     <div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-        <thead class="thead">
-            <tr>
-                <th class="th">
-                    @Html.DisplayNameFor(model => model.Name)
-                </th>
+        <table class="table table-light w-100 table-bordered table-hover table-sm">
+            <thead class="thead">
+                  <tr>
+                    <th class="th">
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
                 
-                <th class="th">
-                    @Html.DisplayNameFor(model => model.ID)
-                </th>
-                <th class="th">
-                    Properties
-                </th>
+                    <th class="th">
+                        @Html.DisplayNameFor(model => model.ID)
+                    </th>
+                    <th class="th">
+                        Properties
+                    </th>
 
-            </tr>
-        </thead>
-        <tbody class="tbody">
+                </tr>
+            </thead>
+        
                 @foreach (var item in Model)
                 {
+                <tbody class="tbody">
                 <tr>
                     <td class="td">
                             @Html.DisplayFor(modelItem => item.Name)
@@ -52,12 +54,11 @@
                         <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
                     </td>
                 </tr>
+                </tbody>
                 }
-        </tbody>
-        
-    </table>
+        </table>
+    </div>
 </div>
-
 @section Scripts {
     <script>
         $(document).ready(function() {

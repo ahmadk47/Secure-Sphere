@@ -3,18 +3,9 @@
 @{
     ViewData["Title"] = "Index";
 }
-
+<div>
 <h1>Clients Branches</h1>
 
-<li>
-    <button class="btn navbar-text text-capitalize fs-6 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#usersCollapse" aria-expanded="false" style="color:#90AFC5">
-        Branch Users
-    </button>
-    <ul class="collapse" id="usersCollapse" style="background-color : #FDF6F6;color:#90AFC5 ">
-        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="index" style="color:#90AFC5">Show Users</a></li>
-        <li><a class="nav-link navbar-text text-capitalize fs-6 fw-bold" asp-area="" asp-controller="Users" asp-action="create" style="color:#90AFC5">Create Users</a></li>
-    </ul>
-</li>
 <form asp-controller="Branches" asp-action="Index" id="searchForm">
     @*     <p>
     Search <input class="search-bar" type="text" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" />
@@ -40,9 +31,10 @@
             </th>
         </tr>
     </thead>
-    <tbody class="tbody">
+   
 
 @foreach (var item in Model) {
+        <tbody class="tbody">
         <tr>
             <td class="td">
                 @Html.DisplayFor(modelItem => item.Client.Name)
@@ -56,9 +48,10 @@
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
         </tr>
+        </tbody>
 }
-    </tbody>
 </table>
+</div>
 </div>
 @section Scripts {
     <script>

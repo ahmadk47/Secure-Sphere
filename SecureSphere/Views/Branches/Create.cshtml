@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Create";
 }
-
+<div>
 <h1>Create</h1>
 
 <h4>Branch</h4>
@@ -33,7 +33,7 @@
 <div>
     <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Clients" asp-action="Details" asp-route-id="@Model.ClientID">Back to List</a>
 </div>
-
+</div>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
