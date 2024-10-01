@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\wwwroot\\css\\login-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:wwwroot\\css\\login-styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\dell-g5\\desktop\\github\\secure-sphere\\securesphere\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,39 +62,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "login-styles.css",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\login-styles.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\login-styles.css",
               "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\login-styles.css",
               "RelativeToolTip": "wwwroot\\css\\login-styles.css",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-10-01T16:03:42.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\styles.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
               "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\wwwroot\\css\\styles.css",
               "RelativeToolTip": "wwwroot\\css\\styles.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-10-01T16:01:00.961Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
               "ToolTip": "C:\\Users\\DELL-G5\\Desktop\\github\\Secure-Sphere\\SecureSphere\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-01T15:59:02.766Z",
               "EditorCaption": ""
@@ -109,8 +109,7 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-01T15:58:02.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T15:58:02.477Z"
             },
             {
               "$type": "Document",
@@ -122,8 +121,7 @@
               "RelativeToolTip": "Controllers\\SystemLogsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T15:50:27.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T15:50:27.777Z"
             },
             {
               "$type": "Document",
@@ -135,8 +133,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T15:50:27.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T15:50:27.192Z"
             },
             {
               "$type": "Document",
@@ -148,8 +145,7 @@
               "RelativeToolTip": "Models\\ApplicationUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T15:44:44.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T15:44:44.77Z"
             },
             {
               "$type": "Document",
@@ -161,8 +157,7 @@
               "RelativeToolTip": "Controllers\\ProfilesController.cs",
               "ViewState": "AgIAAIgAAAAAAAAAAAAYwLkAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T15:39:41.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T15:39:41.17Z"
             },
             {
               "$type": "Document",
@@ -174,8 +169,7 @@
               "RelativeToolTip": "Controllers\\UsersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T15:39:40.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T15:39:40.114Z"
             },
             {
               "$type": "Document",
@@ -187,8 +181,7 @@
               "RelativeToolTip": "Views\\Profiles\\Index.cshtml",
               "ViewState": "AgIAAGAAAAAAAAAAAAAAAAoAAADrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-01T15:33:44.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T15:33:44.26Z"
             }
           ]
         },
