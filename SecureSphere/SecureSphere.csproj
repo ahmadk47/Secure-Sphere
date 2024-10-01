@@ -20,6 +20,11 @@
 
   <ItemGroup>
     <Folder Include="logcs\" />
+    <Folder Include="wwwroot\uploads\profile_pictures\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Images\defaultpfp.jpeg" />
   </ItemGroup>
 
 </Project>

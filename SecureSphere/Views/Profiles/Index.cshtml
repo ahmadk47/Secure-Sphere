@@ -1,0 +1,204 @@
+﻿@model SecureSphere.Models.ApplicationUser
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <img id="profilePicture" src="@(!string.IsNullOrEmpty(Model.ProfilePictureUrl) ? Model.ProfilePictureUrl : "/Images/defaultpfp.png")" alt="Profile Picture" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+
+                    <h3 class="card-title">@Model.FullName</h3>
+                    <input type="file" id="profilePictureInput" style="display: none;" accept="image/*">
+                    <button id="editProfilePicture" class="btn btn-primary">Edit Profile Picture</button>
+                    <button id="removeProfilePicture" class="btn btn-danger mt-2">Remove Profile Picture</button> <!-- New Button -->
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Your Profile</h2>
+                    <form id="profileForm">
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Full Name</h6>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="fullName" value="@Model.FullName" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Email</h6>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="email" value="@Model.Email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary">Save Changes</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="card mt-3">
+                <div class="card-body">
+                    <h3 class="card-title mb-4">Account Security</h3>
+                    <form id="passwordForm">
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Current Password</h6>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="currentPassword" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">New Password</h6>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="newPassword" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Confirm New Password</h6>
+                            </div>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="confirmPassword" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-secondary">Change Password</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Profile picture upload
+            $("#editProfilePicture").click(function() {
+                $("#profilePictureInput").click();
+            });
+
+            $("#profilePictureInput").change(function() {
+                const file = this.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        $("#profilePicture").attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(file);
+
+                    // Upload the file to the server
+                    const formData = new FormData();
+                    formData.append("profilePicture", file);
+
+                    $.ajax({
+                        url: '/Profiles/UploadProfilePicture',
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function(response) {
+                            alert('Profile picture updated successfully!');
+                        },
+                        error: function() {
+                            alert('An error occurred while updating the profile picture.');
+                        }
+                    });
+                }
+            });
+
+            // Profile update
+            $("#profileForm").submit(function(e) {
+                e.preventDefault();
+                const data = {
+                    fullName: $("#fullName").val(),
+                    email: $("#email").val()
+                };
+
+                $.ajax({
+                    url: '/Profiles/UpdateProfile',
+                    type: 'POST',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json',
+                    success: function(response) {
+                        alert('Profile updated successfully!');
+                    },
+                    error: function() {
+                        alert('An error occurred while updating the profile.');
+                    }
+                });
+            });
+            $(document).ready(function () {
+                // Remove profile picture
+                $("#removeProfilePicture").click(function () {
+                    if (confirm('Are you sure you want to remove your profile picture?')) {
+                        $.ajax({
+                            url: '/Profiles/RemoveProfilePicture',
+                            type: 'POST',
+                            success: function (response) {
+                                // Reset the profile picture to the default one
+                                // Path to your default profile picture
+                                alert('Profile picture removed successfully!');
+                                $("#profilePicture").attr('src', '/Images/defaultpfp.png');
+                            },
+                            error: function () {
+                                alert('An error occurred while removing the profile picture.');
+                            }
+                        });
+                    }
+                });
+            });
+
+
+            // Password change
+            $("#passwordForm").submit(function(e) {
+                e.preventDefault();
+                const currentPassword = $("#currentPassword").val();
+                const newPassword = $("#newPassword").val();
+                const confirmPassword = $("#confirmPassword").val();
+
+                if (newPassword !== confirmPassword) {
+                    alert('New password and confirm password do not match.');
+                    return;
+                }
+
+                const data = {
+                    currentPassword: currentPassword,
+                    newPassword: newPassword
+                };
+
+                $.ajax({
+                    url: '/Profiles/ChangePassword',
+                    type: 'POST',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json',
+                    success: function(response) {
+                        alert('Password changed successfully!');
+                        $("#passwordForm")[0].reset();
+                    },
+                    error: function() {
+                        alert('An error occurred while changing the password.');
+                    }
+                });
+            });
+        });
+       
+    </script>
+}

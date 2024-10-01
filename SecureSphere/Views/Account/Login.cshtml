@@ -1,58 +1,39 @@
 ﻿@{
     ViewData["Title"] = "Login";
 }
-<style>
-    body {
-
-    .card {
-        border: none;
-        border-radius: 1rem;
-    }
-
-    .card-body {
-        padding: 2rem;
-    }
-
-    .btn-primary-custom {
-        background-color: #2980b9;
-        border-color: #002C54;
-        color: #2980b9;
-    }
-
-        .btn-primary-custom:hover {
-            background-color: #002C54;
-            border-color: #2980b9;
-            color: #002C54;
-        }
-</style>
-<div class="container">
-    <div class="row justify-content-center align-items-center" style="height: 80vh;">
-        <div class="col-md-6">
-            <div class="card shadow">
-                <div class="card-body">
-                    <h2 class="card-title text-center mb-4">Log In</h2>
-                    <form asp-action="Login">
-                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                        <div class="form-group mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input name="email" class="form-control" placeholder="Enter your Email" required />
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input name="password" class="form-control" type="password" placeholder="Enter your Password" required />
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary-custom btn-lg">Log In</button>
-                        </div>
-                    </form>
-                </div>
+<link rel="stylesheet" href="~/css/login-styles.css" asp-append-version="true" />
+<div class="login-container">
+    <div class="col-md-5">
+        <div class="card animate-fadeInUp">
+            <div class="card-body">
+                <h2 class="card-title text-center">Welcome Back</h2>
+                <form asp-action="Login">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="input-group">
+                        <input name="email" class="form-control input-with-icon" placeholder="Enter your Email" required />
+                        <span class="input-icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                    </div>
+                    <div class="input-group">
+                        <input name="password" class="form-control input-with-icon" type="password" placeholder="Enter your Password" required />
+                        <span class="input-icon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary-custom btn-lg">Log In</button>
+                    </div>
+                </form>
+              
             </div>
         </div>
     </div>
 </div>
-
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 }

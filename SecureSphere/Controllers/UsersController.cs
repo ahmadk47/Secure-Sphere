@@ -72,13 +72,13 @@ namespace SecureSphereApp.Controllers
 
         // GET: Users/Create
         // GET: Users/Create
-        public async Task<IActionResult> Create(int BranchID)
+        public async Task<IActionResult> Create(int BranchID,string Name)
         {
             await Logger.LogAsync($"User requested Create For Users ", _context);
 
             var user = new ApplicationUser
             {
-                BranchID = BranchID
+                BranchID = BranchID,
             };
             ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Get available roles
             return View(user);
@@ -194,6 +194,7 @@ namespace SecureSphereApp.Controllers
 
                     // Update the properties of the existing user
                     user.UserName = userModel.UserName;
+                    user.FullName = userModel.FullName;
                     user.Email = userModel.Email;
                     user.BranchID = userModel.BranchID;
                     user.CreatedAt = userModel.CreatedAt;

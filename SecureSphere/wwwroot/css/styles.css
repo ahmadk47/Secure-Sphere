@@ -8,12 +8,12 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
+    background-color: #f0f3f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
     line-height: 1.6;
-    margin-bottom:90px;
-    z-index : 1000;
+    margin-bottom: 90px;
+    z-index: 1000;
 }
 
 .navbar-custom {
