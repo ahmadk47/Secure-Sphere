@@ -29,5 +29,8 @@ namespace SecureSphere.Models
         public string? UserID { get; set; }
 
         public ApplicationUser? User { get; set; }
+
+        [StringLength(500)]
+        public string? ImagePath { get; set;}
     }
 }

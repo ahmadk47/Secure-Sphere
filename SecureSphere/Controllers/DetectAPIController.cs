@@ -105,7 +105,7 @@ namespace SecureSphere.Controllers
                                   // detection.UserID = userid;
 
             detection.UserID = "31cf615f-374f-44b9-b8ca-7f98d3419726";
-
+            
             var camera = await _context.Cameras
             .Include(c => c.Branch)
             .Include(c => c.Detections)
@@ -127,7 +127,7 @@ namespace SecureSphere.Controllers
             var receiver = "maghairehhamad@gmail.com";
             var subject = "Secure Sphere Alert - Weapon Detected";
             var message = $"{detection.Reason} at {camera.Name} {detection.Timestamp} \n" +
-                          $"Location :  {user.Branch.Address} ";
+                          $"Location :  {user.Branch.Address} imagepath: {detection.ImagePath} " ;
 
             await _emailSender.SendEmailAsync(receiver, subject, message);
 

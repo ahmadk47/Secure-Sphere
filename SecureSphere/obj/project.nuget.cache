@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CGTrjSk1RFA=",
+  "dgSpecHash": "7GegSJmAi6w=",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\SecureSphere\\SecureSphere.csproj",
+  "projectFilePath": "C:\\Users\\HP14\\Desktop\\SecureSphere\\SecureSphere.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP14\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\HP14\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

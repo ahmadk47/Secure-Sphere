@@ -18,7 +18,7 @@ namespace SecureSphereApp.Controllers
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public UsersController(ApplicationDbContext context,UserManager<ApplicationUser> userManager)
+        public UsersController(ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _context = context;
             _userManager = userManager;
@@ -32,7 +32,7 @@ namespace SecureSphereApp.Controllers
 
             if (!string.IsNullOrEmpty(SearchString))
             {
-                users =users.Where(b => b.Branch.Client.Name.Contains(SearchString));
+                users = users.Where(b => b.Branch.Client.Name.Contains(SearchString));
                 await Logger.LogAsync($"User Searched For '{SearchString}' ", _context);
             }
 
@@ -72,15 +72,15 @@ namespace SecureSphereApp.Controllers
 
         // GET: Users/Create
         // GET: Users/Create
-        public IActionResult Create(int BranchID)
+        public async Task<IActionResult> Create(int BranchID)
         {
-            Logger.LogAsync($"User requested Create For Users ", _context);
+            await Logger.LogAsync($"User requested Create For Users ", _context);
 
-            ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Get available roles
             var user = new ApplicationUser
             {
                 BranchID = BranchID
             };
+            ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Get available roles
             return View(user);
         }
 
@@ -89,7 +89,7 @@ namespace SecureSphereApp.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ApplicationUser user, string selectedRole)
         {
-            Logger.LogAsync($"User requested Create For Users ", _context);
+            await Logger.LogAsync($"User requested Create For Users ", _context);
 
             // Create the user
             var result = await _userManager.CreateAsync(user, user.PasswordHash!);
@@ -120,25 +120,63 @@ namespace SecureSphereApp.Controllers
             {
                 return NotFound();
             }
-
+            
             var user = await _context.Users.FindAsync(id);
             if (user == null)
             {
                 return NotFound();
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
+            //ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Id", "Name");
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", user.BranchID);
             return View(user);
         }
 
         // POST: Users/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Edit(string id, ApplicationUser user)
+        //{
+        //    await Logger.LogAsync($"User requested Edit For Users ", _context);
+        //    if (id != user.Id)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        try
+        //        {
+        //            //_context.Update(user);
+        //            await _userManager.UpdateAsync(user);
+        //            await _context.SaveChangesAsync();
+        //        }
+        //        catch (DbUpdateConcurrencyException)
+        //        {
+        //            if (!UserExists(user.Id))
+        //            {
+        //                return NotFound();
+        //            }
+        //            else
+        //            {
+        //                throw;
+        //            }
+        //        }
+        //        return RedirectToAction(nameof(Index));
+
+        //    }
+        //    //ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Id", "Name");
+        //    ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", user.BranchID);
+        //    return View(user);
+        //}
+
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("ID,Name,Email,Password,CreateAt,BranchID")] ApplicationUser user)
+        public async Task<IActionResult> Edit(string id, ApplicationUser userModel)
         {
             await Logger.LogAsync($"User requested Edit For Users ", _context);
-            if (id != user.Id)
+            if (id != userModel.Id)
             {
                 return NotFound();
             }
@@ -147,12 +185,31 @@ namespace SecureSphereApp.Controllers
             {
                 try
                 {
-                    _context.Update(user);
-                    await _context.SaveChangesAsync();
+                    // Fetch the existing user from the database
+                    var user = await _userManager.FindByIdAsync(id);
+                    if (user == null)
+                    {
+                        return NotFound();
+                    }
+
+                    // Update the properties of the existing user
+                    user.UserName = userModel.UserName;
+                    user.Email = userModel.Email;
+                    user.BranchID = userModel.BranchID;
+                    user.CreatedAt = userModel.CreatedAt;
+                    // Update other properties as needed
+
+                    // Use UserManager to update the user
+                    var result = await _userManager.UpdateAsync(user);
+                    if (result.Succeeded)
+                    {
+                        return View(user);
+                    }
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UserExists(user.Id))
+                    if (!UserExists(userModel.Id))
                     {
                         return NotFound();
                     }
@@ -161,10 +218,10 @@ namespace SecureSphereApp.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", user.BranchID);
-            return View(user);
+
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", userModel.BranchID);
+            return View(userModel);
         }
 
         // GET: Users/Delete/5
