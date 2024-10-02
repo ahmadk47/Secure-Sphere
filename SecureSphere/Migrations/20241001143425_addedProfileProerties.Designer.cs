@@ -12,8 +12,8 @@ using SecureSphere.Models;
 namespace SecureSphere.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241001171814_addprofileurl")]
-    partial class addprofileurl
+    [Migration("20241001143425_addedProfileProerties")]
+    partial class addedProfileProerties
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -210,6 +210,7 @@ namespace SecureSphere.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("ProfilePictureUrl")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SecurityStamp")

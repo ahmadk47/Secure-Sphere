@@ -1,7 +1,9 @@
-﻿namespace SecureSphere.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace SecureSphere.Models
 {
-    public class UpdateProfile
+    public class UpdateProfile : IdentityUser
     {
-        public string FullName { get; set; }
+        //public string FullName { get; set; }
     }
 }

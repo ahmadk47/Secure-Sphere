@@ -59,7 +59,7 @@ namespace SecureSphere.Controllers
                 }
 
                 // Update the user profile fields
-                user.FullName = model.FullName;
+                user.UserName = model.UserName;
                 user.PhoneNumber = model.PhoneNumber; // Update other fields as necessary
 
                 var result = await _userManager.UpdateAsync(user);
@@ -120,32 +120,6 @@ namespace SecureSphere.Controllers
             return BadRequest(new { success = false, message = "Invalid profile picture." });
         }
 
-        // 2. Update Profile Information
-        [HttpPost]
-        public async Task<IActionResult> UpdateProfile([FromBody] UpdateProfile model)
-        {
-            if (ModelState.IsValid)
-            {
-                var user = await _userManager.GetUserAsync(User);
-                if (user == null)
-                {
-                    return NotFound();
-                }
-
-                // Update the user profile fields
-                user.FullName = model.FullName;
-
-                var result = await _userManager.UpdateAsync(user);
-                if (result.Succeeded)
-                {
-                    return Ok(new { success = true, message = "Profile updated successfully!" });
-                }
-
-                return BadRequest(new { success = false, errors = result.Errors });
-            }
-
-            return BadRequest(new { success = false, message = "Invalid data." });
-        }
 
         // 3. Change Password
         [HttpPost]

@@ -194,7 +194,6 @@ namespace SecureSphereApp.Controllers
 
                     // Update the properties of the existing user
                     user.UserName = userModel.UserName;
-                    user.FullName = userModel.FullName;
                     user.Email = userModel.Email;
                     user.BranchID = userModel.BranchID;
                     user.CreatedAt = userModel.CreatedAt;
