@@ -1,23 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SecureSphere.Models;
+using System.Security.Claims;
 
 namespace SecureSphere.Controllers
 {
     [Authorize]
     public class DetectionsController : Controller
     {
-       private readonly ApplicationDbContext _context;
-
-        public DetectionsController(ApplicationDbContext context)
+        private readonly ApplicationDbContext _context;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        public DetectionsController(ApplicationDbContext context, UserManager<ApplicationUser> userManager,
+              SignInManager<ApplicationUser> signInManager)
         {
             _context = context;
+            _userManager = userManager;
+            _signInManager = signInManager;
         }
 
         // GET: Detections
@@ -48,6 +50,22 @@ namespace SecureSphere.Controllers
 
             return View(detection);
         }
+        [Authorize]
+        public async Task<IActionResult> ResponsibleUser(int? id)
+        {
+            await Logger.LogAsync($"User requested Details For Detections ", _context);
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var detect = await _context.Detections.FirstOrDefaultAsync(d => d.ID == id);
+            detect!.UserID = userid;
+            _context.Update(detect);
+            await _context.SaveChangesAsync();
+            return View();
+        }
+
 
         // GET: Detections/Create
         public IActionResult Create()

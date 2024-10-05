@@ -104,17 +104,17 @@ namespace SecureSphere.Controllers
             detection.Status = 0; // Default status (e.g., 0 for "Unprocessed")
                                   // detection.UserID = userid;
 
-            detection.UserID = "31cf615f-374f-44b9-b8ca-7f98d3419726";
+            detection.UserID = null;
             
             var camera = await _context.Cameras
             .Include(c => c.Branch)
             .Include(c => c.Detections)
             .FirstOrDefaultAsync(c => c.ID == detection.CameraID);
 
-            var user = await _context.Users
-            .Include(u => u.Branch)
-            .Include(u => u.Detections)
-            .FirstOrDefaultAsync(u => u.Id == detection.UserID);
+            //var user = await _context.Users
+            //.Include(u => u.Branch)
+            //.Include(u => u.Detections)
+            //.FirstOrDefaultAsync(u => u.Id == detection.UserID);
 
             if (detection.WeaponType == true)
                 detection.Reason = "Knife is detected";
@@ -127,9 +127,9 @@ namespace SecureSphere.Controllers
             var receiver = "maghairehhamad@gmail.com";
             var subject = "Secure Sphere Alert - Weapon Detected";
             var message = $"{detection.Reason} at {camera.Name} {detection.Timestamp} \n" +
-                          $"Location :  {user.Branch.Address} imagepath: {detection.ImagePath} " ;
+                          $"Location :  {camera.Branch.Address} imagepath: {detection.ImagePath} " ;
 
-            await _emailSender.SendEmailAsync(receiver, subject, message);
+            await _emailSender.SendEmailAsync(receiver, subject, message , detection.ImagePath!);
 
 
             return CreatedAtAction(nameof(GetDetection), new { id = detection.ID }, detection);

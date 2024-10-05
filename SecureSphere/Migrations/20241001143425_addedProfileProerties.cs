@@ -14,7 +14,7 @@ namespace SecureSphere.Migrations
                 name: "ProfilePictureUrl",
                 table: "AspNetUsers",
                 type: "nvarchar(max)",
-                nullable: false,
+                nullable: true,
                 defaultValue: "");
         }
 

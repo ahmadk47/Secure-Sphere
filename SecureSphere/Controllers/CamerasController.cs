@@ -90,7 +90,7 @@ namespace SecureSphere.Controllers
                 _context.Add(camera);
                 await _context.SaveChangesAsync();
                 //ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", camera.Branch.Address);
-                return RedirectToAction(nameof(Index));
+                return View(camera);
             }
             ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", camera.Branch.Address);
             return View();

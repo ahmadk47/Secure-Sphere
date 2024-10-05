@@ -261,6 +261,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\HP14\\Desktop\\SecureSphere\\wwwroot\\uploads\\profile_pictures\\31cf615f-374f-44b9-b8ca-7f98d3419726_certificate.png",
+      "PackagePath": "staticwebassets\\uploads\\profile_pictures\\31cf615f-374f-44b9-b8ca-7f98d3419726_certificate.png"
+    },
+    {
       "Id": "C:\\Users\\HP14\\Desktop\\SecureSphere\\wwwroot\\uploads\\profile_pictures\\ef8fba38-ef37-426d-a27f-bb690961b077_7ed399a2-b08b-497b-8627-7db5064bbb04.jpeg",
       "PackagePath": "staticwebassets\\uploads\\profile_pictures\\ef8fba38-ef37-426d-a27f-bb690961b077_7ed399a2-b08b-497b-8627-7db5064bbb04.jpeg"
     },

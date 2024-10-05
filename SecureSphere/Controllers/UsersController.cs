@@ -98,8 +98,8 @@ namespace SecureSphereApp.Controllers
             {
                 // Assign the role to the user
                 await _userManager.AddToRoleAsync(user, selectedRole);
-
-                return RedirectToAction(nameof(Index));
+                ViewBag.meg = "Added Successfully";
+                return View(user);
             }
 
             // If there are errors, display them

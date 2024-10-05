@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "38G9X+twqVJj/3SBvpbh83gaYDSax6B0vi8IhcqnZ4s=",
+  "Hash": "KC9BZ2jEkCPiXFQXTii31ObffSa7pamq4gW6vSjJ3G0=",
   "Source": "SecureSphere",
   "BasePath": "_content/SecureSphere",
   "Mode": "Default",
@@ -2409,6 +2409,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\NewFolder\\SecureSphere.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\HP14\\Desktop\\SecureSphere\\wwwroot\\uploads\\profile_pictures\\31cf615f-374f-44b9-b8ca-7f98d3419726_certificate.png",
+      "SourceId": "SecureSphere",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP14\\Desktop\\SecureSphere\\wwwroot\\",
+      "BasePath": "_content/SecureSphere",
+      "RelativePath": "uploads/profile_pictures/31cf615f-374f-44b9-b8ca-7f98d3419726_certificate.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\profile_pictures\\31cf615f-374f-44b9-b8ca-7f98d3419726_certificate.png"
     },
     {
       "Identity": "C:\\Users\\HP14\\Desktop\\SecureSphere\\wwwroot\\uploads\\profile_pictures\\ef8fba38-ef37-426d-a27f-bb690961b077_7ed399a2-b08b-497b-8627-7db5064bbb04.jpeg",
