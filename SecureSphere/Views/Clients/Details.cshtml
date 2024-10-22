@@ -1,63 +1,52 @@
 ﻿@model SecureSphere.Models.Client
 @{
-    ViewData["Title"]="Details";
+    ViewData["Title"] = "Client Details";
 }
 
-<div>
-<h1>Client Details</h1>
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1 class="card-title mb-4">Client Details</h1>
+            <div class="row mb-3">
+                <div class="col-sm-3"><strong>@Html.DisplayNameFor(model => model.Name)</strong></div>
+                <div class="col-sm-9">@Html.DisplayFor(model => model.Name)</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-3"><strong>@Html.DisplayNameFor(model => model.ID)</strong></div>
+                <div class="col-sm-9">@Html.DisplayFor(model => model.ID)</div>
+            </div>
 
-<div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
-    <hr />
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-        <thead class="thead">
-            <tr>
-                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Name)</th>
-                <th class="th col-sm-10">@Html.DisplayFor(model => model.Name)</th>
-            </tr>
-        </thead>
-        <tbody class="tbody">
-            <tr>
-                <td class="td">@Html.DisplayNameFor(model => model.ID)</td>
-                <td class="td"`>@Html.DisplayFor(model => model.ID)</td>
-            </tr>
-        </tbody>
-    </table>
+            <h2 class="mt-4 mb-3">Branches</h2>
+            <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Create" asp-route-ClientID="@Model.ID">Add Branch</a>
 
-</div>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Address</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Branch branch in ViewBag.Branchs)
+                        {
+                            <tr>
+                                <td>@branch.Address</td>
+                                <td class="btn-group-sm">
+                                    <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Edit" asp-route-id="@branch.ID">Edit</a>
+                                    <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Details" asp-route-id="@branch.ID">Details</a>
+                                    <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Delete" asp-route-id="@branch.ID">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
 
-<div class="mb-md-2">
-    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Create" asp-route-ClientID="@Model.ID" style="color: #90AFC5">Add Branch</a>
-</div>
-
-<div class ="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
-
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-        <thead class="thead">
-    <tr>
-        <th class="th">Branches</th>
-        <th class="th">Info</th>
-    </tr>
-    </thead>
-    @foreach(Branch branch in ViewBag.Branchs)
-    {
-        <tbody class="tbody">
-
-        <tr>
-            <td class="td">@branch.Address</td>
-            <td class="td btn-group-sm">
-                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Edit" asp-route-id="@branch.ID">Edit</a> |
-                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Details" asp-route-id="@branch.ID">Details</a> |
-                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Branches" asp-action="Delete" asp-route-id="@branch.ID">Delete</a>
-            </td>
-        </tr>
-
-            </tbody>
-    }
-</table>
-
-</div>
-<div>
-    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@Model?.ID">Edit Client</a> |
-    <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Index">Back to List</a>
-</div>
+            <div class="mt-4">
+                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@Model?.ID">Edit Client</a>
+                <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Index">Back to List</a>
+            </div>
+        </div>
+    </div>
 </div>

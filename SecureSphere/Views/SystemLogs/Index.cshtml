@@ -3,31 +3,27 @@
 @{
     ViewData["Title"] = "Index";
 }
-<link href="~\wwwroot\css\site.css" rel="stylesheet" />
-<link href="~\wwwroot\css\styles.css" rel="stylesheet" />
-<div>
-
-<h1>Logs</h1>
-
-<div class="mb-md-2">
-    <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="SystemLogs" asp-action="Create" style="color: #90AFC5">Add Logs</a>
-</div>
-
-<div class="table-custom table-responsive w-75" style="height :300px; overflow-y:auto">
-<table class="table table-light w-100 table-bordered table-hover table-sm">
-        <thead class="thead">
+<link rel="stylesheet" href="~/css/logs-styles.css" asp-append-version="true" />
+<div class="logs-container">
+    <div class="logs-header">
+        <h1 class="logs-title">System Logs</h1>
+        <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold add-logs-btn" asp-controller="SystemLogs" asp-action="Create" style="color: #90AFC5">Add Clients</a>
+    </div>
+<div class="table-responsive logs-table" style="height :300px; overflow-y:auto">
+        <table class="table table-borderless mb-0">
+        <thead>
         <tr> 
-            <th class="th">
+            <th>
                 @Html.DisplayNameFor(model => model.Details)
             </th >
-                <th class="th">
+                <th>
                 @Html.DisplayNameFor(model => model.IpAddress)
             </th >
-            <th class="th">
+            <th>
                 @Html.DisplayNameFor(model => model.User)
             </th>
-            <th class="th">
-                Properties
+            <th>
+                Actions
             </th>
         </tr>
     </thead>
@@ -43,7 +39,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.User)
             </td>
-                <td class="btn-group-sm">
+            <td class="action-btns">
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Details" asp-route-id="@item.ID">Details</a> |
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
