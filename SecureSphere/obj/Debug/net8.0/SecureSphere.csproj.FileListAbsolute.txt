@@ -1563,3 +1563,6 @@ C:\Users\DELL-G5\Desktop\github\Secure-Sphere\SecureSphere\obj\Debug\net8.0\refi
 C:\Users\DELL-G5\Desktop\github\Secure-Sphere\SecureSphere\obj\Debug\net8.0\SecureSphere.pdb
 C:\Users\DELL-G5\Desktop\github\Secure-Sphere\SecureSphere\obj\Debug\net8.0\SecureSphere.genruntimeconfig.cache
 C:\Users\DELL-G5\Desktop\github\Secure-Sphere\SecureSphere\obj\Debug\net8.0\ref\SecureSphere.dll
+C:\Users\HP14\Documents\GitHubH\Secure-Sphere\Secure-Sphere\SecureSphere\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\HP14\Documents\GitHubH\Secure-Sphere\Secure-Sphere\SecureSphere\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\HP14\Documents\GitHubH\Secure-Sphere\Secure-Sphere\SecureSphere\obj\Debug\net8.0\SecureSphere.MvcApplicationPartsAssemblyInfo.cs

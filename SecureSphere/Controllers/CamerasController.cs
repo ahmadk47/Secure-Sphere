@@ -110,7 +110,7 @@ namespace SecureSphere.Controllers
             {
                 return NotFound();
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", camera.BranchID);
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", camera.BranchID);
             return View(camera);
         }
 
@@ -147,7 +147,7 @@ namespace SecureSphere.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "ID", camera.BranchID);
+            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", camera.BranchID);
             return View(camera);
         }
 

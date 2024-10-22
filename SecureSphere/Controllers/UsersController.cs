@@ -80,7 +80,7 @@ namespace SecureSphereApp.Controllers
             {
                 BranchID = BranchID,
             };
-            ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Get available roles
+            ViewBag.Roles = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Get available roles
             return View(user);
         }
 
@@ -108,7 +108,7 @@ namespace SecureSphereApp.Controllers
                 ModelState.AddModelError(string.Empty, error.Description);
             }
 
-            ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Reload roles if something fails
+            ViewBag.Roles = new SelectList(_context.Roles.ToList(), "Name", "Name"); // Reload roles if something fails
             return View(user);
         }
 
@@ -126,8 +126,8 @@ namespace SecureSphereApp.Controllers
             {
                 return NotFound();
             }
-            //ViewData["Roles"] = new SelectList(_context.Roles.ToList(), "Id", "Name");
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", user.BranchID);
+            ViewBag.Roles = new SelectList(_context.Roles.ToList(), "Name", "Name");
+            ViewBag.BranchID = new SelectList(_context.Branches, "ID", "Address", user.BranchID);
             return View(user);
         }
 
@@ -197,13 +197,18 @@ namespace SecureSphereApp.Controllers
                     user.Email = userModel.Email;
                     user.BranchID = userModel.BranchID;
                     user.CreatedAt = userModel.CreatedAt;
+                    
+   
+                   
                     // Update other properties as needed
 
                     // Use UserManager to update the user
                     var result = await _userManager.UpdateAsync(user);
                     if (result.Succeeded)
                     {
-                        return View(user);
+                        ViewBag.Roles = new SelectList(_context.Roles.ToList(), "Name", "Name");
+                        ViewBag.BranchID = new SelectList(_context.Branches, "ID", "Address", userModel.BranchID);
+                        return View(userModel);
                     }
 
                 }
@@ -219,9 +224,10 @@ namespace SecureSphereApp.Controllers
                     }
                 }
             }
-
-            ViewData["BranchID"] = new SelectList(_context.Branches, "ID", "Address", userModel.BranchID);
+            ViewBag.Roles = new SelectList(_context.Roles.ToList(), "Name", "Name");
+            ViewBag.BranchID = new SelectList(_context.Branches, "ID", "Address", userModel.BranchID);
             return View(userModel);
+            
         }
 
         // GET: Users/Delete/5
