@@ -193,5 +193,19 @@ namespace SecureSphere.Controllers
         {
             return _context.Detections.Any(e => e.ID == id);
         }
+
+        [HttpGet]
+        public IActionResult GetImage(string imagePath)
+        {
+            try
+            {
+                var imageBytes = System.IO.File.ReadAllBytes(imagePath);
+                return File(imageBytes, "image/jpeg"); // Or detect content type based on file extension if needed
+            }
+            catch
+            {
+                return NotFound();
+            }
+        }
     }
 }

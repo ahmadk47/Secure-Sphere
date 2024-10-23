@@ -34,6 +34,11 @@
                     <th>
                     @Html.DisplayNameFor(model => model.User)
                 </th>
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ImagePath)
+                    </th>
+
 
                     <th>
                     Actions
@@ -64,8 +69,25 @@
                         @Html.DisplayFor(modelItem => item.Camera.Name)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.User.UserName)
+                        @Html.DisplayFor(modelItm => item.User.UserName)
                     </td>
+                        <td>
+
+                            @if (!string.IsNullOrEmpty(item.ImagePath))
+                            {
+                                <a href="#" class="show-image"
+                                   data-image-path="@Url.Action("GetImage", "Detections", new { imagePath = item.ImagePath })"
+                                   data-timestamp="@item.Timestamp.ToString("yyyy-MM-dd HH:mm:ss")"
+                                   data-reason="@(item.Reason ?? "No reason provided")">
+                                    Show image
+                                </a>
+                            }
+                            else
+                            {
+                                <span>No image available</span>
+                            }
+                        </td>
+                        
                         <td class="action-btns">
                         <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                         <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Details" asp-route-id="@item.ID">Details</a> |
@@ -76,5 +98,112 @@
             }
     </table>
     </div>
+
+    @section Scripts {
+        <script>
+            $(document).ready(function () {
+                var currentIndex = 0;
+                var images = [];
+
+                // Collect all image data
+                $('.show-image').each(function (index) {
+                    images.push({
+                        index: index,
+                        imagePath: $(this).data('image-path'),
+                        timestamp: $(this).data('timestamp'),
+                        reason: $(this).data('reason')
+                    });
+                    console.log("Collected image path:", $(this).data('image-path')); // Debug line
+                });
+
+                
+                function showImage(index) {
+                    if (index >= 0 && index < images.length) {
+                        currentIndex = index;
+                        var image = images[currentIndex];
+
+                        console.log("Showing image:", image.imagePath); // Debug line
+
+                        // Update modal content
+                        $('.modal-image').attr('src', image.imagePath);
+                        $('.modal-timestamp').text('Date: ' + image.timestamp);
+                        $('.modal-reason').text('Reason: ' + image.reason);
+
+                        // Update navigation buttons
+                        $('.prev-image').prop('disabled', currentIndex === 0);
+                        $('.next-image').prop('disabled', currentIndex === images.length - 1);
+
+                        // Update image counter
+                        $('.image-counter').text(`${currentIndex + 1} of ${images.length}`);
+                    }
+                }
+
+                $('.show-image').click(function (e) {
+                    e.preventDefault();
+                    currentIndex = $(this).closest('tr').index();
+
+                    // Create modal with navigation
+                    var modal = $('<div class="modal fade" tabindex="-1" role="dialog">')
+                        .append($('<div class="modal-dialog modal-lg" role="document">')
+                            .append($('<div class="modal-content">')
+                                .append($('<div class="modal-header">')
+                                    .append($('<h5 class="modal-title">Detection Details</h5>'))
+                                    .append($('<span class="image-counter ms-3"></span>'))
+                                    .append($('<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>')))
+                                .append($('<div class="modal-body text-center">')
+                                    .append($('<p class="modal-timestamp fw-bold">'))
+                                    .append($('<p class="modal-reason fw-bold">'))
+                                    .append($('<div class="image-container">')
+                                        .append($('<img>').addClass('img-fluid modal-image').css({
+                                            'max-height': '60vh',
+                                            'object-fit': 'contain'
+                                        }))))
+                                .append($('<div class="modal-footer justify-content-between">')
+                                    .append($('<button type="button" class="btn btn-primary prev-image">Previous</button>'))
+                                    .append($('<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'))
+                                    .append($('<button type="button" class="btn btn-primary next-image">Next</button>')))));
+
+                    // Add modal to DOM first
+                    $('body').append(modal);
+
+                    // Wait for modal to be shown, then show image
+                    modal.on('shown.bs.modal', function () {
+                        showImage(currentIndex);
+                    });
+
+                    modal.modal('show');
+
+                    // Show initial image
+                    showImage(currentIndex);
+
+                    // Navigation handlers
+                    modal.find('.prev-image').click(function () {
+                        showImage(currentIndex - 1);
+                    });
+
+                    modal.find('.next-image').click(function () {
+                        showImage(currentIndex + 1);
+                    });
+
+                    // Keyboard navigation
+                    $(document).on('keydown.modal', function (e) {
+                        if (e.key === 'ArrowLeft') {
+                            showImage(currentIndex - 1);
+                        } else if (e.key === 'ArrowRight') {
+                            showImage(currentIndex + 1);
+                        }
+                    });
+
+                    // Clean up
+                    modal.on('hidden.bs.modal', function () {
+                        $(document).off('keydown.modal');
+                        $(this).remove();
+                    });
+                });
+            });
+
+        </script>
+    }
+
 
 </div>

@@ -1702,3 +1702,203 @@
 10/23/2024 5:59:51 PM: User requested Index For Branches 
 10/23/2024 5:59:51 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
 10/23/2024 5:59:55 PM: User requested Index For Clients 
+10/23/2024 11:02:11 PM: User 'm111@gmail.com' ;logged in.
+10/23/2024 11:09:40 PM: User 'm111@gmail.com' ;logged in.
+10/23/2024 11:09:44 PM: User requested Index For Detections 
+10/23/2024 11:17:20 PM: User 'm111@gmail.com' ;logged in.
+10/23/2024 11:17:22 PM: User requested Index For Detections 
+10/23/2024 11:20:24 PM: User 'm111@gmail.com' ;logged in.
+10/23/2024 11:20:26 PM: User requested Index For Detections 
+10/23/2024 11:21:29 PM: User 'm111@gmail.com' ;logged in.
+10/23/2024 11:21:31 PM: User requested Index For Detections 
+10/23/2024 11:24:33 PM: User requested Index For Detections 
+10/23/2024 11:25:03 PM: User requested Index For Detections 
+10/23/2024 11:25:27 PM: User requested Index For Detections 
+10/23/2024 11:28:09 PM: User requested Index For Detections 
+10/23/2024 11:28:17 PM: User requested Index For Detections 
+10/23/2024 11:32:51 PM: User requested Index For Detections 
+10/23/2024 11:34:51 PM: User requested Index For Detections 
+10/23/2024 11:36:00 PM: User requested Index For Detections 
+10/23/2024 11:41:51 PM: User requested Index For Detections 
+10/23/2024 11:42:38 PM: User requested Index For Detections 
+10/23/2024 11:44:45 PM: User requested Index For Detections 
+10/23/2024 11:45:53 PM: User requested Delete For Detections 
+10/23/2024 11:45:54 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:45:54 PM: User requested Index For Detections 
+10/23/2024 11:45:56 PM: User requested Edit For Detections 
+10/23/2024 11:45:58 PM: User requested Delete For Detections 
+10/23/2024 11:46:00 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:00 PM: User requested Index For Detections 
+10/23/2024 11:46:01 PM: User requested Delete For Detections 
+10/23/2024 11:46:01 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:02 PM: User requested Index For Detections 
+10/23/2024 11:46:03 PM: User requested Delete For Detections 
+10/23/2024 11:46:03 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:03 PM: User requested Index For Detections 
+10/23/2024 11:46:05 PM: User requested Delete For Detections 
+10/23/2024 11:46:05 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:05 PM: User requested Index For Detections 
+10/23/2024 11:46:06 PM: User requested Delete For Detections 
+10/23/2024 11:46:07 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:07 PM: User requested Index For Detections 
+10/23/2024 11:46:08 PM: User requested Delete For Detections 
+10/23/2024 11:46:09 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:09 PM: User requested Index For Detections 
+10/23/2024 11:46:10 PM: User requested Delete For Detections 
+10/23/2024 11:46:11 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:11 PM: User requested Index For Detections 
+10/23/2024 11:46:12 PM: User requested Delete For Detections 
+10/23/2024 11:46:13 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:13 PM: User requested Index For Detections 
+10/23/2024 11:46:14 PM: User requested Delete For Detections 
+10/23/2024 11:46:14 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:14 PM: User requested Index For Detections 
+10/23/2024 11:46:16 PM: User requested Delete For Detections 
+10/23/2024 11:46:17 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:17 PM: User requested Index For Detections 
+10/23/2024 11:46:17 PM: User requested Delete For Detections 
+10/23/2024 11:46:18 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:18 PM: User requested Index For Detections 
+10/23/2024 11:46:19 PM: User requested Delete For Detections 
+10/23/2024 11:46:20 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:20 PM: User requested Index For Detections 
+10/23/2024 11:46:21 PM: User requested Delete For Detections 
+10/23/2024 11:46:22 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:22 PM: User requested Index For Detections 
+10/23/2024 11:46:24 PM: User requested Delete For Detections 
+10/23/2024 11:46:24 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:24 PM: User requested Index For Detections 
+10/23/2024 11:46:25 PM: User requested Delete For Detections 
+10/23/2024 11:46:26 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:26 PM: User requested Index For Detections 
+10/23/2024 11:46:27 PM: User requested Delete For Detections 
+10/23/2024 11:46:28 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:28 PM: User requested Index For Detections 
+10/23/2024 11:46:29 PM: User requested Delete For Detections 
+10/23/2024 11:46:30 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:30 PM: User requested Index For Detections 
+10/23/2024 11:46:30 PM: User requested Delete For Detections 
+10/23/2024 11:46:31 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:31 PM: User requested Index For Detections 
+10/23/2024 11:46:32 PM: User requested Delete For Detections 
+10/23/2024 11:46:33 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:33 PM: User requested Index For Detections 
+10/23/2024 11:46:37 PM: User requested Delete For Detections 
+10/23/2024 11:46:37 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:37 PM: User requested Index For Detections 
+10/23/2024 11:46:38 PM: User requested Delete For Detections 
+10/23/2024 11:46:39 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:39 PM: User requested Index For Detections 
+10/23/2024 11:46:40 PM: User requested Delete For Detections 
+10/23/2024 11:46:41 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:41 PM: User requested Index For Detections 
+10/23/2024 11:46:42 PM: User requested Delete For Detections 
+10/23/2024 11:46:43 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:43 PM: User requested Index For Detections 
+10/23/2024 11:46:44 PM: User requested Delete For Detections 
+10/23/2024 11:46:45 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:45 PM: User requested Index For Detections 
+10/23/2024 11:46:45 PM: User requested Delete For Detections 
+10/23/2024 11:46:46 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:46 PM: User requested Index For Detections 
+10/23/2024 11:46:47 PM: User requested Delete For Detections 
+10/23/2024 11:46:48 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:48 PM: User requested Index For Detections 
+10/23/2024 11:46:49 PM: User requested Delete For Detections 
+10/23/2024 11:46:50 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:50 PM: User requested Index For Detections 
+10/23/2024 11:46:51 PM: User requested Delete For Detections 
+10/23/2024 11:46:52 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:52 PM: User requested Index For Detections 
+10/23/2024 11:46:53 PM: User requested Delete For Detections 
+10/23/2024 11:46:54 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:54 PM: User requested Index For Detections 
+10/23/2024 11:46:55 PM: User requested Delete For Detections 
+10/23/2024 11:46:56 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:56 PM: User requested Index For Detections 
+10/23/2024 11:46:57 PM: User requested Delete For Detections 
+10/23/2024 11:46:58 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:46:58 PM: User requested Index For Detections 
+10/23/2024 11:46:59 PM: User requested Delete For Detections 
+10/23/2024 11:47:00 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:00 PM: User requested Index For Detections 
+10/23/2024 11:47:03 PM: User requested Delete For Detections 
+10/23/2024 11:47:04 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:04 PM: User requested Index For Detections 
+10/23/2024 11:47:05 PM: User requested Delete For Detections 
+10/23/2024 11:47:05 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:06 PM: User requested Index For Detections 
+10/23/2024 11:47:06 PM: User requested Delete For Detections 
+10/23/2024 11:47:07 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:07 PM: User requested Index For Detections 
+10/23/2024 11:47:08 PM: User requested Delete For Detections 
+10/23/2024 11:47:09 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:09 PM: User requested Index For Detections 
+10/23/2024 11:47:10 PM: User requested Delete For Detections 
+10/23/2024 11:47:11 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:11 PM: User requested Index For Detections 
+10/23/2024 11:47:12 PM: User requested Delete For Detections 
+10/23/2024 11:47:12 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:12 PM: User requested Index For Detections 
+10/23/2024 11:47:13 PM: User requested Delete For Detections 
+10/23/2024 11:47:14 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:14 PM: User requested Index For Detections 
+10/23/2024 11:47:15 PM: User requested Delete For Detections 
+10/23/2024 11:47:16 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:16 PM: User requested Index For Detections 
+10/23/2024 11:47:17 PM: User requested Delete For Detections 
+10/23/2024 11:47:18 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:18 PM: User requested Index For Detections 
+10/23/2024 11:47:19 PM: User requested Delete For Detections 
+10/23/2024 11:47:21 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:21 PM: User requested Index For Detections 
+10/23/2024 11:47:22 PM: User requested Delete For Detections 
+10/23/2024 11:47:23 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:23 PM: User requested Index For Detections 
+10/23/2024 11:47:24 PM: User requested Delete For Detections 
+10/23/2024 11:47:25 PM: User requested Delete Confirmed For Detections 
+10/23/2024 11:47:25 PM: User requested Index For Detections 
+10/23/2024 11:51:10 PM: User requested Index For Detections 
+10/23/2024 11:51:42 PM: User requested Index For Detections 
+10/23/2024 11:53:18 PM: User requested Index For Detections 
+10/23/2024 11:53:26 PM: User requested Index For Detections 
+10/23/2024 11:53:36 PM: User requested Index For Detections 
+10/23/2024 11:56:35 PM: User requested Index For Detections 
+10/23/2024 11:57:02 PM: User requested Index For Detections 
+10/23/2024 11:57:11 PM: User requested Index For Detections 
+10/23/2024 11:57:20 PM: User requested Index For Detections 
+10/23/2024 11:57:53 PM: User requested Index For Detections 
+10/23/2024 11:58:19 PM: User requested Index For Detections 
+10/23/2024 11:58:59 PM: User requested Index For System Logs 
+10/24/2024 12:01:18 AM: User requested Index For System Logs 
+10/24/2024 12:01:27 AM: User requested Index For Detections 
+10/24/2024 12:01:28 AM: User requested Index For Detections 
+10/24/2024 12:02:20 AM: User requested Index For Detections 
+10/24/2024 12:05:45 AM: User requested Index For Detections 
+10/24/2024 12:09:02 AM: User requested Index For Detections 
+10/24/2024 12:09:32 AM: User requested Index For Detections 
+10/24/2024 12:09:49 AM: User requested Index For Detections 
+10/24/2024 12:13:02 AM: User requested Index For Detections 
+10/24/2024 12:13:36 AM: User requested Index For Detections 
+10/24/2024 12:13:46 AM: User requested Index For Clients 
+10/24/2024 12:13:49 AM: User requested Index For Clients 
+10/24/2024 12:13:52 AM: User requested Index For Detections 
+10/24/2024 12:14:17 AM: User requested Index For Detections 
+10/24/2024 12:14:18 AM: User requested Index For Clients 
+10/24/2024 12:14:20 AM: User requested Details For Clients 
+10/24/2024 12:14:23 AM: User requested Details For Branches 
+10/24/2024 12:14:25 AM: User requested Details For Users 
+10/24/2024 12:14:29 AM: User requested Details For Users 
+10/24/2024 12:14:32 AM: User requested Details For Users 
+10/24/2024 12:14:37 AM: User requested Index For Clients 
+10/24/2024 12:14:39 AM: User requested Details For Clients 
+10/24/2024 12:14:40 AM: User requested Details For Branches 
+10/24/2024 12:14:41 AM: User requested Details For Users 
+10/24/2024 12:14:45 AM: User requested Index For Detections 
+10/24/2024 12:14:56 AM: User requested Details For Detections 
+10/24/2024 12:15:11 AM: User requested Index For Clients 
+10/24/2024 12:15:56 AM: User requested Index For Detections 
+10/24/2024 12:18:46 AM: User requested Index For Detections 
+10/24/2024 12:19:01 AM: User requested Edit For Detections 
+10/24/2024 12:19:36 AM: User requested Index For Detections 
+10/24/2024 12:19:37 AM: User requested Index For Detections 
