@@ -1660,3 +1660,45 @@
 10/23/2024 12:44:16 AM: User requested Details For Branches 
 10/23/2024 12:44:18 AM: User requested Edit For Users 
 10/23/2024 12:46:11 AM: User requested Edit For Users 
+10/23/2024 5:54:43 PM: User 'm111@gmail.com' ;logged in.
+10/23/2024 5:54:54 PM: User requested Index For Clients 
+10/23/2024 5:54:56 PM: User requested Details For Clients 
+10/23/2024 5:54:59 PM: User requested Details For Branches 
+10/23/2024 5:55:01 PM: User requested Edit For Users 
+10/23/2024 5:55:49 PM: User requested Edit For Users 
+10/23/2024 5:55:55 PM: User requested Edit For Users 
+10/23/2024 5:57:20 PM: User requested Edit For Users 
+10/23/2024 5:57:23 PM: User requested Edit For Users 
+10/23/2024 5:57:25 PM: User requested Edit For Users 
+10/23/2024 5:57:34 PM: User requested Edit For Users 
+10/23/2024 5:57:38 PM: User requested Details For Cameras 
+10/23/2024 5:57:44 PM: User requested Index For Detections 
+10/23/2024 5:58:27 PM: User requested Index For System Logs 
+10/23/2024 5:58:51 PM: User requested Index For System Logs 
+10/23/2024 5:58:56 PM: User requested Delete For System Logs 
+10/23/2024 5:58:57 PM: User requested Delete Confirmed For System Logs 
+10/23/2024 5:58:57 PM: User requested Index For System Logs 
+10/23/2024 5:59:06 PM: User requested Index For Clients 
+10/23/2024 5:59:09 PM: User requested Edit For Clients 
+10/23/2024 5:59:11 PM: User requested Index For Clients 
+10/23/2024 5:59:12 PM: User requested Details For Clients 
+10/23/2024 5:59:15 PM: User requested Index For Clients 
+10/23/2024 5:59:18 PM: User requested Details For Clients 
+10/23/2024 5:59:19 PM: User requested Details For Branches 
+10/23/2024 5:59:21 PM: User requested Edit For Cameras 
+10/23/2024 5:59:23 PM: User requested Edit For Cameras 
+10/23/2024 5:59:23 PM: User requested Index For Cameras 
+10/23/2024 5:59:25 PM: User requested Edit For Cameras 
+10/23/2024 5:59:32 PM: User requested Edit For Branches 
+10/23/2024 5:59:33 PM: User requested Edit confirmed For Branches 
+10/23/2024 5:59:33 PM: User requested Index For Branches 
+10/23/2024 5:59:33 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+10/23/2024 5:59:35 PM: User requested Edit For Branches 
+10/23/2024 5:59:40 PM: User requested Create For Branches 
+10/23/2024 5:59:43 PM: User requested Create confirmed For Branches 
+10/23/2024 5:59:47 PM: User requested Details For Clients 
+10/23/2024 5:59:50 PM: User requested Delete For Branches 
+10/23/2024 5:59:51 PM: User requested Delete confirmed For Branches 
+10/23/2024 5:59:51 PM: User requested Index For Branches 
+10/23/2024 5:59:51 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+10/23/2024 5:59:55 PM: User requested Index For Clients 
