@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\models\\detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:models\\detection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\views\\detections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\detections\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\controllers\\detectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\detectionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\views\\profiles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\profiles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\views\\profiles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\profiles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\views\\cameras\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\cameras\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\clientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|solutionrelative:controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E16A30A6-0AAF-484E-8A4E-0E27BA9D39BF}|SecureSphere.csproj|c:\\users\\hp14\\documents\\githubh\\secure-sphere\\secure-sphere\\securesphere\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,103 +39,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Models\\Client.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Models\\Client.cs",
-              "RelativeToolTip": "Models\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:19:21.804Z",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cameras\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Cameras\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Cameras\\Edit.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAABlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T14:28:19.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Detections\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Detections\\Index.cshtml",
-              "RelativeToolTip": "Views\\Detections\\Index.cshtml",
-              "ViewState": "AgIAALkAAAAAAAAAAAAAAMYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T20:02:56.192Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Detection.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Models\\Detection.cs",
-              "RelativeDocumentMoniker": "Models\\Detection.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Models\\Detection.cs",
-              "RelativeToolTip": "Models\\Detection.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBEAAAAAAAAAAAAAAA==",
+              "Title": "ClientsController.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\ClientsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientsController.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\ClientsController.cs",
+              "RelativeToolTip": "Controllers\\ClientsController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:02:21.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DetectionsController.cs",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\DetectionsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DetectionsController.cs",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\DetectionsController.cs",
-              "RelativeToolTip": "Controllers\\DetectionsController.cs",
-              "ViewState": "AgIAALMAAAAAAAAAAAAqwMwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T20:02:17.988Z",
+              "WhenOpened": "2024-11-08T14:18:51.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Profiles\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Profiles\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Profiles\\Index.cshtml",
-              "RelativeToolTip": "Views\\Profiles\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:53:18.682Z",
+              "Title": "BranchesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\BranchesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BranchesController.cs",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\BranchesController.cs",
+              "RelativeToolTip": "Controllers\\BranchesController.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T14:11:42.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Profiles\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Profiles\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Profiles\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Profiles\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-23T14:53:07.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
               "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Models\\ApplicationUser.cs",
               "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T21:45:22.874Z",
+              "WhenOpened": "2024-11-08T14:08:36.619Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Views\\Users\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Users\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T14:06:44.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\HP14\\Documents\\GitHubH\\Secure-Sphere\\Secure-Sphere\\SecureSphere\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAIBJwMcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAqwHYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T17:25:09.554Z",
               "EditorCaption": ""

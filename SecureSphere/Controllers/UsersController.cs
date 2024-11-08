@@ -93,7 +93,7 @@ namespace SecureSphereApp.Controllers
 
             // Create the user
             var result = await _userManager.CreateAsync(user, user.PasswordHash!);
-
+            
             if (result.Succeeded)
             {
                 // Assign the role to the user
@@ -120,14 +120,19 @@ namespace SecureSphereApp.Controllers
             {
                 return NotFound();
             }
-            
-            var user = await _context.Users.FindAsync(id);
+
+            var user = await _context.Users
+                .Include(u => u.Branch)
+                .ThenInclude(b => b.Client)
+                .FirstOrDefaultAsync(u => u.Id == id);
+
             if (user == null)
             {
                 return NotFound();
             }
+
             ViewBag.Roles = new SelectList(_context.Roles.ToList(), "Name", "Name");
-            ViewBag.BranchID = new SelectList(_context.Branches, "ID", "Address", user.BranchID);
+            ViewBag.BranchID = new SelectList(_context.Branches.Where(b => b.ClientID == user.Branch.ClientID), "ID", "Address", user.BranchID);
             return View(user);
         }
 
@@ -201,7 +206,6 @@ namespace SecureSphereApp.Controllers
    
                    
                     // Update other properties as needed
-
                     // Use UserManager to update the user
                     var result = await _userManager.UpdateAsync(user);
                     if (result.Succeeded)
@@ -225,7 +229,8 @@ namespace SecureSphereApp.Controllers
                 }
             }
             ViewBag.Roles = new SelectList(_context.Roles.ToList(), "Name", "Name");
-            ViewBag.BranchID = new SelectList(_context.Branches, "ID", "Address", userModel.BranchID);
+            //ViewBag.BranchID = new SelectList(_context.Branches, "ID", "Address", userModel.BranchID);
+            ViewBag.BranchID = new SelectList(_context.Branches.Where(b => b.ClientID == userModel.Branch.ClientID), "ID", "Address", userModel.BranchID);
             return View(userModel);
             
         }
