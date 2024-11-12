@@ -127,7 +127,7 @@ namespace SecureSphere.Controllers
             var receiver = "maghairehhamad@gmail.com";
             var subject = "Secure Sphere Alert - Weapon Detected";
             var message = $"{detection.Reason} at {camera.Name} {detection.Timestamp} \n" +
-                          $"Location :  {camera.Branch.Address} imagepath: {detection.ImagePath} " ;
+                          $"Location :  {camera.Branch.Address} " ;
 
             await _emailSender.SendEmailAsync(receiver, subject, message , detection.ImagePath!);
 

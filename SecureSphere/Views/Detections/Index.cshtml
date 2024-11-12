@@ -7,7 +7,7 @@
 <div class="detection-container">
     <div class="detection-header">
         <h1 class="detection-title">Detections</h1>
-        <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold add-detection-btn" asp-controller="Detections" asp-action="Create" style="color: #90AFC5">Add A Detection</a>
+        @* <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold add-detection-btn" asp-controller="Detections" asp-action="Create" style="color: #90AFC5">Add A Detection</a> *@
     </div>
     <div class="table-responsive detection-table">
         <table class="table table-borderless mb-0">
@@ -101,46 +101,16 @@
 
     @section Scripts {
         <script>
+            
             $(document).ready(function () {
-                var currentIndex = 0;
-                var images = [];
-
-                // Collect all image data
-                $('.show-image').each(function (index) {
-                    images.push({
-                        index: index,
-                        imagePath: $(this).data('image-path'),
-                        timestamp: $(this).data('timestamp'),
-                        reason: $(this).data('reason')
-                    });
-                    console.log("Collected image path:", $(this).data('image-path')); // Debug line
-                });
-
-                
-                function showImage(index) {
-                    if (index >= 0 && index < images.length) {
-                        currentIndex = index;
-                        var image = images[currentIndex];
-
-                        console.log("Showing image:", image.imagePath); // Debug line
-
-                        // Update modal content
-                        $('.modal-image').attr('src', image.imagePath);
-                        $('.modal-timestamp').text('Date: ' + image.timestamp);
-                        $('.modal-reason').text('Reason: ' + image.reason);
-
-                        // Update navigation buttons
-                        $('.prev-image').prop('disabled', currentIndex === 0);
-                        $('.next-image').prop('disabled', currentIndex === images.length - 1);
-
-                        // Update image counter
-                        $('.image-counter').text(`${currentIndex + 1} of ${images.length}`);
-                    }
-                }
-
                 $('.show-image').click(function (e) {
                     e.preventDefault();
-                    currentIndex = $(this).closest('tr').index();
+                    var currentIndex = $(this).closest('tr').index();
+
+                    // Collect image data for this specific link
+                    var imagePath = $(this).data('image-path');
+                    var timestamp = $(this).data('timestamp');
+                    var reason = $(this).data('reason');
 
                     // Create modal with navigation
                     var modal = $('<div class="modal fade" tabindex="-1" role="dialog">')
@@ -168,29 +138,62 @@
 
                     // Wait for modal to be shown, then show image
                     modal.on('shown.bs.modal', function () {
-                        showImage(currentIndex);
+                        // Update modal content
+                        $('.modal-image').attr('src', imagePath);
+                        $('.modal-timestamp').text('Date: ' + timestamp);
+                        $('.modal-reason').text('Reason: ' + reason);
+
+                        // Update navigation buttons
+                        $('.prev-image').prop('disabled', currentIndex === 0);
+                        $('.next-image').prop('disabled', currentIndex === $('.show-image').length - 1);
+
+                        // Update image counter
+                        $('.image-counter').text(`${currentIndex + 1} of ${$('.show-image').length}`);
                     });
 
                     modal.modal('show');
 
-                    // Show initial image
-                    showImage(currentIndex);
-
                     // Navigation handlers
                     modal.find('.prev-image').click(function () {
-                        showImage(currentIndex - 1);
+                        var prevIndex = currentIndex - 1;
+                        if (prevIndex >= 0) {
+                            var prevLink = $('.show-image').eq(prevIndex);
+                            var prevImagePath = prevLink.data('image-path');
+                            var prevTimestamp = prevLink.data('timestamp');
+                            var prevReason = prevLink.data('reason');
+                            $('.modal-image').attr('src', prevImagePath);
+                            $('.modal-timestamp').text('Date: ' + prevTimestamp);
+                            $('.modal-reason').text('Reason: ' + prevReason);
+                            $('.prev-image').prop('disabled', prevIndex === 0);
+                            $('.next-image').prop('disabled', false);
+                            $('.image-counter').text(`${prevIndex + 1} of ${$('.show-image').length}`);
+                            currentIndex = prevIndex;
+                        }
                     });
 
                     modal.find('.next-image').click(function () {
-                        showImage(currentIndex + 1);
+                        var nextIndex = currentIndex + 1;
+                        if (nextIndex < $('.show-image').length) {
+                            var nextLink = $('.show-image').eq(nextIndex);
+                            var nextImagePath = nextLink.data('image-path');
+                            var nextTimestamp = nextLink.data('timestamp');
+                            var nextReason = nextLink.data('reason');
+                            $('.modal-image').attr('src', nextImagePath);
+                            $('.modal-timestamp').text('Date: ' + nextTimestamp);
+                            $('.modal-reason').text('Reason: ' + nextReason);
+                            $('.next-image').prop('disabled', nextIndex === $('.show-image').length - 1);
+                            $('.prev-image').prop('disabled', false);
+                            $('.image-counter').text(`${nextIndex + 1} of ${$('.show-image').length}`);
+                            currentIndex = nextIndex;
+                        }
                     });
 
                     // Keyboard navigation
                     $(document).on('keydown.modal', function (e) {
                         if (e.key === 'ArrowLeft') {
-                            showImage(currentIndex - 1);
+                            modal.find('.prev-image').click();
                         } else if (e.key === 'ArrowRight') {
-                            showImage(currentIndex + 1);
+                            modal.find('.next-image').click();
                         }
                     });
 

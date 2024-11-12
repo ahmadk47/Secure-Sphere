@@ -2007,3 +2007,73 @@
 11/8/2024 5:32:02 PM: User requested Details For Branches 
 11/8/2024 5:32:04 PM: User requested Edit For Users 
 11/8/2024 5:32:08 PM: User requested Edit For Cameras 
+11/11/2024 10:03:38 PM: User 'm111@gmail.com' ;logged in.
+11/11/2024 10:03:48 PM: User 'm111@gmail.com' ;logged in.
+11/11/2024 10:04:14 PM: User requested Index For Clients 
+11/11/2024 10:04:20 PM: User requested Edit For Clients 
+11/11/2024 10:04:22 PM: User requested Index For Clients 
+11/11/2024 10:04:26 PM: User requested Details For Clients 
+11/11/2024 10:04:31 PM: User requested Details For Branches 
+11/11/2024 10:04:50 PM: User requested Details For Users 
+11/11/2024 10:05:29 PM: User requested Index For Detections 
+11/11/2024 10:08:06 PM: User requested Index For System Logs 
+11/11/2024 10:08:07 PM: User requested Index For System Logs 
+11/11/2024 10:08:15 PM: User requested Index For Clients 
+11/11/2024 10:08:26 PM: User requested Index For Clients 
+11/11/2024 10:08:32 PM: User requested Details For Clients 
+11/11/2024 10:08:34 PM: User requested Index For Detections 
+11/11/2024 10:08:55 PM: User requested Index For Clients 
+11/11/2024 10:10:07 PM: User requested Details For Clients 
+11/11/2024 10:10:09 PM: User requested Details For Branches 
+11/12/2024 9:04:28 PM: User 'm111@gmail.com' ;logged in.
+11/12/2024 9:04:30 PM: User requested Index For Detections 
+11/12/2024 9:05:33 PM: User requested Index For Detections 
+11/12/2024 9:06:00 PM: User requested Index For Detections 
+11/12/2024 9:06:41 PM: User requested Index For Detections 
+11/12/2024 9:09:20 PM: User requested Delete For Detections 
+11/12/2024 9:09:22 PM: User requested Delete Confirmed For Detections 
+11/12/2024 9:09:22 PM: User requested Index For Detections 
+11/12/2024 9:12:28 PM: User 'm111@gmail.com' ;logged in.
+11/12/2024 9:12:30 PM: User requested Index For Detections 
+11/12/2024 9:17:06 PM: User 'm111@gmail.com' ;logged in.
+11/12/2024 9:19:12 PM: User requested Index For Detections 
+11/12/2024 9:22:36 PM: User 'm111@gmail.com' ;logged in.
+11/12/2024 9:22:37 PM: User requested Index For Detections 
+11/12/2024 9:23:30 PM: User 'm111@gmail.com' ;logged in.
+11/12/2024 9:23:32 PM: User requested Index For Detections 
+11/12/2024 9:23:43 PM: User requested Create For Detections 
+11/12/2024 9:24:30 PM: User requested Index For Detections 
+11/12/2024 9:24:31 PM: User requested Index For Detections 
+11/12/2024 9:24:54 PM: User 'm111@gmail.com' ;logged in.
+11/12/2024 9:24:56 PM: User requested Index For Detections 
+11/12/2024 9:25:00 PM: User requested Index For Clients 
+11/12/2024 9:25:02 PM: User requested Details For Clients 
+11/12/2024 9:25:04 PM: User requested Index For Clients 
+11/12/2024 9:25:09 PM: User requested Index For Clients 
+11/12/2024 9:25:10 PM: User requested Index For Detections 
+11/12/2024 9:25:11 PM: User requested Index For System Logs 
+11/12/2024 9:25:13 PM: User requested Index For Detections 
+11/12/2024 9:25:40 PM: User requested Delete For Detections 
+11/12/2024 9:25:42 PM: User requested Delete Confirmed For Detections 
+11/12/2024 9:25:42 PM: User requested Index For Detections 
+11/12/2024 9:25:51 PM: User requested Index For Clients 
+11/12/2024 9:25:52 PM: User requested Details For Clients 
+11/12/2024 9:25:53 PM: User requested Details For Branches 
+11/12/2024 9:26:16 PM: User requested Details For Branches 
+11/12/2024 9:26:21 PM: User requested Index For Clients 
+11/12/2024 9:26:24 PM: User requested Details For Clients 
+11/12/2024 9:26:27 PM: User requested Details For Branches 
+11/12/2024 9:26:29 PM: User requested Details For Users 
+11/12/2024 9:26:35 PM: User requested Details For Users 
+11/12/2024 9:26:39 PM: User requested Details For Users 
+11/12/2024 9:29:04 PM: User requested Index For Clients 
+11/12/2024 9:29:06 PM: User requested Details For Clients 
+11/12/2024 9:29:08 PM: User requested Details For Branches 
+11/12/2024 9:29:15 PM: User requested Details For Clients 
+11/12/2024 9:29:17 PM: User requested Edit For Clients 
+11/12/2024 9:29:27 PM: User requested Details For Branches 
+11/12/2024 9:29:29 PM: User requested Details For Users 
+11/12/2024 9:29:31 PM: User requested Details For Users 
+11/12/2024 9:30:38 PM: User 'm111@gmail.com' ;logged in.
+11/12/2024 9:30:41 PM: User requested Index For Detections 
+11/12/2024 9:30:50 PM: User requested Index For Detections 
