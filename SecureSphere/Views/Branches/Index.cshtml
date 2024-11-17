@@ -3,43 +3,45 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div>
-<h1>Clients Branches</h1>
-
-<form asp-controller="Branches" asp-action="Index" id="searchForm">
-    @*     <p>
-    Search <input class="search-bar" type="text" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" />
-    </p> *@
-    <div class="input-group w-50">
-        <input type="search" class="form-control rounded" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" aria-label="Search" aria-describedby="search-addon" />
-
+<link rel="stylesheet" href="~/css/branch-styles.css" asp-append-version="true" />
+<div class="branch-container">
+    <div class="branch-header">
+        <h1 class="branch-title">Branches</h1>
     </div>
-</form>
- <div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-    <thead class="thead">
-        <tr>
-            <th class="th">
-                @Html.DisplayNameFor(model => model.Client.Name)
-            </th>
-                <th class="th">
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
 
-                <th class="th">
-                Properties
-            </th>
-        </tr>
-    </thead>
+    <div class="search-container">
+        <form asp-controller="Branches" asp-action="Index" id="searchForm">
+            <div class="input-group">
+                <input type="search" class="search-input" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+        </form>
+    </div>
+
+ <div class="table-responsive branch-table" style="overflow:auto;" id="searchResults">
+        <table class="table table-borderless mb-0">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Client.Name)
+                    </th>
+                        <th>
+                        @Html.DisplayNameFor(model => model.Address)
+                    </th>
+
+                        <th>
+                        Properties
+                    </th>
+                </tr>
+            </thead>
    
 
 @foreach (var item in Model) {
-        <tbody class="tbody">
+        <tbody>
         <tr>
-            <td class="td">
+            <td>
                 @Html.DisplayFor(modelItem => item.Client.Name)
             </td>
-            <td class="td">
+            <td>
                 @Html.DisplayFor(modelItem => item.Address)
             </td>
                 <td class="td btn-group-sm">

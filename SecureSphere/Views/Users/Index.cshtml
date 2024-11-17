@@ -3,70 +3,58 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div>
-        <h1>Users</h1>
-   
-<form asp-controller="Users" asp-action="Index" id="searchForm">
-    @*     <p>
-    Search <input class="search-bar" type="text" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" />
-    </p> *@
-    <div class="input-group w-50">
-        <input type="search" class="form-control rounded" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" aria-label="Search" aria-describedby="search-addon" />
-
+<link rel="stylesheet" href="~/css/user-styles.css" asp-append-version="true" />
+<div class="user-container">
+    <div class="user-header">
+        <h1 class="user-title">Users</h1>
     </div>
-</form>
-<div class="table-custom table-responsive w-75" style="height :300px; overflow-y:auto">
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-        <thead class="thead">
+    <div class="search-container">
+        <form asp-controller="Users" asp-action="Index" id="searchForm">
+            <div class="input-group">
+                <input type="search" class="search-input" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+        </form>
+    </div>
+    <div class="table-responsive user-table" id="searchResults" style="height :300px; overflow:auto">
+        <table class="table table-borderless mb-0">
+            <thead>
                 <tr>
-                    <th class="th">
+                    <th>
                         @Html.DisplayNameFor(model => model.UserName)
                     </th>
-                <th class="th">
+                <th>
                         @Html.DisplayNameFor(model => model.Email)
                     </th >
-                <th class="th">
-                        @Html.DisplayNameFor(model => model.PasswordHash)
-                    </th>
-                <th class="th">
+                <th>
                         @Html.DisplayNameFor(model => model.CreatedAt)
                     </th>
-                <th class="th">
-                        @Html.DisplayNameFor(model => model.Branch.Client)
-                    </th>
-                <th class="th">
+                <th>
                         @Html.DisplayNameFor(model => model.Branch)
                     </th>
 
-                <th class="th">
-                        Properties
+                <th>
+                        Actions
                     </th>
                 </tr>
             </thead>
            
                 @foreach (var item in Model)
                 {
-            <tbody class="tbody">
+            <tbody>
                     <tr>
-                        <td class="td">
+                        <td>
                         @Html.DisplayFor(modelItem => item.UserName)
                         </td>
-                        <td class="td">
+                        <td>
                             @Html.DisplayFor(modelItem => item.Email)
                         </td>
-                        <td class="td">
-                        @Html.DisplayFor(modelItem => item.PasswordHash)
-                        </td>
-                        <td class="td">
+                        <td>
                             @Html.DisplayFor(modelItem => item.CreatedAt)
                         </td>
-                        <td class="td">
-                            @Html.DisplayFor(modelItem => item.Branch.Client.Name)
-                        </td>
-                        <td class="td">
+                        <td>
                             @Html.DisplayFor(modelItem => item.Branch.Address)
                         </td>
-                <td class="td btn-group-sm">
+                <td class="btn-group-sm">
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Details" asp-route-id="@item.Id">Details</a> |
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Delete" asp-route-id="@item.Id">Delete</a>

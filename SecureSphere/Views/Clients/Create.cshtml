@@ -2,14 +2,11 @@
 @{
     ViewData["Title"] = "Create";
 }
-
-<h4>Client</h4>
-<hr />
 <h2 class="text-success"> @ViewBag.msg</h2>
 <div class="container mt-4">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h1 class="card-title mb-4">Create New Client</h1>
+            <h1 class="card-title mb-4">Create A New Client</h1>
             <form asp-action="Create">
                 <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
                 <div class="mb-3">
@@ -18,7 +15,7 @@
                     <span asp-validation-for="Name" class="text-danger"></span>
                 </div>
                 <div class="mb-3">
-                    <button type="submit" class="btn btn-outline-primary btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5">Create</button>
+                    <input type="submit" value="Create" class="btn btn-primary" />
                     <a class="btn btn-outline-danger btn-lg active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-action="Index">Back to List</a>
                 </div>
             </form>

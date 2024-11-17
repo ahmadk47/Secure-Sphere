@@ -9,19 +9,13 @@
         <h1 class="logs-title">System Logs</h1>
         <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold add-logs-btn" asp-controller="SystemLogs" asp-action="Create" style="color: #90AFC5">Add Clients</a>
     </div>
-<div class="table-responsive logs-table" style="height :300px; overflow-y:auto">
+<div class="table-responsive logs-table" style="max-height :400px; overflow-y:auto">
         <table class="table table-borderless mb-0">
         <thead>
         <tr> 
             <th>
                 @Html.DisplayNameFor(model => model.Details)
             </th >
-                <th>
-                @Html.DisplayNameFor(model => model.IpAddress)
-            </th >
-            <th>
-                @Html.DisplayNameFor(model => model.User)
-            </th>
             <th>
                 Actions
             </th>
@@ -32,12 +26,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Details)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IpAddress)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User)
             </td>
             <td class="action-btns">
                     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

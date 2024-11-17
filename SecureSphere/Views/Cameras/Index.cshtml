@@ -3,67 +3,69 @@
 @{
     ViewData["Title"] = "Index";
 }
-<div>
-<h1>Cameras</h1>
-<form asp-controller="Cameras" asp-action="Index" id="searchForm">
-    @*     <p>
-    Search <input class="search-bar" type="text" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" />
-    </p> *@
-    <div class="input-group w-50">
-        <input type="search" class="form-control rounded" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Client Name" aria-label="Search" aria-describedby="search-addon" />
-
+<link rel="stylesheet" href="~/css/camera-styles.css" asp-append-version="true" />
+<div class="camera-container">
+    <div class="camera-header">
+        <h1 class="camera-header">Cameras</h1>
     </div>
-</form>
-<div class="table-custom table-responsive w-75" style="overflow:auto;" id="searchResults">
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-    <thead class="thead">
-        <tr>
-            <th class="th">
-                @Html.DisplayNameFor(model => model.Name)
-            </th >
-                <th class="th">
-                @Html.DisplayNameFor(model => model.IpAddress)
-            </th>
-                <th class="th">
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-                <th class="th">
-                @Html.DisplayNameFor(model => model.Branch.Client.Name)
-            </th>
-                <th class="th">
-                @Html.DisplayNameFor(model => model.Branch)
-            </th>
 
-            <th>
-                Properties
-            </th>
-        </tr>
+    <div class="search-container">
+        <form asp-controller="Cameras" asp-action="Index" id="searchForm">
+            <div class="input-group">
+                <input type="search" class="search-input" name="SearchString" id="searchInput" value="@ViewBag.SearchString" placeholder="Enter Camera Name" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+        </form>
+    </div>
+    <div class="table-responsive camera-table" style="overflow:auto;" id="searchResults">
+        <table class="table table-borderless mb-0">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                        <th>
+                        @Html.DisplayNameFor(model => model.IpAddress)
+                    </th>
+                        <th>
+                        @Html.DisplayNameFor(model => model.Status)
+                    </th>
+                        <th>
+                        @Html.DisplayNameFor(model => model.Branch.Client.Name)
+                    </th>
+                        <th>
+                        @Html.DisplayNameFor(model => model.Branch)
+                    </th>
+
+                    <th>
+                        Actions
+                    </th>
+                </tr>
     </thead>
     
 @foreach (var item in Model) {
-                <tbody class="tbody">
-        <tr>
-            <td class="td">
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-                    <td class="td">
-                @Html.DisplayFor(modelItem => item.IpAddress)
-            </td>
-                    <td class="td">
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-                    <td class="td">
-                @Html.DisplayFor(modelItem => item.Branch.Client.Name)
-            </td>
-                    <td class="td">
-                @Html.DisplayFor(modelItem => item.Branch.ID)
-            </td>
-                <td class="td btn-group-sm">
-                    <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Details" asp-route-id="@item.ID">Details</a> |
-                    <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                         <td>
+                            @Html.DisplayFor(modelItem => item.IpAddress)
+                        </td>
+                         <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Branch.Client.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Branch.ID)
+                        </td>
+                        <td class="btn-group-sm">
+                                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                                <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                        </td>
+                    </tr>
                 </tbody>
 }
 </table>

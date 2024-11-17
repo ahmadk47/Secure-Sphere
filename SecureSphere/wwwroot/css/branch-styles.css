@@ -1,56 +1,74 @@
-﻿.detection-container {
+﻿.branch-container {
     background-color: #f8f9fa;
     border-radius: 8px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.detection-header {
+.branch-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
 }
 
-.detection-title {
+.branch-title {
     font-size: 2.5rem;
     color: #2c3e50;
     font-weight: 700;
     margin: 0;
 }
 
-.add-detection-btn {
+.add-branch-btn {
     transition: transform 0.2s ease-in-out;
 }
 
-    .add-detection-btn:hover {
+    .add-branch-btn:hover {
         transform: translateY(-2px);
     }
 
-.detection-table {
+.search-container {
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    border: 2px solid #90AFC5;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+    .search-input:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(144, 175, 197, 0.3);
+    }
+
+.branch-table {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-    .detection-table thead {
+    .branch-table thead {
         background-color: #90AFC5;
         color: white;
     }
 
-    .detection-table th {
+    .branch-table th {
         font-weight: 600;
         text-transform: uppercase;
         font-size: 0.9rem;
         letter-spacing: 0.5px;
     }
 
-    .detection-table tbody tr {
+    .branch-table tbody tr {
         transition: background-color 0.2s ease;
     }
 
-        .detection-table tbody tr:hover {
+        .branch-table tbody tr:hover {
             background-color: #f1f3f5;
         }
 

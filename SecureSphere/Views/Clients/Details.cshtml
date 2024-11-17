@@ -2,7 +2,7 @@
 @{
     ViewData["Title"] = "Client Details";
 }
-
+<link rel="stylesheet" href="~/css/client-styles.css" asp-append-version="true" />
 <div class="container mt-4">
     <div class="card shadow-sm">
         <div class="card-body">
@@ -17,11 +17,11 @@
             </div>
 
             <h2 class="mt-4 mb-3">Branches</h2>
-            <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Create" asp-route-ClientID="@Model.ID">Add Branch</a>
+            <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold mb-2" asp-controller="Branches" asp-action="Create" asp-route-ClientID="@Model.ID">Add Branch</a>
 
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead class="table-light">
+            <div class="table-responsive client-table">
+                <table class="table table-borderless mb-0">
+                    <thead>
                         <tr>
                             <th>Address</th>
                             <th>Actions</th>

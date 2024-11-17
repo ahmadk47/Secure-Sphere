@@ -3,38 +3,38 @@
 @{
     ViewData["Title"] = "Details";
 }
-<div>
-<h1>Details</h1>
-
-
-    <h4>Camera</h4>
-    <div class="table-custom table-responsive w-75" style="overflow-y:auto;" id="searchResults">
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-        <thead class="thead">
+<link rel="stylesheet" href="~/css/camera-styles.css" asp-append-version="true" />
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1>Camera Details</h1>
+    <div class="table-custom camera-table mb-3" style="overflow-y:auto;" id="searchResults">
+                <table class="table table-borderless mb-0">
+        <thead>
             <tr>
-                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Name)</th>
-                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.IpAddress)</th>
-                <th class="th col-sm-2">@Html.DisplayNameFor(model => model.Status)</th>
+                <th class="col-sm-2">@Html.DisplayNameFor(model => model.Name)</th>
+                <th class="col-sm-2">@Html.DisplayNameFor(model => model.IpAddress)</th>
+                <th class="col-sm-2">@Html.DisplayNameFor(model => model.Status)</th>
                 
             </tr>
         </thead>
-        <tbody class="tbody">
+        <tbody>
             <tr>
-                <td class="td">@Html.DisplayFor(model => model.Name)</td>
-                <td class="td">@Html.DisplayFor(model => model.IpAddress)</td>
-                <td class="td">@Html.DisplayFor(model => model.Status)</td>
+                <td>@Html.DisplayFor(model => model.Name)</td>
+                <td>@Html.DisplayFor(model => model.IpAddress)</td>
+                <td>@Html.DisplayFor(model => model.Status)</td>
             </tr>
         </tbody>
     </table>
     </div>
-    <div class="table-custom table-responsive w-75" style="height:300px; overflow-y:auto;" id="searchResults">
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-        <thead class="thead">
+    <div class="table-custom camera-table mb-3" style="overflow-y:auto;" id="searchResults">
+                <table class="table table-borderless mb-0">
+        <thead>
     <tr>
-        <th class="th">Detections</th>
-        <th class="th">Confidence</th>
-        <th class="th">Reason</th>
-        <th class="th">Info</th>
+        <th>Detections</th>
+        <th>Confidence</th>
+        <th>Reason</th>
+        <th>Info</th>
     </tr>
         </thead>
        
@@ -42,10 +42,10 @@
     {
             <tbody class="tbody">
         <tr>
-            <td class="td">@detection.Timestamp</td>
-            <td class="td">@detection.Confidence</td>
-            <td class="td">@detection.Reason</td>
-            <td class="td btn-group-sm">
+            <td>@detection.Timestamp</td>
+            <td>@detection.Confidence</td>
+            <td>@detection.Reason</td>
+            <td class="btn-group-sm">
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Edit" asp-route-id="@detection.ID">Edit</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Details" asp-route-id="@detection.ID">Details</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Detections" asp-action="Delete" asp-route-id="@detection.ID">Delete</a>
@@ -59,4 +59,7 @@
     <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@Model?.ID">Edit</a> |
     <a class="btn btn-outline-danger btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>
 </div>
+</div>
+    </div>
+
 </div>

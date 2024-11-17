@@ -3,64 +3,64 @@
 @{
     ViewData["Title"] = "Details";
 }
-<div>
-<h1>Details</h1>
-<div>
-    <h4>User</h4>
-<div class="table-custom table-responsive w-75" style="max-height :300px; overflow:auto;">
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-    <thead class="thead">
-        <tr>
-            <th class="th">@Html.DisplayNameFor(model => model.UserName)</th>
-            <th class="th">@Html.DisplayNameFor(model => model.Email)</th>
-            <th class="th">@Html.DisplayNameFor(model => model.PasswordHash)</th>
-            <th class="th">@Html.DisplayNameFor(model => model.CreatedAt)</th>
+<link rel="stylesheet" href="~/css/user-styles.css" asp-append-version="true" />
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1>User Details</h1>
+            <div class="table-custom user-table mt-4" style="max-height :300px; overflow:auto;">
+                <table class="table table-borderless mb-3">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.UserName)</th>
+                        <th>@Html.DisplayNameFor(model => model.Email)</th>
+                        <th>@Html.DisplayNameFor(model => model.PasswordHash)</th>
+                        <th>@Html.DisplayNameFor(model => model.CreatedAt)</th>
            
-        </tr>
-    </thead>
-    <tbody class="tbody">
-        <tr>
-            <td class="td">@Html.DisplayFor(model => model.UserName)</td>
-            <td class="td">@Html.DisplayFor(model => model.Email)</td>
-            <td class="td">@Html.DisplayFor(model => model.PasswordHash)</td>
-            <td class="td">@Html.DisplayFor(model => model.CreatedAt)</td>
-        </tr>
-    </tbody>
-</table>
-   
-    <table class="table table-light w-100 table-bordered table-hover table-sm">
-       <thead class="thead">
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayFor(model => model.UserName)</td>
+                        <td>@Html.DisplayFor(model => model.Email)</td>
+                        <td>@Html.DisplayFor(model => model.PasswordHash)</td>
+                        <td>@Html.DisplayFor(model => model.CreatedAt)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+            <div class="table-custom user-table mt-4" style="max-height :300px; overflow:auto;">
+    <table class="table table-borderless mb-0">
+       <thead>
             <tr>
-                <th class="th">Detections</th>
-                <th class="th">Confidence</th>
-                <th class="th">Reason</th>
-                <th class="th">Info</th>
+                <th>Detections</th>
+                <th>Confidence</th>
+                <th>Reason</th>
+                <th>Info</th>
             </tr>
        </thead>
    
     @foreach (Detection detection in ViewBag.Detections)
     {
-        <tbody class="tbody">
-
-        <tr>
-            <td class="td">@detection.Timestamp</td>
-            <td class="td">@detection.Confidence</td>
-            <td class="td">@detection.Reason</td>
-            <td class="td btn-group-sm">
+        <tbody>
+            <tr>
+            <td>@detection.Timestamp</td>
+            <td>@detection.Confidence</td>
+            <td>@detection.Reason</td>
+            <td class="btn-group-sm">
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Detections" asp-action="Edit" asp-route-id="@detection.ID">Edit</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Detections" asp-action="Details" asp-route-id="@detection.ID">Details</a> |
                 <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" style="color: #90AFC5" asp-controller="Detections" asp-action="Delete" asp-route-id="@detection.ID">Delete</a>
             </td>
-
-        </tr>
-
-         </tbody>
+            </tr>
+        </tbody>
     }
-</table>
+    </table>
     </div>
-    <div>
+    <div class="mt-3">
         <a class="btn btn-outline-secondary btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-action="Edit" asp-route-id="@Model?.Branch">Edit</a> |
         <a class="btn btn-outline-danger btn-sm active navbar-text text-capitalize fs-6 fw-bold" asp-controller="Branches" asp-action="Details" asp-route-id="@Model.BranchID">Back to List</a>
     </div>
+</div>
 </div>
 </div>
