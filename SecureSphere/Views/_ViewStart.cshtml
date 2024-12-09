@@ -1,3 +1,16 @@
-﻿@{
-    Layout = "_Layout";
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Default layout
+
+    if (SignInManager.IsSignedIn(User))
+    {
+        var currentUser = await UserManager.GetUserAsync(User);
+        if (currentUser != null && await UserManager.IsInRoleAsync(currentUser, "User"))
+        {
+            Layout = "~/Views/Shared/_UserLayout.cshtml";
+        }
+    }
 }

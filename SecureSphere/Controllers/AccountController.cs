@@ -58,10 +58,12 @@ namespace SecureSphere.Controllers
             if(isSignIn.Succeeded)
             {
                 await Logger.LogAsync($"User '{email}' ;logged in.", _context);
-                return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home");
             }
             await Logger.LogAsync($"User '{email}' failed to log in.", _context);
             ModelState.AddModelError("", "Invalid email or password.");
+
+           
             return View();
             //if (user != null)
             //{

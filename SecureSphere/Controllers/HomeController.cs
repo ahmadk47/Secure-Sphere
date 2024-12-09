@@ -1,4 +1,6 @@
+using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using SecureSphere.Models;
 using System.Diagnostics;
