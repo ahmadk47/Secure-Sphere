@@ -2236,3 +2236,187 @@
 11/17/2024 7:23:36 PM: User requested Index For Users 
 11/17/2024 7:23:54 PM: User requested Index For Users 
 11/17/2024 7:24:13 PM: User requested Index For Users 
+11/17/2024 9:33:13 PM: User 'm111@gmail.com' ;logged in.
+11/17/2024 9:33:32 PM: User requested Index For Branches 
+11/17/2024 9:33:32 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+11/17/2024 9:33:36 PM: User requested Details For Branches 
+11/17/2024 9:33:40 PM: User requested Details For Users 
+11/17/2024 9:33:42 PM: User requested Details For Detections 
+11/17/2024 9:33:46 PM: User requested Index For Detections 
+11/17/2024 9:33:48 PM: User requested Index For Branches 
+11/17/2024 9:33:48 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+11/17/2024 9:33:51 PM: User requested Index For Clients 
+11/17/2024 9:33:52 PM: User requested Index For Clients 
+11/17/2024 9:33:56 PM: User requested Index For System Logs 
+11/17/2024 9:33:58 PM: User requested Index For Detections 
+11/17/2024 9:34:47 PM: User requested Index For Detections 
+11/17/2024 9:34:48 PM: User requested Index For Detections 
+11/17/2024 9:34:49 PM: User requested Index For Detections 
+11/17/2024 9:34:49 PM: User requested Index For Detections 
+11/17/2024 9:35:02 PM: User requested Edit For Detections 
+11/17/2024 9:35:10 PM: User requested Index For Detections 
+11/17/2024 9:35:12 PM: User requested Index For Branches 
+11/17/2024 9:35:12 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+11/17/2024 9:35:12 PM: User requested Index For Clients 
+11/17/2024 9:35:13 PM: User requested Details For Clients 
+11/17/2024 9:35:16 PM: User requested Details For Branches 
+11/17/2024 9:35:19 PM: User requested Edit For Branches 
+11/17/2024 9:35:21 PM: User requested Details For Branches 
+11/17/2024 9:35:24 PM: User requested Details For Users 
+11/17/2024 9:35:27 PM: User requested Edit For Users 
+11/17/2024 9:36:26 PM: User requested Edit For Users 
+11/17/2024 9:36:33 PM: User requested Edit For Users 
+11/17/2024 9:37:05 PM: User requested Edit For Cameras 
+11/17/2024 9:37:15 PM: User requested Details For Cameras 
+11/17/2024 9:37:22 PM: User requested Edit For Users 
+11/17/2024 9:37:26 PM: User requested Details For Users 
+11/17/2024 9:37:31 PM: User requested Details For Branches 
+11/17/2024 9:37:32 PM: User requested Details For Cameras 
+11/17/2024 9:37:46 PM: User requested Details For Cameras 
+11/17/2024 9:37:49 PM: User requested Details For Users 
+11/17/2024 9:37:54 PM: User requested Details For Users 
+11/17/2024 9:37:59 PM: User requested Details For Users 
+11/17/2024 9:38:04 PM: User requested Index For Clients 
+11/17/2024 9:38:05 PM: User requested Details For Clients 
+11/17/2024 9:38:07 PM: User requested Index For Clients 
+12/9/2024 2:28:07 PM: User 'm111@gmail.com' ;logged in.
+12/9/2024 2:28:09 PM: User requested Index For Detections 
+12/9/2024 2:28:18 PM: User requested Index For Clients 
+12/9/2024 2:28:19 PM: User requested Details For Clients 
+12/9/2024 2:28:21 PM: User requested Details For Branches 
+12/9/2024 2:28:22 PM: User requested Details For Cameras 
+12/9/2024 2:28:31 PM: User requested Index For Detections 
+12/9/2024 2:28:32 PM: User requested Index For Branches 
+12/9/2024 2:28:32 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 2:28:33 PM: User requested Index For Clients 
+12/9/2024 2:36:29 PM: User requested Index For Detections 
+12/9/2024 2:37:20 PM: User requested Delete For Detections 
+12/9/2024 2:37:22 PM: User requested Delete Confirmed For Detections 
+12/9/2024 2:37:22 PM: User requested Index For Detections 
+12/9/2024 2:37:24 PM: User requested Delete For Detections 
+12/9/2024 2:37:25 PM: User requested Delete Confirmed For Detections 
+12/9/2024 2:37:25 PM: User requested Index For Detections 
+12/9/2024 2:37:53 PM: User requested Index For Detections 
+12/9/2024 2:42:29 PM: User requested Index For Detections 
+12/9/2024 2:45:21 PM: User requested Index For Detections 
+12/9/2024 2:45:42 PM: User requested Index For Detections 
+12/9/2024 2:47:33 PM: User requested Delete For Detections 
+12/9/2024 2:47:35 PM: User requested Delete Confirmed For Detections 
+12/9/2024 2:47:35 PM: User requested Index For Detections 
+12/9/2024 2:48:01 PM: User requested Index For Detections 
+12/9/2024 3:31:30 PM: User 'm111@gmail.com' ;logged in.
+12/9/2024 3:31:34 PM: User requested Index For Detections 
+12/9/2024 3:31:38 PM: User requested Index For Clients 
+12/9/2024 3:31:41 PM: User requested Edit For Clients 
+12/9/2024 3:31:42 PM: User requested Index For Clients 
+12/9/2024 3:31:43 PM: User requested Details For Clients 
+12/9/2024 3:31:44 PM: User requested Details For Branches 
+12/9/2024 3:31:47 PM: User requested Details For Cameras 
+12/9/2024 3:31:53 PM: User requested Details For Users 
+12/9/2024 3:32:03 PM: User requested Details For Users 
+12/9/2024 3:32:06 PM: User requested Edit For Users 
+12/9/2024 3:32:09 PM: User requested Details For Users 
+12/9/2024 3:32:15 PM: User requested Index For Branches 
+12/9/2024 3:32:15 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 3:32:16 PM: User requested Index For Clients 
+12/9/2024 3:32:36 PM: User requested Index For Clients 
+12/9/2024 4:31:59 PM: User 'm111@gmail.com' ;logged in.
+12/9/2024 4:32:00 PM: User requested Index For Detections 
+12/9/2024 4:35:52 PM: User requested Index For Branches 
+12/9/2024 4:35:52 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:35:57 PM: User requested Details For Branches 
+12/9/2024 4:35:59 PM: User requested Index For Branches 
+12/9/2024 4:35:59 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:36:01 PM: User requested Index For Clients 
+12/9/2024 4:36:02 PM: User requested Details For Clients 
+12/9/2024 4:36:03 PM: User requested Details For Branches 
+12/9/2024 4:36:06 PM: User requested Create For Users 
+12/9/2024 4:37:08 PM: User requested Edit For Users 
+12/9/2024 4:37:19 PM: User requested Index For Clients 
+12/9/2024 4:37:21 PM: User requested Details For Clients 
+12/9/2024 4:37:23 PM: User requested Details For Branches 
+12/9/2024 4:37:27 PM: User requested Edit For Users 
+12/9/2024 4:37:35 PM: User requested Index For Detections 
+12/9/2024 4:37:49 PM: User requested Index For System Logs 
+12/9/2024 4:37:51 PM: User requested Index For Detections 
+12/9/2024 4:38:35 PM: User requested Index For Detections 
+12/9/2024 4:38:37 PM: User requested Index For Branches 
+12/9/2024 4:38:37 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:38:38 PM: User requested Index For Clients 
+12/9/2024 4:38:39 PM: User requested Index For Clients 
+12/9/2024 4:38:40 PM: User requested Details For Clients 
+12/9/2024 4:38:42 PM: User requested Details For Branches 
+12/9/2024 4:38:45 PM: User requested Index For Clients 
+12/9/2024 4:38:46 PM: User requested Index For Detections 
+12/9/2024 4:40:18 PM: User requested Index For Clients 
+12/9/2024 4:40:19 PM: User requested Index For Branches 
+12/9/2024 4:40:19 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:40:20 PM: User requested Index For Clients 
+12/9/2024 4:40:20 PM: User requested Index For Branches 
+12/9/2024 4:40:20 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:40:21 PM: User requested Index For Detections 
+12/9/2024 4:40:21 PM: User requested Index For System Logs 
+12/9/2024 4:40:23 PM: User requested Index For System Logs 
+12/9/2024 4:40:25 PM: User requested Index For System Logs 
+12/9/2024 4:40:26 PM: User requested Index For Branches 
+12/9/2024 4:40:26 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:40:27 PM: User requested Index For Detections 
+12/9/2024 4:40:28 PM: User requested Index For System Logs 
+12/9/2024 4:40:30 PM: User requested Create For System Logs 
+12/9/2024 4:41:05 PM: User requested Index For System Logs 
+12/9/2024 4:41:08 PM: User requested Index For Detections 
+12/9/2024 4:41:09 PM: User requested Index For System Logs 
+12/9/2024 4:41:10 PM: User requested Index For System Logs 
+12/9/2024 4:41:12 PM: User requested Index For Detections 
+12/9/2024 4:41:13 PM: User requested Index For System Logs 
+12/9/2024 4:41:17 PM: User requested Index For Detections 
+12/9/2024 4:41:22 PM: User requested Index For Branches 
+12/9/2024 4:41:22 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:41:22 PM: User requested Index For Clients 
+12/9/2024 4:41:26 PM: User requested Index For Branches 
+12/9/2024 4:41:26 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:41:32 PM: User requested Index For Branches 
+12/9/2024 4:41:32 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 4:41:33 PM: User requested Index For Clients 
+12/9/2024 4:41:40 PM: User requested Details For Clients 
+12/9/2024 4:41:45 PM: User requested Index For Clients 
+12/9/2024 7:54:21 PM: User requested Index For Clients 
+12/9/2024 7:54:22 PM: User requested Index For Detections 
+12/9/2024 7:54:51 PM: User requested Index For Clients 
+12/9/2024 7:54:55 PM: User requested Index For Clients 
+12/9/2024 7:54:55 PM: User searched for 'ara' 
+12/9/2024 7:54:56 PM: User requested Index For Clients 
+12/9/2024 7:55:01 PM: User requested Details For Clients 
+12/9/2024 7:55:02 PM: User requested Index For Clients 
+12/9/2024 7:55:05 PM: User requested Details For Clients 
+12/9/2024 8:03:27 PM: User requested Details For Branches 
+12/9/2024 8:03:30 PM: User requested Index For Branches 
+12/9/2024 8:03:30 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 8:03:31 PM: User requested Index For Clients 
+12/9/2024 8:03:32 PM: User requested Index For Branches 
+12/9/2024 8:03:32 PM: User 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[SecureSphere.Models.Branch,System.String]' searched for '' 
+12/9/2024 8:03:40 PM: User requested Index For Branches 
+12/9/2024 8:03:40 PM: User requested Index For Branches 
+12/9/2024 8:03:41 PM: User requested Index For Branches 
+12/9/2024 8:03:41 PM: User requested Index For Branches 
+12/9/2024 8:03:43 PM: User requested Index For Branches 
+12/9/2024 8:03:44 PM: User requested Index For Branches 
+12/9/2024 8:03:45 PM: User requested Index For Branches 
+12/9/2024 8:03:46 PM: User requested Index For Branches 
+12/9/2024 8:03:47 PM: User requested Index For Branches 
+12/9/2024 8:03:48 PM: User requested Index For Branches 
+12/9/2024 8:03:48 PM: User requested Index For Branches 
+12/9/2024 8:03:49 PM: User requested Index For Branches 
+12/9/2024 8:03:50 PM: User requested Index For Branches 
+12/9/2024 8:03:53 PM: User requested Index For Clients 
+12/9/2024 8:03:55 PM: User requested Index For Detections 
+12/9/2024 8:04:46 PM: User requested Index For Detections 
+12/9/2024 8:04:47 PM: User requested Index For Clients 
+12/9/2024 8:04:48 PM: User requested Details For Clients 
+12/9/2024 8:04:49 PM: User requested Details For Branches 
+12/9/2024 8:08:27 PM: User requested Index For Detections 
+12/9/2024 8:08:59 PM: User requested Index For Detections 
+12/9/2024 8:09:09 PM: User requested Index For Detections 
+12/9/2024 8:09:14 PM: User requested Index For Clients 
+12/9/2024 8:17:06 PM: User requested Index For Detections 
+12/9/2024 8:17:38 PM: User Microsoft.AspNetCore.Identity.SignInManager`1[SecureSphere.Models.ApplicationUser]logged out

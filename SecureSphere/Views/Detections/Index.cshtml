@@ -7,7 +7,7 @@
 <div class="detection-container">
     <div class="detection-header">
         <h1 class="detection-title">Detections</h1>
-        <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold add-detection-btn" asp-controller="Detections" asp-action="Create" style="color: #90AFC5">Add A Detection</a>
+        <a class="btn btn-outline-secondary btn-lg active navbar-text text-capitalize fs-6 fw-bold add-detection-btn" asp-controller="Detections" asp-action="Create" style="color: #90AFC5" hidden>Add A Detection</a>
     </div>
     <div class="table-responsive detection-table">
         <table class="table table-borderless mb-0">
@@ -113,95 +113,90 @@
                         timestamp: $(this).data('timestamp'),
                         reason: $(this).data('reason')
                     });
-                    console.log("Collected image path:", $(this).data('image-path')); // Debug line
                 });
 
-                
-                function showImage(index) {
+                function showImage(index, $modal) {
                     if (index >= 0 && index < images.length) {
                         currentIndex = index;
                         var image = images[currentIndex];
 
-                        console.log("Showing image:", image.imagePath); // Debug line
-
-                        // Update modal content
-                        $('.modal-image').attr('src', image.imagePath);
-                        $('.modal-timestamp').text('Date: ' + image.timestamp);
-                        $('.modal-reason').text('Reason: ' + image.reason);
+                        $modal.find('.modal-image').attr('src', image.imagePath);
+                        $modal.find('.modal-timestamp').text('Date: ' + image.timestamp);
+                        $modal.find('.modal-reason').text('Reason: ' + image.reason);
+                        $modal.find('.image-counter').text(`${currentIndex + 1} of ${images.length}`);
 
                         // Update navigation buttons
-                        $('.prev-image').prop('disabled', currentIndex === 0);
-                        $('.next-image').prop('disabled', currentIndex === images.length - 1);
-
-                        // Update image counter
-                        $('.image-counter').text(`${currentIndex + 1} of ${images.length}`);
+                        $modal.find('.prev-image').prop('disabled', currentIndex === 0);
+                        $modal.find('.next-image').prop('disabled', currentIndex === images.length - 1);
                     }
                 }
 
                 $('.show-image').click(function (e) {
                     e.preventDefault();
-                    currentIndex = $(this).closest('tr').index();
 
-                    // Create modal with navigation
-                    var modal = $('<div class="modal fade" tabindex="-1" role="dialog">')
-                        .append($('<div class="modal-dialog modal-lg" role="document">')
-                            .append($('<div class="modal-content">')
-                                .append($('<div class="modal-header">')
-                                    .append($('<h5 class="modal-title">Detection Details</h5>'))
-                                    .append($('<span class="image-counter ms-3"></span>'))
-                                    .append($('<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>')))
-                                .append($('<div class="modal-body text-center">')
-                                    .append($('<p class="modal-timestamp fw-bold">'))
-                                    .append($('<p class="modal-reason fw-bold">'))
-                                    .append($('<div class="image-container">')
-                                        .append($('<img>').addClass('img-fluid modal-image').css({
-                                            'max-height': '60vh',
-                                            'object-fit': 'contain'
-                                        }))))
-                                .append($('<div class="modal-footer justify-content-between">')
-                                    .append($('<button type="button" class="btn btn-primary prev-image">Previous</button>'))
-                                    .append($('<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'))
-                                    .append($('<button type="button" class="btn btn-primary next-image">Next</button>')))));
+                    // Find the correct index based on the clicked element's data
+                    var clickedPath = $(this).data('image-path');
+                    currentIndex = images.findIndex(img => img.imagePath === clickedPath);
 
-                    // Add modal to DOM first
-                    $('body').append(modal);
+                    // Create and append modal
+                    var $modal = $(`
+                        <div class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Detection Details</h5>
+                                        <span class="image-counter ms-3"></span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p class="modal-timestamp fw-bold"></p>
+                                        <p class="modal-reason fw-bold"></p>
+                                        <div class="image-container">
+                                            <img class="img-fluid modal-image" style="max-height: 60vh; object-fit: contain;">
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-between">
+                                        <button type="button" class="btn btn-primary prev-image">Previous</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary next-image">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `).appendTo('body');
 
-                    // Wait for modal to be shown, then show image
-                    modal.on('shown.bs.modal', function () {
-                        showImage(currentIndex);
-                    });
+                    // Show image before showing modal
+                    showImage(currentIndex, $modal);
 
-                    modal.modal('show');
-
-                    // Show initial image
-                    showImage(currentIndex);
+                    // Initialize and show Bootstrap modal
+                    var modal = new bootstrap.Modal($modal[0]);
+                    modal.show();
 
                     // Navigation handlers
-                    modal.find('.prev-image').click(function () {
-                        showImage(currentIndex - 1);
+                    $modal.find('.prev-image').click(function () {
+                        showImage(currentIndex - 1, $modal);
                     });
 
-                    modal.find('.next-image').click(function () {
-                        showImage(currentIndex + 1);
+                    $modal.find('.next-image').click(function () {
+                        showImage(currentIndex + 1, $modal);
                     });
 
                     // Keyboard navigation
                     $(document).on('keydown.modal', function (e) {
                         if (e.key === 'ArrowLeft') {
-                            showImage(currentIndex - 1);
+                            showImage(currentIndex - 1, $modal);
                         } else if (e.key === 'ArrowRight') {
-                            showImage(currentIndex + 1);
+                            showImage(currentIndex + 1, $modal);
                         }
                     });
 
-                    // Clean up
-                    modal.on('hidden.bs.modal', function () {
+                    // Clean up when modal is hidden
+                    $modal.on('hidden.bs.modal', function () {
                         $(document).off('keydown.modal');
                         $(this).remove();
                     });
                 });
             });
-
         </script>
     }
 
